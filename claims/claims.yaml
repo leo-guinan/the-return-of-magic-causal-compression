@@ -2,32 +2,59 @@ paper: the-return-of-magic-causal-compression
 status: local_draft
 publication_authorized: false
 claims:
-  - id: CausalCompression-001
+  - id: Mechanism-001
     type: theory
-    wording: Causal compression reduces the runtime burden of future decisions by compiling continuation-relevant consequences of history into present structure.
+    wording: Causal compression converts historically expensive causal sequences into maintained transitions that are cheap to invoke under a declared continuation contract.
     evidence: paper/main.tex
-    falsifier: A bounded contract in which every lower-burden representation loses a contract-relevant future distinction.
-    status: draft
+    falsifier: A bounded transition whose invocation burden does not decline relative to construction burden after reuse and maintenance are introduced.
+    status: framework_claim
+  - id: Compression-001
+    type: theory
+    wording: Representational causal compression preserves continuation-relevant distinctions in a future-sufficient present state, while structural causal compression embodies historical work in maintained infrastructure that makes a transition cheaply available.
+    evidence: paper/main.tex
+    falsifier: A case in which the proposed distinction cannot separate internal state abstraction from maintained transition infrastructure under the declared contract.
+    status: framework_claim
+  - id: Gap-001
+    type: bounded_hypothesis
+    wording: The invocation-construction gap is an observable asymmetry between the work required to establish reliable transition capability and the work required for local invocation.
+    evidence: paper/main.tex
+    falsifier: A specified transition for which construction and invocation workloads remain comparable after contract, maintenance, and reuse are controlled.
+    status: hypothesis
   - id: Lifecycle-001
     type: theory
-    wording: Durable capability requires coupled generation, evaluation, selection, compilation, maintenance, re-evaluation, and retirement processes.
+    wording: Causal compression participates in a lifecycle in which cheap invocation expands reachable states, selection creates commitments, maintenance preserves compiled structure, and re-evaluation determines renewal, replacement, or retirement.
     evidence: paper/main.tex
-    falsifier: A bounded system in which durable capability remains stable while one lifecycle stage has persistently unbounded overload.
-    status: draft
+    falsifier: A bounded system in which durable compressed capability persists while every lifecycle stage is absent or persistently unable to perform its declared function.
+    status: framework_claim
   - id: Headroom-001
     type: bounded_hypothesis
-    wording: Effective adaptive reachability can contract when commitment burden and maintenance drift exceed capacity creation and safe retirement.
+    wording: Increasing nominal capability does not necessarily increase adaptive headroom; commitment burden and maintenance drift can narrow effective reachable futures while raw capability grows.
     evidence: paper/main.tex
-    falsifier: A controlled workload where the proposed burden/reachability coupling is absent under declared constraints.
+    falsifier: A controlled workload in which the proposed burden/reachability coupling is absent under declared constraints.
+    status: hypothesis
+  - id: QueueMigration-001
+    type: bounded_hypothesis
+    wording: Increasing candidate-generation capacity should move observed bottlenecks downstream when evaluation, integration, maintenance, or retirement capacity does not scale with generation.
+    evidence: paper/main.tex
+    falsifier: A controlled capacity-scaling experiment in which downstream service remains non-bottlenecked without additional evaluation, integration, maintenance, or retirement capacity.
+    status: hypothesis
+  - id: Timescale-001
+    type: bounded_hypothesis
+    wording: Under environmental change, an intermediate structural-update regime can outperform both excessively rapid updating and excessively slow updating on a predeclared adaptive-performance measure.
+    evidence: paper/main.tex
+    falsifier: A repeated-seed dynamical benchmark in which performance is monotone across the declared update-rate range or the result disappears under matched controls.
     status: hypothesis
   - id: Magic-001
     type: source_grounded_context
-    wording: Locally low-cost invocation can produce a phenomenology of magic when historical causal work is compiled into an opaque or familiar interface.
+    wording: The phenomenology of magic is associated with a large construction-invocation gap, reliable and consequential transition behavior, and causal depth hidden from the local invocation loop.
     evidence: paper/main.tex; paper/references.bib
-    falsifier: A comparative study showing no relationship between construction/invocation separation and reports of magical appearance under a specified protocol.
+    falsifier: A comparative protocol showing no relationship between the declared gap/reliability/consequence variables and reports of magical appearance.
     status: hypothesis
 non_claims:
-  - No universal civilizational law is established.
-  - No P/NP conclusion is offered.
+  - No universal law about civilization, organizations, brains, markets, or artificial intelligence is established.
+  - No claim is made that representational and structural compression are identical mechanisms.
+  - No claim is made that scalar headroom captures all nonlinear network constraints.
+  - No claim is made that safety is equivalent to positive headroom release.
+  - No empirical estimate of AI's social or economic effects is reported.
   - No energy measurement is reported.
-  - No empirical AI productivity effect is measured.
+  - Synthetic fixtures, if later added, will not by themselves establish the broad thesis.

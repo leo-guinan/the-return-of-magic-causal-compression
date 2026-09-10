@@ -9,7 +9,7 @@ paper/*.out
 paper/*.run.xml
 paper/*.synctex.gz
 paper/*.toc
-paper/*.pdf
+
 __pycache__/
 .DS_Store
 .venv/

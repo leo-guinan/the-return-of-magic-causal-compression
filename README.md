@@ -21,7 +21,7 @@ python3 scripts/validate.py
 cd paper && latexmk -pdf -interaction=nonstopmode -halt-on-error main.tex
 ```
 
-The generated PDF is `paper/main.pdf`. Build outputs are ignored by Git.
+The generated PDF is `paper/main.pdf` and is checked in as the current compiled projection. Auxiliary LaTeX build outputs are ignored by Git.
 
 ## Evidence boundary
 

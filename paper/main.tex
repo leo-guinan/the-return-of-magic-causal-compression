@@ -1,0 +1,379 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage{booktabs}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage[hidelinks]{hyperref}
+\usepackage[numbers,sort&compress]{natbib}
+
+\newtheorem{proposition}{Proposition}
+\newtheorem{definition}{Definition}
+\newcommand{\R}{\mathcal{R}}
+\newcommand{\C}{\mathcal{C}}
+\newcommand{\I}{\mathcal{I}}
+\newcommand{\Ob}{\mathcal{O}}
+
+\title{The Return of Magic: Causal Compression in Adaptive Systems}
+\author{Leo Guinan}
+\date{Draft --- September 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Advanced technologies increasingly produce outcomes whose visible invocation bears little resemblance to the historical, computational, institutional, and physical work required to make them possible. This paper develops causal compression as a framework for understanding that gap. In adaptive systems, successful experience is progressively compiled into structural memory: procedures become policies, repeated actions become maintained infrastructure, and costly causal chains become low-latency transitions available to future agents. The result is a growing separation between the work required to create a capability and the work required to invoke it. We argue that this separation provides a technical basis for the phenomenology traditionally associated with magic: consequential transformations become locally observable while much of their causal history disappears from the active decision loop. Artificial intelligence sharply increases this effect by compressing not only execution but also search, coordination, expertise, and procedure, while simultaneously expanding the set of reachable future states available to individuals and networks. We situate causal compression within a broader lifecycle of generation, evaluation, selection, compilation, maintenance, re-evaluation, and retirement, showing that accumulated capability can produce either adaptability or lock-in depending on whether systems preserve sufficient adaptive headroom. The framework therefore distinguishes hidden causality from absent causality: reliable compressed mechanisms can appear magical without being mysterious, while unverified causal attribution remains superstition. We conclude that the central challenge of increasingly ``magical'' technological systems is not to make every causal layer continuously visible, but to preserve evaluation, provenance, reversibility, and the capacity to inspect, replace, or retire compiled structure when circumstances change.
+\end{abstract}
+
+\section{Introduction: the disappearing cause}
+
+A passenger presses a button, receives a generated image, crosses a continent, or asks a system to summarize a difficult argument. The local action is small. The consequence is not. Between them lies a causal chain of computation, accumulated design, trained expertise, contracts, energy, maintenance, institutional coordination, and physical infrastructure. Most of that chain is absent from the user's immediate field of action.
+
+This is not necessarily deception. It is often the point of a successful system. A mechanism becomes useful when a previously expensive sequence can be invoked through a smaller interface. The work has not vanished; it has been displaced in time, distributed across actors, and compiled into the present structure of the world.
+
+We call this process \emph{causal compression}. The term is related to existing uses of compression in causal time-series analysis \citep{causalcompression2016} and to work connecting compression with learned causal structure \citep{wendong2025}, but our object is broader. We study the compression of a causal pathway into a reusable transition in an adaptive network. The compressed object may be a learned policy, a software library, an airport system, a laboratory protocol, or an institutional procedure.
+
+The central claim is deliberately modest:
+
+\begin{quote}
+A transition can appear magical when the causal work required to make it reliable is much larger than the work required to invoke it locally.
+\end{quote}
+
+The claim is not that magic is real in the supernatural sense, nor that opacity proves reliability. A black box can be magical in appearance and still be wrong. The framework separates three questions that are often collapsed: whether a transition exists, whether it works repeatedly, and whether its causal basis is adequately understood.
+
+Our paper is a conceptual framework and measurement program. Its equations define quantities and proposed observables; they do not establish universal laws about civilizations, firms, brains, or artificial intelligence. The intended use is falsifiable comparison across bounded systems.
+
+\section{Causal compression}
+
+Let an episode or causal history be:
+\[
+e_t=(o_{0:t},a_{0:t-1},y_{0:t},c_t),
+\]
+where observations, actions, outcomes, and context may be high-dimensional. An adaptive system does not need to carry the full episode into every future decision. It may apply an evaluation and update operator:
+\[
+e_t\xrightarrow{\ \mathcal E\ }g(e_t)
+\xrightarrow{\ \eta_t\ }\Delta\theta_t,
+\qquad
+\theta_{t+1}=\theta_t+\eta_t g(e_t).
+\]
+The episode can then leave active control while its useful consequences persist in structural state \(\theta\).
+
+The learning rate \(\eta_t\) is not a decorative parameter. If it is too large, noisy outcomes rewrite policy and produce thrashing. If it is too small, genuine environmental change fails to alter the policy and produces rigidity. A mature system assigns different evidence different update rates.
+
+\begin{definition}[Causal compression]
+A transformation from history \(h_t\) to present state \(z_t=\phi(h_t)\) is causally compressive for contract \(g\) when it reduces the runtime burden of future decisions while preserving the distinctions required by the continuation problem under \(g\).
+\end{definition}
+
+A strict version requires future equivalence:
+\[
+\phi(h_1)=\phi(h_2)
+\Rightarrow
+\mathcal P_{\mathrm{future}}(h_1;g)\cong
+\mathcal P_{\mathrm{future}}(h_2;g).
+\]
+The representation need not preserve every fact about the past. It must preserve the facts that affect future actions, observations, transitions, costs, risks, and contract outcomes.
+
+This is a state-sufficiency problem. Under partial observability, the present state may be a belief, a learned statistic, or a maintained network position rather than a physical state. The Markov property is therefore best treated as contract-relative and approximate in practical systems:
+\[
+P(a_{t+1}\mid s_t,\theta_t,H_t)
+\approx
+P(a_{t+1}\mid s_t,\theta_t).
+\]
+The residual is not evidence that memory is useless. It is evidence that the compression is incomplete for the chosen contract.
+
+\section{From episodes to structure}
+
+A useful distinction is between \emph{informational persistence} and \emph{attentional persistence}. The first is the survival of a lesson in a state representation. The second is the continued presence of the original episode in active control. Good adaptation often requires the first and suppresses the second.
+
+A hitter's previous at-bat contains pitch sequence, timing, result, emotion, and context. The next pitch should not be controlled by replaying that entire record. Instead, evaluation may update pitch recognition, timing, or a release-point cue. The narrative payload can be retired:
+\[
+\text{episode}\rightarrow\text{evaluation}\rightarrow\Delta\theta\rightarrow\text{episode retirement}.
+\]
+
+This does not mean the episode contributed zero information. It means its information passed through a compression/update operator before the next decision. The practical maxim ``short memory'' can therefore mean high information extraction with low episode carry-forward.
+
+The same pattern appears in technical systems. A one-time repair becomes a test. A repeated test becomes a deployment gate. Repeated deployments become a service. A service becomes infrastructure with operators, documentation, monitoring, dependencies, and replacement paths. History has become morphology.
+
+\begin{quote}
+Expertise is history compiled into cheap present action.
+\end{quote}
+
+Compilation reduces runtime burden, but it creates a new obligation: the compiled structure must remain valid as the environment changes. Causal compression is therefore not just a memory operation. It is a lifecycle.
+
+\section{The evolving transition network}
+
+Represent an adaptive system as:
+\[
+\mathcal N_t=(Z_t,E_t,A_t,\Lambda_t,M_t),
+\]
+where \(Z_t\) are states, \(E_t\) available transitions, \(A_t\) transition attributes, \(\Lambda_t\) realized flows, and \(M_t\) maintenance and retention state. An attributed edge may include capability, cost, latency, reliability, evidence quality, and capacity:
+\[
+e_{ij}=(k_{ij},c_{ij},\tau_{ij},\rho_{ij},\upsilon_{ij},\kappa_{ij}).
+\]
+
+The network changes through a lifecycle:
+\[
+\begin{gathered}
+\text{generation}\rightarrow\text{evaluation}\rightarrow\text{selection}\rightarrow\text{compilation}\\
+\rightarrow\text{maintenance}\rightarrow\text{re-evaluation}\rightarrow\text{renewal, replacement, or retirement}.
+\end{gathered}
+\]
+
+
+This formulation distinguishes intensive and extensive progress. Intensive progress lowers the cost, latency, risk, or burden of an existing edge. Extensive progress creates an edge that was previously unavailable. A capability is therefore not merely a faster action; it is potentially a change in the reachable-state graph:
+\[
+(z_i,z_j)\notin E_t
+\rightarrow
+(z_i,z_j)\in E_{t+1}.
+\]
+
+A demonstration establishes only bounded edge existence. Adoption establishes integration. A market establishes repeated valuable flow. Infrastructure establishes that the flow is worth preserving as the environment changes:
+\[
+\text{idea}\rightarrow\text{demo}\rightarrow\text{adoption}\rightarrow\text{market}\rightarrow\text{infrastructure}.
+\]
+
+\section{Queues, stocks, and four pressure variables}
+
+The lifecycle has both queues and stocks. Let \(B_t\) be candidate backlog and \(V_t\) validated-but-uncompiled backlog. Service capacity and realized service must be separated:
+\[
+r_{\mathrm{eval}}\leq\mu_{\mathrm{eval}},
+\qquad
+r_{\mathrm{compile}}\leq\mu_{\mathrm{compile}}.
+\]
+Then:
+\[
+\dot B=\lambda_{\mathrm{birth}}-r_{\mathrm{eval}},
+\]
+\[
+\dot V=r_{\mathrm{promote}}-r_{\mathrm{compile}}-r_{\mathrm{discard}},
+\]
+\[
+\frac{d|E_B|}{dt}=r_{\mathrm{compile}}-r_{\mathrm{retire}}.
+\]
+
+The ratios are offered-load diagnostics, not claims that a service station is always saturated:
+\[
+\Psi=\frac{\lambda_{\mathrm{eval-in}}}{\mu_{\mathrm{eval}}},
+\qquad
+\Phi_C=\frac{\lambda_{\mathrm{promote}}}{\mu_{\mathrm{compile}}}.
+\]
+When \(\Psi>1\), candidate work tends to accumulate. When \(\Phi_C>1\), validated commitments tend to accumulate before integration.
+
+Maintenance is a stock burden:
+\[
+M_t=\sum_{e\in E_B(t)}m_e(t).
+\]
+Its dynamics include drift:
+\[
+\dot M
+= r_{\mathrm{compile}}\bar m_{\mathrm{new}}
+-r_{\mathrm{retire}}\bar m_{\mathrm{retired}}
++D_M,
+\]
+where \(D_M\) captures dependencies aging, standards changing, expertise leaving, security requirements increasing, and related effects. Maintenance pressure is:
+\[
+\Phi_M=\frac{M_t}{K_{\mathrm{maint}}(t)}.
+\]
+
+Retirement has its own queue. Let \(O_t^{\mathrm{known}}\) be known-obsolete obligations awaiting safe retirement:
+\[
+\dot O^{\mathrm{known}}
+=\lambda_{\mathrm{deprecate}}-r_{\mathrm{retire}},
+\qquad
+r_{\mathrm{retire}}\leq\mu_{\mathrm{safe-retire}}.
+\]
+The legacy pressure is:
+\[
+\Omega=\frac{\lambda_{\mathrm{deprecate}}}{\mu_{\mathrm{safe-retire}}}.
+\]
+
+The four questions are distinct:
+\begin{center}
+\begin{tabular}{ll}
+\toprule
+Pressure & Question\\
+\midrule
+\(\Psi\) & Can the system evaluate possibilities?\\
+\(\Phi_C\) & Can it integrate what it selects?\\
+\(\Phi_M\) & Can it sustain what it has?\\
+\(\Omega\) & Can it safely release what it no longer wants?\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+A fifth ratio describes environmental response:
+\[
+\chi=\frac{T_A}{T_W},
+\]
+where \(T_A\) is adaptation time and \(T_W\) is the timescale of material world change. Stability is not low velocity. It is adequate capacity across the coupled loop.
+
+\section{Headroom and option-value conservation}
+
+Separate raw capabilities from adaptive capacity:
+\[
+\mathcal C_t=\text{raw capabilities possessed},
+\]
+\[
+K_t=\text{gross capacity to deploy, coordinate, modify, replace, and support change},
+\]
+\[
+M_t=\text{capacity encumbered by current commitments}.
+\]
+The scalar headroom approximation is:
+\[
+\boxed{H_t=K_t-M_t.}
+\]
+It follows that:
+\[
+|\mathcal C_t|\uparrow
+\not\Rightarrow K_t\uparrow
+\not\Rightarrow H_t\uparrow.
+\]
+
+Promotion consumes headroom by creating future obligations. Retirement can recover it, but only net of capability destroyed:
+\[
+\Delta H_e^{\mathrm{retire}}=\Delta K_e-\Delta M_e.
+\]
+A safe retirement must preserve the required continuation contract and satisfy:
+\[
+\Delta H_e^{\mathrm{retire}}>0.
+\]
+Migration, archival, compatibility layers, retraining, contractual closure, and temporary parallel operation therefore belong in the retirement cost, not outside the model.
+
+A simple headroom balance is:
+\[
+\dot H
+=\dot K
+-r_{\mathrm{compile}}\mathbb E[b_{\mathrm{new}}]
++r_{\mathrm{retire}}\mathbb E[\Delta H^{\mathrm{retire}}]
+-\lambda_{\mathrm{drift}}.
+\]
+If commitment consumption and drift persistently exceed capacity creation and safe recovery, then:
+\[
+\dot H<0.
+\]
+Under the additional assumption that constrained headroom raises transition cost or removes feasible actions, effective reachability can contract even as raw capability increases:
+\[
+\R_{t+1}^{\mathrm{effective}}\subset\R_t^{\mathrm{effective}}.
+\]
+This is a hypothesis about the coupling between burden and reachability, not a theorem from scalar headroom alone.
+
+The richer object is the value of the reachable future set:
+\[
+\Ob_t=\{z:z\text{ remains reachable within acceptable time, cost, risk, and commitment bounds}\}.
+\]
+Headroom is a proxy. Option value is the quantity of interest.
+
+\section{Commitment, renewal, and lock-in}
+
+A selected transition is a commitment. Its value must be compared with its operating cost, maintenance burden, risk, opportunity cost, and eventual exit cost:
+\[
+\mathbb E[V_{\mathrm{future}}(e)]
+>
+C_{\mathrm{operate}}+C_{\mathrm{maintain}}+C_{\mathrm{opportunity}}+C_{\mathrm{exit}}.
+\]
+
+A structure can be profitable and still reduce total future value if it consumes scarce people, attention, capital, coordination bandwidth, or architectural freedom. Conversely, an apparently inferior incumbent may remain rational when replacement costs exceed expected savings:
+\[
+C_{\mathrm{switch}}
+>
+\mathbb E[C_{\mathrm{incumbent}}-C_{\mathrm{replacement}}].
+\]
+
+Renewal prevents structural memory from becoming historical privilege:
+\[
+\text{infrastructure}\rightarrow\text{re-evaluation}\rightarrow
+\begin{cases}
+\text{renew},\\
+\text{replace},\\
+\text{retire}.
+\end{cases}
+\]
+Renewal is a fresh commitment to an incumbent after comparison against currently reachable substitutes.
+
+This distinction matters for lock-in. Behavioral persistence is observable. Rationality is informationally conditioned counterfactual. A persistent incumbent is not automatically irrational; it becomes maladaptive when the causal online benchmark would have switched under the same information.
+
+\section{The phenomenology of magic}
+
+Causal compression creates an asymmetry between construction and invocation. The first successful flight required an enormous new arrangement of knowledge, materials, engines, control systems, pilots, airports, regulation, fuel, maintenance, and coordination. A mature airline system makes one passenger's traversal feel ordinary.
+
+\begin{quote}
+Cheap traversal is often evidence of expensive accumulated structure.
+\end{quote}
+
+The same is true of software and artificial intelligence. A prompt can produce a competent-looking result because models, data, chips, libraries, interfaces, evaluation procedures, and global infrastructure have already absorbed much of the causal work. The local invocation is cheap relative to the historical work that made it possible.
+
+This is the return of magic: not a return to supernatural causation, but a return of the experience that consequential transformations arrive through opaque, low-latency interfaces.
+
+The framework differs from accounts that treat technological magic primarily as rhetoric or concealment. Such rhetoric exists and can be used to evade accountability \citep{conjuringalgorithms2024}. But causal compression can occur without deliberate concealment. A mechanism may become invisible through familiarity, reliability, and abstraction. The normative requirement is consequently not total visibility. It is inspectability where inspection matters: provenance, evidence, known failure modes, reversal paths, and accountable operators.
+
+\section{Predictions and measurement program}
+
+The framework yields bounded predictions rather than universal laws.
+
+\begin{enumerate}[leftmargin=*]
+\item \textbf{Invocation-construction gap.} As a transition becomes infrastructure, invocation cost should fall relative to historical construction cost, conditional on continued maintenance.
+\item \textbf{Compression-versus-burden tradeoff.} Greater causal compression should reduce runtime decision burden while increasing dependence on compiled structure and its maintenance state.
+\item \textbf{Headroom erosion.} If commitment burden grows faster than capacity creation and safe retirement, effective adaptation choices should narrow even when nominal capabilities grow.
+\item \textbf{Queue migration.} Increasing candidate generation should move observed bottlenecks downstream when evaluation, compilation, maintenance, or retirement capacity does not scale.
+\item \textbf{Retirement asymmetry.} Counting deleted edges will overestimate recovered capacity unless migration, replacement, residual risk, and capability loss are charged.
+\item \textbf{Timescale matching.} Systems with rapid updates to slow structural state should exhibit more policy thrashing; systems with excessively slow updates should exhibit delayed response to regime change.
+\end{enumerate}
+
+A minimal empirical instrument would log, for each candidate transition, its evidence status, evaluation cost, promotion decision, compilation cost, maintenance burden, re-evaluation outcome, retirement cost, and net headroom change. It should distinguish candidate, demonstrated, repeatable, discoverable, routable, trusted, economical, and maintained states. Synthetic fixtures can validate the instrument; they cannot establish market, institutional, or civilizational effects.
+
+\section{Limitations and non-claims}
+
+First, causal compression is not a synonym for causal understanding. A reliable transition can be invoked without its user understanding the mechanism. Conversely, a compelling explanation can be false. The framework therefore requires evidence and provenance rather than treating opacity as proof.
+
+Second, the scalar headroom model is an approximation. Real networks have shared infrastructure, complementarities, bottlenecks, nonconvex migration costs, and dependencies. In a richer treatment, headroom is vector-valued or represented directly by the reachable-set object \(\Ob_t\).
+
+Third, maintenance burden is not always measurable in one common unit. Time, money, attention, risk, and coordination capacity may not be commensurable without an explicit contract and valuation rule.
+
+Fourth, the pressure ratios are diagnostics, not universal phase laws. A temporary ratio above one may be absorbed by slack or queues that later clear. Sustained interpretation requires time windows, quality-adjusted service, and explicit boundary conditions.
+
+Fifth, the framework makes no claim about P versus NP, universal social evolution, biological law, or the welfare of artificial intelligence. It is an architecture-relative theory of transitions, memory, burden, and option preservation.
+
+\section{Conclusion}
+
+Adaptive systems do not merely store the past. They transform selected histories into present structure. Episodes become policies. Procedures become infrastructure. Repeated flows become commitments. The causal chain remains real even when the invocation becomes small.
+
+This compression creates both power and danger. It lowers the cost of action and expands reachable futures, but it also creates maintenance obligations, path dependence, and exit costs. A system can accumulate capabilities while losing the headroom required to redeploy them. It can evaluate and compile faster than it can sustain. It can recognize obsolete structure faster than it can safely retire it.
+
+The resulting objective is not maximal memory, maximal capability, maximal novelty, or maximal deletion. It is preservation of valuable future reachability:
+\[
+\boxed{
+\text{remember enough to remain capable; forget enough to remain free.}
+}
+\]
+
+The complete lifecycle is:
+\[
+\boxed{\begin{gathered}
+\text{generate}\rightarrow\text{evaluate}\rightarrow\text{select}\rightarrow\text{compile}\\
+\rightarrow\text{maintain}\rightarrow\text{re-evaluate}\rightarrow\text{renew, replace, or retire}\\
+\rightarrow\text{recover option value}\rightarrow\text{generate again}.
+\end{gathered}}
+\]
+
+The shortest statement of the theory is therefore:
+\[
+\boxed{
+\text{Adaptability is the ability to change without exhausting the ability to change again.}
+}
+\]
+
+The positive version is equally simple:
+\[
+\boxed{\begin{gathered}
+\text{Learning creates options. Selection creates commitments.}\\
+\text{Maintenance creates memory. Retirement preserves possibility.}
+\end{gathered}}
+\]
+
+\bibliographystyle{plainnat}
+\bibliography{references}
+\end{document}

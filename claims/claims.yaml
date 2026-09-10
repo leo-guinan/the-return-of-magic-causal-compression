@@ -1,0 +1,33 @@
+paper: the-return-of-magic-causal-compression
+status: local_draft
+publication_authorized: false
+claims:
+  - id: CausalCompression-001
+    type: theory
+    wording: Causal compression reduces the runtime burden of future decisions by compiling continuation-relevant consequences of history into present structure.
+    evidence: paper/main.tex
+    falsifier: A bounded contract in which every lower-burden representation loses a contract-relevant future distinction.
+    status: draft
+  - id: Lifecycle-001
+    type: theory
+    wording: Durable capability requires coupled generation, evaluation, selection, compilation, maintenance, re-evaluation, and retirement processes.
+    evidence: paper/main.tex
+    falsifier: A bounded system in which durable capability remains stable while one lifecycle stage has persistently unbounded overload.
+    status: draft
+  - id: Headroom-001
+    type: bounded_hypothesis
+    wording: Effective adaptive reachability can contract when commitment burden and maintenance drift exceed capacity creation and safe retirement.
+    evidence: paper/main.tex
+    falsifier: A controlled workload where the proposed burden/reachability coupling is absent under declared constraints.
+    status: hypothesis
+  - id: Magic-001
+    type: source_grounded_context
+    wording: Locally low-cost invocation can produce a phenomenology of magic when historical causal work is compiled into an opaque or familiar interface.
+    evidence: paper/main.tex; paper/references.bib
+    falsifier: A comparative study showing no relationship between construction/invocation separation and reports of magical appearance under a specified protocol.
+    status: hypothesis
+non_claims:
+  - No universal civilizational law is established.
+  - No P/NP conclusion is offered.
+  - No energy measurement is reported.
+  - No empirical AI productivity effect is measured.

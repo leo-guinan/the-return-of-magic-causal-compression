@@ -1,0 +1,24 @@
+name: paper-ci
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+      - name: Validate ledger and manuscript
+        run: python3 scripts/validate.py
+      - name: Build PDF
+        uses: xu-cheng/latex-action@v3
+        with:
+          root_file: paper/main.tex
+          working_directory: paper
+          args: -pdf -interaction=nonstopmode -halt-on-error
+      - name: Check PDF exists
+        run: test -s paper/main.pdf

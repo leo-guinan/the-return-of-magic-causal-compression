@@ -2,7 +2,7 @@
 
 ## Verdict
 
-The project has a public artifact corpus and one claim-specific synthetic evidence chain plus one source-derived calibration chain. It does not yet have a complete evidence graph or field validation.
+The project has a public artifact corpus, claim-specific synthetic evidence chains, two source-derived archive calibrations, and a bounded external operational calibration. It does not have causal field validation.
 
 The current state is best described as:
 
@@ -10,9 +10,10 @@ The current state is best described as:
 public source catalogue
 + validated formal slices
 + bounded experiment archive
-+ one claim-specific synthetic support/test chain
++ claim-specific synthetic support/test chain
 + two source-derived trace calibration chains
-- deployment or external operational evidence
++ bounded two-cell Google Borg operational observation
+- causal deployment validation
 - profile-held causal-compression commitments
 - resolved source-hash lineage for AxiomReason readbacks
 ```

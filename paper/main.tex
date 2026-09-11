@@ -202,6 +202,8 @@ A bounded synthetic cross-check implements this protocol in two independently sp
 
 Two trace-derived calibrations replay 1,190 and 58 timestamped archive records as anonymized one-minute demand bins, using only timestamps and role labels. With both source hashes fixed and message content excluded, the high-capacity sweep exposes evaluation on each trace, while the capacity-release ladder localizes each constrained lifecycle stage on each trace. This two-trace result strengthens workload calibration within one archive corpus but does not establish stationarity, participant causality, or deployment generality.
 
+A separate bounded operational observation uses remote BigQuery aggregates from two public Google Borg cells, restricted to the first 24 hours and retaining no raw task rows. Attempt reconstruction exposes long-tailed durations, interruption, and right-censoring; stratification shows that priority, scheduling class, collection type, and coarse resource-request strata have materially different outcome profiles, and the dominant scheduler composition differs between cells. Pooled pressure/utilization associations are weak or change sign across cells. This is evidence that scheduler composition is a boundary condition on observed queue behavior, not causal confirmation of queue migration; the usage measure is a capacity-normalized task-usage proxy rather than physical utilization.
+
 \section{Commitment, maintenance, and adaptive headroom}
 
 Separate raw capability from the capacity to change:

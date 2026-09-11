@@ -1,7 +1,7 @@
 {
   "schema_version": "research-graph-v1",
   "graph_id": "the-return-of-magic-causal-compression",
-  "checked_at": "2026-09-11T03:12:00Z",
+  "checked_at": "2026-09-11T04:00:00Z",
   "source_of_truth": "graph-v1.json",
   "nodes": [
     {
@@ -2794,6 +2794,135 @@
       "public_urls": [
         "https://github.com/Build-In-Public-University/pnp-research-base/blob/main/experiment/artifacts/queue_migration_v4_trace2.json"
       ]
+    },
+    {
+      "id": "claim:BorgObservation-001",
+      "type": "bounded_observation",
+      "label": "BorgObservation-001",
+      "status": "observed",
+      "scope": "Two public Google Borg cells; bounded first-24-hour BigQuery aggregates; scheduler-stratified attempt outcomes and cross-cell pressure/utilization comparison",
+      "source_refs": [
+        [
+          "claims/claims.yaml",
+          "/Users/leoguinan/the-return-of-magic-causal-compression/claims/claims.yaml"
+        ],
+        [
+          "paper/main.tex",
+          "/Users/leoguinan/the-return-of-magic-causal-compression/paper/main.tex"
+        ]
+      ],
+      "provenance": [
+        {
+          "source_ref": "paper/main.tex",
+          "source_locator": "/Users/leoguinan/the-return-of-magic-causal-compression/paper/main.tex",
+          "retrieved_or_checked_at": "2026-09-11T04:00:00Z",
+          "confidence": "direct",
+          "notes": "",
+          "content_hash": "sha256:3f0d78a4aaa056a8135b3ac81abd117e324603113593aa6cc3f05e84257403f4"
+        }
+      ],
+      "claim_text": "Scheduler composition is a boundary condition on observed queue behavior; the bounded Borg aggregates do not causally validate queue migration.",
+      "falsifiers": [
+        "A preregistered matched comparison showing stable scheduler composition and a robust monotone pressure/utilization relationship after declared controls."
+      ],
+      "formal_status": "not_a_theorem",
+      "publication_status": "draft_paper",
+      "profile_status": "not_held"
+    },
+    {
+      "id": "experiment:google-borg-v6-v8",
+      "type": "experiment",
+      "label": "Google Borg bounded operational calibration v6-v8",
+      "status": "measured",
+      "scope": "Remote BigQuery aggregates over cells a and b; first 24 hours; raw rows not downloaded",
+      "source_refs": [
+        [
+          "experiment/docs/google-borg-bigquery-v6-results.md",
+          "/Users/leoguinan/pnp-session-review/experiment/docs/google-borg-bigquery-v6-results.md"
+        ],
+        [
+          "experiment/docs/google-borg-bigquery-v8-results.md",
+          "/Users/leoguinan/pnp-session-review/experiment/docs/google-borg-bigquery-v8-results.md"
+        ]
+      ],
+      "provenance": [
+        {
+          "source_ref": "experiment/docs/google-borg-bigquery-v8-results.md",
+          "source_locator": "/Users/leoguinan/pnp-session-review/experiment/docs/google-borg-bigquery-v8-results.md",
+          "retrieved_or_checked_at": "2026-09-11T04:00:00Z",
+          "confidence": "direct",
+          "notes": "",
+          "content_hash": "sha256:cb2469051d0eca7ceb87e7e4a6bb1b94b04d2151a3e7de8ed333103bab0135fc"
+        }
+      ],
+      "commit": "c4f6b5e73ab9f80a35bc4bbde556a867fefeba09",
+      "public_urls": [
+        "https://github.com/Build-In-Public-University/pnp-research-base/tree/main/experiment/docs"
+      ]
+    },
+    {
+      "id": "result:google-borg-v8",
+      "type": "empirical_result",
+      "label": "Google Borg v8 paired scheduler-stratification result",
+      "status": "observed",
+      "scope": "95 cell-a strata and 92 cell-b strata; exact conservation audits against v3 totals",
+      "source_refs": [
+        [
+          "experiment/docs/google-borg-bigquery-v8-results.md",
+          "/Users/leoguinan/pnp-session-review/experiment/docs/google-borg-bigquery-v8-results.md"
+        ],
+        [
+          "experiment/artifacts/google_borg_bigquery_v8.json",
+          "/Users/leoguinan/pnp-session-review/experiment/artifacts/google_borg_bigquery_v8.json"
+        ]
+      ],
+      "provenance": [
+        {
+          "source_ref": "experiment/artifacts/google_borg_bigquery_v8.json",
+          "source_locator": "/Users/leoguinan/pnp-session-review/experiment/artifacts/google_borg_bigquery_v8.json",
+          "retrieved_or_checked_at": "2026-09-11T04:00:00Z",
+          "confidence": "direct",
+          "notes": "",
+          "content_hash": "sha256:8b704f1d1eacdefa3e5b60fee77b5d36b3b11c681c4d399f519c2703c1a670c8"
+        }
+      ],
+      "experimental_status": "bounded_observational",
+      "publication_status": "public_experiment_repo",
+      "profile_status": "not_held",
+      "falsifiers": [
+        "Matched cross-cell evidence removing scheduler-composition heterogeneity without retuning."
+      ],
+      "commit": "c4f6b5e73ab9f80a35bc4bbde556a867fefeba09",
+      "public_urls": [
+        "https://github.com/Build-In-Public-University/pnp-research-base"
+      ]
+    },
+    {
+      "id": "evidence:google-borg-v8-receipt",
+      "type": "evidence",
+      "label": "Google Borg v8 canonical receipt",
+      "status": "measured",
+      "scope": "Metadata-only paired cell receipt with query provenance, hashes, job metadata, top strata, and conservation audits",
+      "source_refs": [
+        [
+          "experiment/artifacts/google_borg_bigquery_v8.json",
+          "/Users/leoguinan/pnp-session-review/experiment/artifacts/google_borg_bigquery_v8.json"
+        ]
+      ],
+      "provenance": [
+        {
+          "source_ref": "experiment/artifacts/google_borg_bigquery_v8.json",
+          "source_locator": "/Users/leoguinan/pnp-session-review/experiment/artifacts/google_borg_bigquery_v8.json",
+          "retrieved_or_checked_at": "2026-09-11T04:00:00Z",
+          "confidence": "direct",
+          "notes": "",
+          "content_hash": "sha256:8b704f1d1eacdefa3e5b60fee77b5d36b3b11c681c4d399f519c2703c1a670c8"
+        }
+      ],
+      "commit": "c4f6b5e73ab9f80a35bc4bbde556a867fefeba09",
+      "public_urls": [
+        "https://github.com/Build-In-Public-University/pnp-research-base"
+      ]
     }
   ],
   "edges": [
@@ -4234,6 +4363,86 @@
           "retrieved_or_checked_at": "2026-09-11T03:12:00Z",
           "confidence": "direct",
           "notes": "Second trace remains bounded to one exported archive corpus."
+        }
+      ]
+    },
+    {
+      "id": "borg-observation-paper-source",
+      "from": "claim:BorgObservation-001",
+      "to": "artifact:paper-main-tex",
+      "relation": "documented_in",
+      "provenance": [
+        {
+          "source_ref": "paper/main.tex",
+          "source_locator": "/Users/leoguinan/the-return-of-magic-causal-compression/paper/main.tex",
+          "retrieved_or_checked_at": "2026-09-11T04:00:00Z",
+          "confidence": "direct",
+          "notes": "",
+          "content_hash": "sha256:3f0d78a4aaa056a8135b3ac81abd117e324603113593aa6cc3f05e84257403f4"
+        }
+      ]
+    },
+    {
+      "id": "google-borg-v8-result-observes-claim",
+      "from": "result:google-borg-v8",
+      "to": "claim:BorgObservation-001",
+      "relation": "supports",
+      "provenance": [
+        {
+          "source_ref": "experiment/docs/google-borg-bigquery-v8-results.md",
+          "source_locator": "/Users/leoguinan/pnp-session-review/experiment/docs/google-borg-bigquery-v8-results.md",
+          "retrieved_or_checked_at": "2026-09-11T04:00:00Z",
+          "confidence": "direct",
+          "notes": "",
+          "content_hash": "sha256:cb2469051d0eca7ceb87e7e4a6bb1b94b04d2151a3e7de8ed333103bab0135fc"
+        }
+      ]
+    },
+    {
+      "id": "google-borg-v8-result-verified-by-receipt",
+      "from": "result:google-borg-v8",
+      "to": "evidence:google-borg-v8-receipt",
+      "relation": "verified_by",
+      "provenance": [
+        {
+          "source_ref": "experiment/artifacts/google_borg_bigquery_v8.json",
+          "source_locator": "/Users/leoguinan/pnp-session-review/experiment/artifacts/google_borg_bigquery_v8.json",
+          "retrieved_or_checked_at": "2026-09-11T04:00:00Z",
+          "confidence": "direct",
+          "notes": "",
+          "content_hash": "sha256:8b704f1d1eacdefa3e5b60fee77b5d36b3b11c681c4d399f519c2703c1a670c8"
+        }
+      ]
+    },
+    {
+      "id": "google-borg-v8-result-documents-experiment",
+      "from": "result:google-borg-v8",
+      "to": "experiment:google-borg-v6-v8",
+      "relation": "documents",
+      "provenance": [
+        {
+          "source_ref": "experiment/docs/google-borg-bigquery-v8-results.md",
+          "source_locator": "/Users/leoguinan/pnp-session-review/experiment/docs/google-borg-bigquery-v8-results.md",
+          "retrieved_or_checked_at": "2026-09-11T04:00:00Z",
+          "confidence": "direct",
+          "notes": "",
+          "content_hash": "sha256:cb2469051d0eca7ceb87e7e4a6bb1b94b04d2151a3e7de8ed333103bab0135fc"
+        }
+      ]
+    },
+    {
+      "id": "google-borg-v8-result-qualifies-queue-claim",
+      "from": "result:google-borg-v8",
+      "to": "claim:QueueMigration-001",
+      "relation": "qualifies",
+      "provenance": [
+        {
+          "source_ref": "experiment/docs/google-borg-bigquery-v8-results.md",
+          "source_locator": "/Users/leoguinan/pnp-session-review/experiment/docs/google-borg-bigquery-v8-results.md",
+          "retrieved_or_checked_at": "2026-09-11T04:00:00Z",
+          "confidence": "direct",
+          "notes": "",
+          "content_hash": "sha256:cb2469051d0eca7ceb87e7e4a6bb1b94b04d2151a3e7de8ed333103bab0135fc"
         }
       ]
     }

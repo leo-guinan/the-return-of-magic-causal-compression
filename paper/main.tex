@@ -4,6 +4,7 @@
 \usepackage{lmodern}
 \usepackage{microtype}
 \usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage{graphicx}
 \usepackage{booktabs}
 \usepackage{enumitem}
 \usepackage{xcolor}
@@ -25,7 +26,7 @@
 \maketitle
 
 \begin{abstract}
-A passenger presses a button, a model produces an image, or a traveler crosses a continent. The local invocation is small; the consequence depends on a much larger historical arrangement of knowledge, computation, infrastructure, coordination, and maintenance. This paper develops causal compression as a framework for that asymmetry. Causal compression converts historically expensive sequences into maintained transitions that are cheap to invoke. We distinguish representational causal compression, in which history is reduced to a future-sufficient internal state, from structural causal compression, in which historical work is embodied in maintained infrastructure that makes a transition available at low local cost. Adaptive systems frequently couple the two. Compression expands reachable states and lowers invocation burden, but selection also converts possibilities into commitments whose maintenance can consume future adaptive headroom. The phenomenology of magic is therefore located in the invocation--construction gap: a reliable, consequential transition appears magical when the work required to construct its reliability is much larger than the work required to invoke it locally, while its causal depth is hidden from the invocation loop. We present a lifecycle model, a worked software example, a bounded measurement program, and explicit limitations. The paper is a conceptual framework rather than a completed formal theory; its equations are definitions, accounting identities, or model-relative hypotheses unless separately proved or measured.
+A passenger presses a button, a model produces an image, or a traveler crosses a continent. The local invocation is small; the consequence depends on a much larger historical arrangement of knowledge, computation, infrastructure, coordination, and maintenance. This paper develops causal compression as a framework for that asymmetry. Causal compression converts historically expensive sequences into maintained transitions that are cheap to invoke. We distinguish representational causal compression, in which history is reduced to a future-sufficient internal state, from structural causal compression, in which historical work is embodied in maintained infrastructure that makes a transition available at low local cost. Adaptive systems frequently couple the two. Compression expands reachable states and lowers invocation burden, but selection also converts possibilities into commitments whose maintenance can consume future adaptive headroom. The phenomenology of magic is therefore located in the invocation--construction gap: a reliable, consequential transition appears magical when the work required to construct its reliability is much larger than the work required to invoke it locally, while its causal depth is hidden from the invocation loop. We present a lifecycle model, a worked software example, and a bounded empirical probe of queue migration using synthetic interventions, workload traces, and public scheduler aggregates. In the synthetic intervention, the measurement scheme localizes the constrained downstream stage; the operational observations show that aggregate pressure relationships depend materially on scheduler composition. These experiments validate instrument behavior and expose boundary conditions; they do not establish general organizational or AI-system effects. The paper is a conceptual framework rather than a completed formal theory; its equations are definitions, accounting identities, or model-relative hypotheses unless separately proved or measured.
 \end{abstract}
 
 \section{Introduction: the disappearing cause}
@@ -198,11 +199,43 @@ The example also exposes the downstream bottleneck. If candidate generation beco
 \]
 Cheap generation can therefore increase the stock of unprocessed commitments faster than the system can safely absorb them. This queue-migration prediction is the most direct empirical entry point in the framework: it can be tested without estimating the total causal history of the system, by varying upstream candidate-generation capacity while holding downstream service capacities fixed and measuring where backlog and delay accumulate.
 
-A bounded synthetic cross-check implements this protocol in two independently specified workload families: burst/on--off arrivals and jittered arrivals. Across 48 records (eight conditions, two workload families, three seeds), the generation sweep exposed evaluation as the first downstream bottleneck at the highest rate, while the capacity-release ladder localized evaluation, integration, maintenance, and retirement bottlenecks in turn. All records passed an independent flow-conservation audit and drained within the finite bound. This is evidence for the instrument-level mechanism under the declared synthetic model, not for deployed organizational or AI-system behavior; a trace-derived workload remains a separate evidentiary step.
+\section{Experimental probes of queue migration}
 
-Two trace-derived calibrations replay 1,190 and 58 timestamped archive records as anonymized one-minute demand bins, using only timestamps and role labels. With both source hashes fixed and message content excluded, the high-capacity sweep exposes evaluation on each trace, while the capacity-release ladder localizes each constrained lifecycle stage on each trace. This two-trace result strengthens workload calibration within one archive corpus but does not establish stationarity, participant causality, or deployment generality.
+The queue-migration claim is tested in three deliberately different evidence layers. The synthetic intervention tests whether the instrument can recover a known bottleneck under controlled changes. The trace layer tests workload-shape sensitivity using two traces from a single archive corpus. The operational layer asks a narrower boundary-condition question: whether aggregate pressure relationships are portable across scheduler compositions.
 
-A separate bounded operational observation uses remote BigQuery aggregates from two public Google Borg cells, restricted to the first 24 hours and retaining no raw task rows. Attempt reconstruction exposes long-tailed durations, interruption, and right-censoring; stratification shows that priority, scheduling class, collection type, and coarse resource-request strata have materially different outcome profiles, and the dominant scheduler composition differs between cells. Pooled pressure/utilization associations are weak or change sign across cells. This is evidence that scheduler composition is a boundary condition on observed queue behavior, not causal confirmation of queue migration; the usage measure is a capacity-normalized task-usage proxy rather than physical utilization.
+\subsection{Synthetic intervention}
+
+The frozen v3 protocol uses two independently implemented finite workload families: five-tick burst/on--off arrivals (`burst\_train`) and bounded seeded jitter around the declared mean (`jittered`). Each workload runs for 80 ticks and must drain completely. The simulator is a finite, stage-ordered service system with fixed downstream capacities; each record reports arrivals, completions, stage flow, queue state, and drain time. The generation sweep uses rates \(1,2,4,8\) with downstream capacities fixed at 4. The capacity-release ladder constrains exactly one of evaluation, integration, maintenance, or retirement in turn. Seeds 11, 12, and 13 are applied to both workload families, producing 48 records.
+
+The result is not merely that a deliberately constrained stage queues. The independent audit recovers the declared bottleneck under the generation sweep and the release ladder: rates 1, 2, and 4 remain generation-bound, rate 8 becomes evaluation-bound, and each release condition localizes the constrained downstream stage. All 48 records pass flow conservation and drain within the finite bound. Figure~\ref{fig:bottleneck} renders the localization pattern. The strongest interpretation is therefore instrument identifiability under the declared synthetic contract: the measurements recover a known bottleneck location. This validates the instrument, not the general theory.
+
+\begin{figure}[t]
+  \centering
+  \includegraphics[width=\linewidth]{figures/queue_migration_bottleneck.pdf}
+  \caption{Bottleneck localization in the frozen synthetic v3 protocol. In the generation sweep, the observed bottleneck moves from generation to evaluation only at the highest rate. In the capacity-release ladder, the localized bottleneck follows the constrained lifecycle stage. The diagram summarizes 48 audited records, not a continuous estimate over untested rates.}
+  \label{fig:bottleneck}
+\end{figure}
+
+For reproduction, the protocol, input hash, seeds, condition definitions, independent auditor, and result receipt are preserved in the experiment repository. The executable checks are:
+\begin{verbatim}
+PYTHONPATH=src python3 -m unittest tests.test_queue_migration_v3_bursty -v
+PYTHONPATH=src python3 scripts/run_queue_migration_v3_bursty.py \\
+  --output artifacts/queue_migration_v3.json \\
+  --summary artifacts/queue_migration_v3.md
+\end{verbatim}
+The finite drain requirement and independent flow-conservation audit are hard gates rather than post-hoc diagnostics.
+
+\subsection{Trace-derived workload replay}
+
+Two workload traces from a single archive corpus replay 1,190 and 58 timestamped records as anonymized one-minute demand bins, using only timestamps and role labels. The frozen trace protocol fixes source hashes, excludes message content, and repeats the same generation sweep and capacity-release ladder without retuning. On both traces, the high-capacity sweep exposes evaluation and the release ladder localizes evaluation, integration, maintenance, and retirement in turn. This is a robustness check against workload shape within one corpus, not independent operational replication. The small 58-record trace is especially a calibration specimen, not a separate population estimate. These results do not establish stationarity, participant causality, or deployment generality.
+
+\subsection{Operational boundary-condition probe}
+
+The Borg analysis has a different purpose. It does not test the lifecycle stages as a controlled intervention. It asks whether aggregate pressure/utilization relationships can be interpreted without conditioning on scheduler architecture. Remote BigQuery aggregates from public cells \texttt{clusterdata\_2019\_a} and \texttt{clusterdata\_2019\_b} use the first 24 hours, retain no raw task rows, and preserve query metadata and bounded outputs. Attempt reconstruction shows long-tailed durations, interruption, and right-censoring. Scheduler stratification by priority, scheduling class, collection type, and coarse resource-request bins yields 95 strata in cell a and 92 in cell b, with exact conservation against the pooled attempt totals. The dominant scheduler composition differs across cells, and pooled pressure/utilization associations are weak or change sign.
+
+This is a boundary-condition experiment: queue behavior cannot be interpreted independently of the architecture doing the scheduling. The normalized task-usage measure is a proxy and can exceed one under overcommit; it is not physical machine saturation. The result is observational, not causal, and does not validate queue migration as a universal mechanism.
+
+Causal compression does not abolish scarcity. By reducing burden at one stage, it can expose scarcity at the next: cheaper generation can make evaluation, verification, integration, maintenance, or retirement the visible constraint. The experiments turn that systems implication into a bounded measurement program while preserving the distinction between instrument validation, workload calibration, and operational observation.
 
 \section{Commitment, maintenance, and adaptive headroom}
 
@@ -307,7 +340,7 @@ Causal compression is not causal understanding: hidden causality must be disting
 
 Construction work, invocation work, maintenance burden, and capacity need not be commensurable without a declared contract and valuation rule. The gap metric and lifecycle equations are therefore instrument-relative accounting objects. A temporary arrival rate above service capacity need not imply permanent overload if slack or later service clears the queue.
 
-The framework does not claim that every successful compression improves welfare, that every persistent structure is irrational, or that retirement is always beneficial. This paper contains no field dataset, energy measurement, or empirical estimate of AI's social or economic effects; the predictions are proposed instruments and hypotheses, not reported confirmations.
+The framework does not claim that every successful compression improves welfare, that every persistent structure is irrational, or that retirement is always beneficial. This paper contains no newly collected field dataset, no energy measurement, and no empirical estimate of AI's social or economic effects. Its operational observation uses existing public traces rather than a purpose-built field study; the predictions are proposed instruments and bounded observations, not general organizational or AI-system effects.
 
 \section{Conclusion}
 

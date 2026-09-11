@@ -105,15 +105,19 @@ The causal history is not annihilated. It is relocated into a state or structure
 
 \subsection{The invocation--construction gap}
 
-For a transition \(e\), let \(W_{\mathrm{construction}}(e)>0\) be the declared work required to make the transition reliable under contract \(q\), and let \(W_{\mathrm{invocation}}(e)>0\) be the work required for one local use. These are contract-bound workload measures, not claims about one universal physical unit. Define the causal compression ratio:
+For a transition \(e\), substrate \(S\), and continuation contract \(q\), let \(W_{\mathrm{construction}}(e\mid S,q)>0\) be the declared work added on top of inherited substrate \(S\) to make the transition reliable under \(q\), and let \(W_{\mathrm{invocation}}(e\mid S,q)>0\) be the work required for one local use. The substrate boundary is part of the measurement contract: it may include an existing model, chip, airport network, organizational routine, or other inherited capability, but it must be stated before comparison. This prevents an analysis of an AI service from silently expanding to metallurgy, electromagnetism, or human language. The same transition can therefore be analyzed at multiple nested boundaries; causal compression is scale-relative rather than boundary-free. Define the causal compression ratio:
 \[
-G_e=\frac{W_{\mathrm{construction}}(e)}{W_{\mathrm{invocation}}(e)},
+G_e(S,q)=\frac{W_{\mathrm{construction}}(e\mid S,q)}{W_{\mathrm{invocation}}(e\mid S,q)},
 \qquad
-L_e=\log(1+G_e).
+L_e(S,q)=\log(1+G_e(S,q)).
 \]
 The logarithmic form is useful when scales differ by orders of magnitude. Neither quantity is a literal magic score. They measure the asymmetry that can contribute to magical appearance.
 
-A large \(G_e\) is not sufficient. A confusing bureaucracy may have a large construction--invocation gap while failing its contract. A pencil has low invocation cost but little hidden causal depth. The phenomenology becomes plausible when the gap is large, the transition is reliable, its consequence is substantial, and the causal depth is not present in the local control loop.
+A large \(G_e(S,q)\) is not sufficient. A confusing bureaucracy may have a large construction--invocation gap while failing its contract. A pencil has low invocation cost but little hidden causal depth. The phenomenology becomes plausible when the gap is large, the transition is reliable, its consequence is substantial, and the causal depth is not present in the local control loop.
+
+\begin{definition}[Magic-like transition]
+A transition exhibits the phenomenology of technological magic under substrate \(S\) and contract \(q\) when it combines a high construction--invocation asymmetry \(G_e(S,q)\), reliability at least sufficient for \(q\), a consequential state change under the declared outcome measure, and low local visibility of the causal depth that supports the transition. This is a predicate over a declared observation protocol, not a scalar measure of subjective awe.
+\end{definition}
 
 \section{Episodes, expertise, and structural memory}
 
@@ -182,7 +186,7 @@ Consider a recurring problem in a software organization.
 \item The service becomes infrastructure used by other teams and external users.
 \end{enumerate}
 
-At each step, invocation becomes cheaper for the next user because earlier work has been compiled into structure. The reachable-state graph expands: tasks that previously required bespoke reasoning become available through a stable edge. But the causal work has not been eliminated. It has changed location.
+This is a stylized progression, not a claim that every script becomes a library or every service becomes infrastructure. At each step, invocation becomes cheaper for the next user because earlier work has been compiled into structure. The reachable-state graph expands: tasks that previously required bespoke reasoning become available through a stable edge. But the causal work has not been eliminated. It has changed location.
 
 The library now requires tests, dependencies, maintainers, compatibility guarantees, security updates, deployment procedures, observability, documentation, and an exit path. The service may be locally cheap to invoke while globally expensive to preserve. A successful compression therefore creates both capability and commitment.
 
@@ -192,7 +196,7 @@ The example also exposes the downstream bottleneck. If candidate generation beco
 \[
 \text{generation}\rightarrow\text{evaluation}\rightarrow\text{integration}\rightarrow\text{maintenance}\rightarrow\text{retirement}.
 \]
-Cheap generation can therefore increase the stock of unprocessed commitments faster than the system can safely absorb them.
+Cheap generation can therefore increase the stock of unprocessed commitments faster than the system can safely absorb them. This queue-migration prediction is the most direct empirical entry point in the framework: it can be tested without estimating the total causal history of the system, by varying upstream candidate-generation capacity while holding downstream service capacities fixed and measuring where backlog and delay accumulate.
 
 \section{Commitment, maintenance, and adaptive headroom}
 
@@ -216,7 +220,7 @@ Headroom is not the value of the future. The richer object is the reachable futu
 \]
 The scalar is a diagnostic proxy for the option set, not a substitute for it.
 
-Selection consumes optionality by making a transition worth preserving. Maintenance keeps that commitment alive. A rough maintenance balance is:
+Selection creates commitment. Commitment encumbers some adaptive capacity, even when the resulting capability expands the reachable future set. Thus \(\Oset_t\) can expand while \(H_t\) contracts. Maintenance keeps that commitment alive. A rough maintenance balance is:
 \[
 \dot M
 =r_{\mathrm{compile}}\bar m_{\mathrm{new}}
@@ -265,10 +269,10 @@ The framework makes bounded predictions. These are not consequences of the defin
 
 \begin{enumerate}[leftmargin=*]
 \item \textbf{Invocation--construction gap.} Across a transition's lifecycle, invocation workload should fall relative to construction workload as the transition becomes reusable infrastructure, conditional on continued maintenance and a stable contract.
-\item \textbf{Compression--burden tradeoff.} Greater compression should reduce measured invocation burden while increasing dependence on compiled structure, provenance, and maintenance state.
+\item \textbf{Compression--burden relocation.} Increasing causal compression should decrease the fraction of lifecycle work performed during invocation and increase the fraction borne by pre-existing representation, structure, and maintenance. In a declared workload accounting, this predicts \(W_{\mathrm{invoke}}/W_{\mathrm{lifecycle}}\downarrow\), not necessarily \(W_{\mathrm{maintain}}\uparrow\); consolidation can reduce total work.
 \item \textbf{Queue migration.} Increasing candidate-generation capacity should move observed bottlenecks downstream when evaluation, integration, maintenance, or retirement capacity does not scale with it.
 \item \textbf{Headroom erosion.} Holding nominal capability performance constant, faster growth in commitment burden and maintenance drift should narrow measured adaptation choices.
-\item \textbf{Maintenance sensitivity.} Systems with larger construction--invocation gaps should exhibit greater performance degradation when maintenance or provenance infrastructure is deliberately interrupted, unless redundant substitutes exist.
+\item \textbf{Support-architecture sensitivity.} Transitions whose reliable invocation depends on a larger unresolved support set should be more sensitive to support interruption, conditional on the availability of substitutes. This tests dependency architecture, not compression magnitude alone: compression and fragility are orthogonal properties.
 \item \textbf{Retirement asymmetry.} Deleted-edge counts should overestimate recovered capacity when migration, replacement, residual risk, or capability loss are not charged.
 \item \textbf{Timescale matching.} Under environmental change, an intermediate structural-update regime should outperform both excessively rapid updating and excessively slow updating on a predeclared adaptive-performance measure. The U-shape is a hypothesis requiring a specified dynamical model and repeated seeds.
 \end{enumerate}
@@ -281,11 +285,13 @@ A minimal instrument should log, for each candidate transition: its contract, ev
 \end{gathered}
 \]
 
-Synthetic fixtures can test instrumentation and implementation invariants. They cannot establish market, institutional, civilizational, or general AI effects. A serious test program should compare generation, evaluation, integration, maintenance, and retirement capacity under controlled workload scaling, with fixed seeds, independent correctness checks, and explicit receipts.
+Synthetic fixtures can test instrumentation and implementation invariants. They cannot establish market, institutional, civilizational, or general AI effects. A serious test program should compare generation, evaluation, integration, maintenance, and retirement capacity under controlled workload scaling, with fixed seeds, independent correctness checks, and explicit receipts. For queue-migration tests, arrival rate, service rate, stage occupancy, and time-in-stage should be reported separately; Little's law is a useful benchmark only when its stationarity and finite-mean conditions are checked, not a license to infer permanent overload from a transient spike \citep{little1961}. For update-rate tests, adaptation and retention should be measured as separate outcomes: a policy that changes quickly may gain short-run fit while losing previously retained behavior, the stability--plasticity tradeoff documented in connectionist learning \citep{french1999}.
 
 \section{Relation to adjacent frameworks}
 
-The contribution claimed here is unification, not ownership of every component. Representational compression overlaps with state abstraction, sufficient statistics, learned representations, and causal compression in existing technical senses \citep{causalcompression2016,wendong2025}. Structural compression overlaps with compilation, amortization, infrastructure studies, organizational routines, and software evolution \citep{lehman1980}. Commitment and headroom connect to technical debt, path dependence, lock-in, maintenance engineering, and real-options reasoning. The treatment of magical appearance also relates to scholarship on how technological systems are staged and made opaque \citep{conjuringalgorithms2024}.
+The contribution claimed here is unification, not ownership of every component. Representational compression overlaps with state abstraction, sufficient statistics, learned representations, and causal compression in existing technical senses \citep{causalcompression2016,wendong2025,li2006}. Structural compression overlaps with compilation, amortization, infrastructure studies, organizational routines, and software evolution \citep{lehman1980,tarjan1985,star1996}. Commitment and headroom connect to technical debt, path dependence, lock-in, maintenance engineering, and real-options reasoning \citep{cunningham1992,arthur1989,dixit1994}. Queue migration is adjacent to queueing theory, but the paper's stage model is not Little's law and should not inherit its assumptions silently \citep{little1961}. The update-rate hypothesis is adjacent to the stability--plasticity problem in continual learning \citep{french1999}, while remaining a broader systems hypothesis rather than a neural-network claim. The treatment of magical appearance also relates to scholarship on how technological systems are staged and made opaque \citep{conjuringalgorithms2024}.
+
+These literatures contribute different mechanisms rather than interchangeable synonyms. State-abstraction work asks which distinctions can be discarded while preserving planning or learning properties. Amortized analysis moves cost across a sequence of operations rather than treating each invocation in isolation. Organizational-memory and routine theories locate retained knowledge in distributed procedures and roles \citep{walshungson1991,nelsonwinter1982}; infrastructure studies show that supposedly transparent access depends on standards, maintenance, and situated work. Simon's account of hierarchy explains why stable intermediate structures can make complex systems tractable \citep{simon1962}, while Clark and Chalmers make a related argument about cognition distributed across external supports \citep{clarkchalmers1998}. Arthur's increasing-returns model shows how selection can make a path difficult to reverse, and real-options theory explains why waiting or preserving alternatives can have value under uncertainty. The present framework does not collapse these results into one theory; it proposes a lifecycle relation among them and supplies a shared measurement vocabulary for construction, invocation, commitment, maintenance, and retirement.
 
 The proposed synthesis is the lifecycle relation among these objects: historical causal work becomes a cheap transition; cheap transitions expand reachable states; selection turns options into commitments; maintenance preserves the compressed structure; and retirement determines whether future optionality is recovered. The novelty claim is therefore a framework-level one and remains subject to comparison with adjacent literatures.
 
@@ -307,7 +313,7 @@ Sixth, the paper contains no new field dataset, no energy measurement, and no em
 
 Civilization becomes more powerful by moving causal work out of the present. Procedures become policies. Policies become infrastructure. Repeated flows become commitments. The causal chain remains real even when the invocation becomes small.
 
-This is why the title is not merely a metaphor. The invocation--construction gap gives magical appearance an operational object. A transition feels magical when it is reliable and consequential, cheap to invoke, expensive to construct, and causally deep beyond the local interface.
+This is why the title is not merely a metaphor. The invocation--construction gap supplies one measurable component of magical appearance, while the magic-like predicate adds reliability, consequence, and local causal visibility. A transition feels magical when it is reliable and consequential, cheap to invoke, expensive to construct within a declared substrate boundary, and causally deep beyond the local interface.
 
 But compression has a cost. It lowers the burden of action and can expand reachable futures; it also turns selected possibilities into maintained commitments. The past survives as structure, and structure has to be maintained. A system that evaluates and compiles faster than it can sustain or retire its commitments may become more capable while becoming less able to change.
 

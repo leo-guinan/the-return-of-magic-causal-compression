@@ -11,7 +11,7 @@ public source catalogue
 + validated formal slices
 + bounded experiment archive
 + one claim-specific synthetic support/test chain
-+ one source-derived trace calibration chain
++ two source-derived trace calibration chains
 - deployment or external operational evidence
 - profile-held causal-compression commitments
 - resolved source-hash lineage for AxiomReason readbacks
@@ -29,7 +29,7 @@ The graph snapshot is structurally valid. Its epistemic edges remain sparse by d
 | Descriptive definitions | 6 | In `Workspace/CausalCompression.lean`; server-validated, unpublished |
 | Descriptive Statements | 12 | In the same package; not theorem declarations |
 | Proved theorem declarations | 11 | Three public AxiomReason source packages |
-| Bounded experiment result documents | 37 | In the public experiment archive; queue migration v3 and v4 are claim-linked |
+| Bounded experiment result documents | 38 | In the public experiment archive; queue migration v3 and both v4 trace results are claim-linked |
 | AxiomReason theorem receipts | 3 | Search/fetch readback recorded |
 | Experiment manifest receipt | 1 | 384-entry archive manifest |
 | Causal-compression profile holdings | 0 | Not represented in the profile commitment projection |

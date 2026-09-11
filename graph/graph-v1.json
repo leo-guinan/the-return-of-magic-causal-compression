@@ -1,0 +1,3896 @@
+{
+  "schema_version": "research-graph-v1",
+  "graph_id": "the-return-of-magic-causal-compression",
+  "checked_at": "2026-09-11T02:54:18Z",
+  "source_of_truth": "graph-v1.json",
+  "nodes": [
+    {
+      "id": "artifact:paper-main-tex",
+      "type": "artifact",
+      "label": "Paper manuscript source",
+      "status": "published_source",
+      "scope": "Public GitHub repository",
+      "source_refs": [
+        [
+          "paper/main.tex",
+          "/Users/leoguinan/the-return-of-magic-causal-compression/paper/main.tex"
+        ]
+      ],
+      "provenance": [
+        {
+          "source_ref": "paper/main.tex",
+          "source_locator": "paper/main.tex",
+          "retrieved_or_checked_at": "2026-09-10T20:40:32Z",
+          "confidence": "direct",
+          "notes": "",
+          "content_hash": "sha256:9f17e9df0dc48e3475f74e6fe85863bad7dc111dd001c44604fd43075811ac57"
+        }
+      ],
+      "commit": "8fcaa6fabe089c353fd78746ef96bd48de6037c6",
+      "content_hash": "sha256:9f17e9df0dc48e3475f74e6fe85863bad7dc111dd001c44604fd43075811ac57",
+      "public_urls": [
+        "https://github.com/leo-guinan/the-return-of-magic-causal-compression/blob/main/paper/main.tex"
+      ]
+    },
+    {
+      "id": "artifact:paper-main-pdf",
+      "type": "artifact",
+      "label": "Compiled paper PDF",
+      "status": "published_source",
+      "scope": "Public GitHub repository",
+      "source_refs": [
+        [
+          "paper/main.pdf",
+          "/Users/leoguinan/the-return-of-magic-causal-compression/paper/main.pdf"
+        ]
+      ],
+      "provenance": [
+        {
+          "source_ref": "paper/main.pdf",
+          "source_locator": "paper/main.pdf",
+          "retrieved_or_checked_at": "2026-09-10T20:40:32Z",
+          "confidence": "direct",
+          "notes": "",
+          "content_hash": "sha256:d0efc2b84d252644a5f00a6b99073194d7cc56ae1fec3d119248f79d006467fe"
+        }
+      ],
+      "commit": "8fcaa6fabe089c353fd78746ef96bd48de6037c6",
+      "content_hash": "sha256:d0efc2b84d252644a5f00a6b99073194d7cc56ae1fec3d119248f79d006467fe",
+      "public_urls": [
+        "https://github.com/leo-guinan/the-return-of-magic-causal-compression/blob/main/paper/main.pdf"
+      ]
+    },
+    {
+      "id": "artifact:paper-repo",
+      "type": "publication",
+      "label": "GitHub repository: The Return of Magic",
+      "status": "published_source",
+      "scope": "Public repository",
+      "source_refs": [
+        [
+          "README.md",
+          "/Users/leoguinan/the-return-of-magic-causal-compression/README.md"
+        ]
+      ],
+      "provenance": [
+        {
+          "source_ref": "README.md",
+          "source_locator": "README.md",
+          "retrieved_or_checked_at": "2026-09-10T20:40:32Z",
+          "confidence": "direct",
+          "notes": "",
+          "content_hash": "sha256:320269b4a166f30c5c0b409fbbb1e9634cc86da5f77b1f07430ce47081aaca93"
+        }
+      ],
+      "commit": "8fcaa6fabe089c353fd78746ef96bd48de6037c6",
+      "public_urls": [
+        "https://github.com/leo-guinan/the-return-of-magic-causal-compression"
+      ]
+    },
+    {
+      "id": "artifact:claims-ledger",
+      "type": "artifact",
+      "label": "Paper claims ledger",
+      "status": "locally_validated",
+      "scope": "Repository claim-control surface",
+      "source_refs": [
+        [
+          "claims/claims.yaml",
+          "/Users/leoguinan/the-return-of-magic-causal-compression/claims/claims.yaml"
+        ]
+      ],
+      "provenance": [
+        {
+          "source_ref": "claims/claims.yaml",
+          "source_locator": "claims/claims.yaml",
+          "retrieved_or_checked_at": "2026-09-10T20:40:32Z",
+          "confidence": "direct",
+          "notes": "",
+          "content_hash": "sha256:1a6b486de45394dd8629e250b74b9e2f4e99088a54d04a7914a1e3c8a6b40e96"
+        }
+      ],
+      "commit": "8fcaa6fabe089c353fd78746ef96bd48de6037c6"
+    },
+    {
+      "id": "artifact:research-boundary",
+      "type": "artifact",
+      "label": "Research boundary",
+      "status": "locally_validated",
+      "scope": "Repository evidence boundary",
+      "source_refs": [
+        [
+          "docs/RESEARCH-BOUNDARY.md",
+          "/Users/leoguinan/the-return-of-magic-causal-compression/docs/RESEARCH-BOUNDARY.md"
+        ]
+      ],
+      "provenance": [
+        {
+          "source_ref": "docs/RESEARCH-BOUNDARY.md",
+          "source_locator": "docs/RESEARCH-BOUNDARY.md",
+          "retrieved_or_checked_at": "2026-09-10T20:40:32Z",
+          "confidence": "direct",
+          "notes": "",
+          "content_hash": "sha256:bb5f04043353e6e07e8c7b17de90b5426b18fb897ed1de4c506e7cc532a2dfae"
+        }
+      ],
+      "commit": "8fcaa6fabe089c353fd78746ef96bd48de6037c6"
+    },
+    {
+      "id": "artifact:experiment-repo",
+      "type": "artifact",
+      "label": "Bounded morphology and capability experiment archive",
+      "status": "published_source",
+      "scope": "Public experiment repository",
+      "source_refs": [
+        [
+          "experiment/README.md",
+          "/Users/leoguinan/pnp-session-review/experiment/README.md"
+        ]
+      ],
+      "provenance": [
+        {
+          "source_ref": "experiment/README.md",
+          "source_locator": "experiment/README.md",
+          "retrieved_or_checked_at": "2026-09-10T20:40:32Z",
+          "confidence": "direct",
+          "notes": "",
+          "content_hash": "sha256:974e0fa232fb4abc4fb31c46cc0ee7a23d2e34f087251f0073478fb831a09e12"
+        }
+      ],
+      "commit": "d6c983fc1aad3a09d27139d2e74f6b5b912b483b",
+      "content_hash": "sha256:990d926bb8f810c9d94c9ee881f382124981ed417067f224b87c2be8440e2e88"
+    },
+    {
+      "id": "artifact:experiment-manifest",
+      "type": "evidence",
+      "label": "Experiment archive manifest",
+      "status": "measured",
+      "scope": "384-entry experiment/archive manifest",
+      "source_refs": [
+        [
+          "manifest.json",
+          "/Users/leoguinan/pnp-session-review/manifest.json"
+        ]
+      ],
+      "provenance": [
+        {
+          "source_ref": "manifest.json",
+          "source_locator": "manifest.json",
+          "retrieved_or_checked_at": "2026-09-10T20:40:32Z",
+          "confidence": "direct",
+          "notes": "",
+          "content_hash": "sha256:990d926bb8f810c9d94c9ee881f382124981ed417067f224b87c2be8440e2e88"
+        }
+      ],
+      "content_hash": "sha256:990d926bb8f810c9d94c9ee881f382124981ed417067f224b87c2be8440e2e88"
+    },
+    {
+      "id": "claim:Mechanism-001",
+      "type": "claim",
+      "label": "Mechanism-001",
+      "status": "conceptual",
+      "scope": "Paper-level proposition",
+      "source_refs": [
+        [
+          "claims/claims.yaml",
+          "/Users/leoguinan/the-return-of-magic-causal-compression/claims/claims.yaml"
+        ]
+      ],
+      "provenance": [
+        {
+          "source_ref": "claims/claims.yaml",
+          "source_locator": "claims/claims.yaml",
+          "retrieved_or_checked_at": "2026-09-10T20:40:32Z",
+          "confidence": "direct",
+          "notes": "",
+          "content_hash": "sha256:1a6b486de45394dd8629e250b74b9e2f4e99088a54d04a7914a1e3c8a6b40e96"
+        }
+      ],
+      "claim_text": "Causal compression converts historically expensive causal sequences into maintained transitions that are cheap to invoke under a declared continuation contract.",
+      "falsifiers": [
+        "A bounded transition whose invocation burden does not decline relative to construction burden after reuse and maintenance are introduced."
+      ],
+      "formal_status": "not_formalized",
+      "publication_status": "published_source",
+      "profile_status": "not_held"
+    },
+    {
+      "id": "claim:Compression-001",
+      "type": "claim",
+      "label": "Compression-001",
+      "status": "conceptual",
+      "scope": "Paper-level proposition",
+      "source_refs": [
+        [
+          "claims/claims.yaml",
+          "/Users/leoguinan/the-return-of-magic-causal-compression/claims/claims.yaml"
+        ]
+      ],
+      "provenance": [
+        {
+          "source_ref": "claims/claims.yaml",
+          "source_locator": "claims/claims.yaml",
+          "retrieved_or_checked_at": "2026-09-10T20:40:32Z",
+          "confidence": "direct",
+          "notes": "",
+          "content_hash": "sha256:1a6b486de45394dd8629e250b74b9e2f4e99088a54d04a7914a1e3c8a6b40e96"
+        }
+      ],
+      "claim_text": "Representational causal compression preserves continuation-relevant distinctions in a future-sufficient present state, while structural causal compression embodies historical work in maintained infrastructure that makes a transition cheaply available.",
+      "falsifiers": [
+        "A case in which the proposed distinction cannot separate internal state abstraction from maintained transition infrastructure under the declared contract."
+      ],
+      "formal_status": "not_formalized",
+      "publication_status": "published_source",
+      "profile_status": "not_held"
+    },
+    {
+      "id": "claim:Gap-001",
+      "type": "hypothesis",
+      "label": "Gap-001",
+      "status": "hypothesized",
+      "scope": "Paper-level proposition",
+      "source_refs": [
+        [
+          "claims/claims.yaml",
+          "/Users/leoguinan/the-return-of-magic-causal-compression/claims/claims.yaml"
+        ]
+      ],
+      "provenance": [
+        {
+          "source_ref": "claims/claims.yaml",
+          "source_locator": "claims/claims.yaml",
+          "retrieved_or_checked_at": "2026-09-10T20:40:32Z",
+          "confidence": "direct",
+          "notes": "",
+          "content_hash": "sha256:1a6b486de45394dd8629e250b74b9e2f4e99088a54d04a7914a1e3c8a6b40e96"
+        }
+      ],
+      "claim_text": "The invocation-construction gap is an observable asymmetry between the work required to establish reliable transition capability and the work required for local invocation.",
+      "falsifiers": [
+        "A specified transition for which construction and invocation workloads remain comparable after contract, maintenance, and reuse are controlled."
+      ],
+      "formal_status": "not_formalized",
+      "publication_status": "published_source",
+      "profile_status": "not_held"
+    },
+    {
+      "id": "claim:Lifecycle-001",
+      "type": "claim",
+      "label": "Lifecycle-001",
+      "status": "conceptual",
+      "scope": "Paper-level proposition",
+      "source_refs": [
+        [
+          "claims/claims.yaml",
+          "/Users/leoguinan/the-return-of-magic-causal-compression/claims/claims.yaml"
+        ]
+      ],
+      "provenance": [
+        {
+          "source_ref": "claims/claims.yaml",
+          "source_locator": "claims/claims.yaml",
+          "retrieved_or_checked_at": "2026-09-10T20:40:32Z",
+          "confidence": "direct",
+          "notes": "",
+          "content_hash": "sha256:1a6b486de45394dd8629e250b74b9e2f4e99088a54d04a7914a1e3c8a6b40e96"
+        }
+      ],
+      "claim_text": "Causal compression participates in a lifecycle in which cheap invocation expands reachable states, selection creates commitments, maintenance preserves compiled structure, and re-evaluation determines renewal, replacement, or retirement.",
+      "falsifiers": [
+        "A bounded system in which durable compressed capability persists while every lifecycle stage is absent or persistently unable to perform its declared function."
+      ],
+      "formal_status": "not_formalized",
+      "publication_status": "published_source",
+      "profile_status": "not_held"
+    },
+    {
+      "id": "claim:Headroom-001",
+      "type": "hypothesis",
+      "label": "Headroom-001",
+      "status": "hypothesized",
+      "scope": "Paper-level proposition",
+      "source_refs": [
+        [
+          "claims/claims.yaml",
+          "/Users/leoguinan/the-return-of-magic-causal-compression/claims/claims.yaml"
+        ]
+      ],
+      "provenance": [
+        {
+          "source_ref": "claims/claims.yaml",
+          "source_locator": "claims/claims.yaml",
+          "retrieved_or_checked_at": "2026-09-10T20:40:32Z",
+          "confidence": "direct",
+          "notes": "",
+          "content_hash": "sha256:1a6b486de45394dd8629e250b74b9e2f4e99088a54d04a7914a1e3c8a6b40e96"
+        }
+      ],
+      "claim_text": "Increasing nominal capability does not necessarily increase adaptive headroom; commitment burden and maintenance drift can narrow effective reachable futures while raw capability grows.",
+      "falsifiers": [
+        "A controlled workload in which the proposed burden/reachability coupling is absent under declared constraints."
+      ],
+      "formal_status": "not_formalized",
+      "publication_status": "published_source",
+      "profile_status": "not_held"
+    },
+    {
+      "id": "claim:QueueMigration-001",
+      "type": "hypothesis",
+      "label": "QueueMigration-001",
+      "status": "hypothesized",
+      "scope": "Paper-level proposition",
+      "source_refs": [
+        [
+          "claims/claims.yaml",
+          "/Users/leoguinan/the-return-of-magic-causal-compression/claims/claims.yaml"
+        ]
+      ],
+      "provenance": [
+        {
+          "source_ref": "claims/claims.yaml",
+          "source_locator": "claims/claims.yaml",
+          "retrieved_or_checked_at": "2026-09-10T20:40:32Z",
+          "confidence": "direct",
+          "notes": "",
+          "content_hash": "sha256:1a6b486de45394dd8629e250b74b9e2f4e99088a54d04a7914a1e3c8a6b40e96"
+        }
+      ],
+      "claim_text": "Increasing candidate-generation capacity should move observed bottlenecks downstream when evaluation, integration, maintenance, or retirement capacity does not scale with generation.",
+      "falsifiers": [
+        "A controlled capacity-scaling experiment in which downstream service remains non-bottlenecked without additional evaluation, integration, maintenance, or retirement capacity."
+      ],
+      "formal_status": "not_formalized",
+      "publication_status": "published_source",
+      "profile_status": "not_held"
+    },
+    {
+      "id": "claim:Timescale-001",
+      "type": "hypothesis",
+      "label": "Timescale-001",
+      "status": "hypothesized",
+      "scope": "Paper-level proposition",
+      "source_refs": [
+        [
+          "claims/claims.yaml",
+          "/Users/leoguinan/the-return-of-magic-causal-compression/claims/claims.yaml"
+        ]
+      ],
+      "provenance": [
+        {
+          "source_ref": "claims/claims.yaml",
+          "source_locator": "claims/claims.yaml",
+          "retrieved_or_checked_at": "2026-09-10T20:40:32Z",
+          "confidence": "direct",
+          "notes": "",
+          "content_hash": "sha256:1a6b486de45394dd8629e250b74b9e2f4e99088a54d04a7914a1e3c8a6b40e96"
+        }
+      ],
+      "claim_text": "Under environmental change, an intermediate structural-update regime can outperform both excessively rapid updating and excessively slow updating on a predeclared adaptive-performance measure.",
+      "falsifiers": [
+        "A repeated-seed dynamical benchmark in which performance is monotone across the declared update-rate range or the result disappears under matched controls."
+      ],
+      "formal_status": "not_formalized",
+      "publication_status": "published_source",
+      "profile_status": "not_held"
+    },
+    {
+      "id": "claim:Magic-001",
+      "type": "claim",
+      "label": "Magic-001",
+      "status": "hypothesized",
+      "scope": "Paper-level proposition",
+      "source_refs": [
+        [
+          "claims/claims.yaml",
+          "/Users/leoguinan/the-return-of-magic-causal-compression/claims/claims.yaml"
+        ]
+      ],
+      "provenance": [
+        {
+          "source_ref": "claims/claims.yaml",
+          "source_locator": "claims/claims.yaml",
+          "retrieved_or_checked_at": "2026-09-10T20:40:32Z",
+          "confidence": "direct",
+          "notes": "",
+          "content_hash": "sha256:1a6b486de45394dd8629e250b74b9e2f4e99088a54d04a7914a1e3c8a6b40e96"
+        }
+      ],
+      "claim_text": "The phenomenology of magic is associated with a large construction-invocation gap, reliable and consequential transition behavior, and causal depth hidden from the local invocation loop.",
+      "falsifiers": [
+        "A comparative protocol showing no relationship between the declared gap/reliability/consequence variables and reports of magical appearance."
+      ],
+      "formal_status": "not_formalized",
+      "publication_status": "published_source",
+      "profile_status": "not_held"
+    },
+    {
+      "id": "definition:CausalCompression",
+      "type": "definition",
+      "label": "CausalCompression",
+      "status": "descriptive",
+      "scope": "AxiomReason descriptive Lean package",
+      "source_refs": [
+        [
+          "Workspace/CausalCompression.lean",
+          "/Users/leoguinan/axiom-workspace/Workspace/CausalCompression.lean"
+        ]
+      ],
+      "provenance": [
+        {
+          "source_ref": "Workspace/CausalCompression.lean",
+          "source_locator": "Workspace/CausalCompression.lean",
+          "retrieved_or_checked_at": "2026-09-10T20:40:32Z",
+          "confidence": "direct",
+          "notes": "",
+          "content_hash": "sha256:90a1c88d3b2a1bacb934050183d56774f98fbfdeaf4f5fc267c07a098b9c3b20"
+        }
+      ],
+      "summary": "A transformation that reduces runtime decision burden by compiling continuation-relevant consequences of history into present structure under a declared contract.",
+      "formal_status": "formalized",
+      "validation_status": "server_validated",
+      "publication_status": "unpublished",
+      "profile_status": "not_held"
+    },
+    {
+      "id": "definition:InformationalPersistence",
+      "type": "definition",
+      "label": "InformationalPersistence",
+      "status": "descriptive",
+      "scope": "AxiomReason descriptive Lean package",
+      "source_refs": [
+        [
+          "Workspace/CausalCompression.lean",
+          "/Users/leoguinan/axiom-workspace/Workspace/CausalCompression.lean"
+        ]
+      ],
+      "provenance": [
+        {
+          "source_ref": "Workspace/CausalCompression.lean",
+          "source_locator": "Workspace/CausalCompression.lean",
+          "retrieved_or_checked_at": "2026-09-10T20:40:32Z",
+          "confidence": "direct",
+          "notes": "",
+          "content_hash": "sha256:90a1c88d3b2a1bacb934050183d56774f98fbfdeaf4f5fc267c07a098b9c3b20"
+        }
+      ],
+      "summary": "A lesson surviving in a state representation after the originating episode leaves active control.",
+      "formal_status": "formalized",
+      "validation_status": "server_validated",
+      "publication_status": "unpublished",
+      "profile_status": "not_held"
+    },
+    {
+      "id": "definition:AttentionalPersistence",
+      "type": "definition",
+      "label": "AttentionalPersistence",
+      "status": "descriptive",
+      "scope": "AxiomReason descriptive Lean package",
+      "source_refs": [
+        [
+          "Workspace/CausalCompression.lean",
+          "/Users/leoguinan/axiom-workspace/Workspace/CausalCompression.lean"
+        ]
+      ],
+      "provenance": [
+        {
+          "source_ref": "Workspace/CausalCompression.lean",
+          "source_locator": "Workspace/CausalCompression.lean",
+          "retrieved_or_checked_at": "2026-09-10T20:40:32Z",
+          "confidence": "direct",
+          "notes": "",
+          "content_hash": "sha256:90a1c88d3b2a1bacb934050183d56774f98fbfdeaf4f5fc267c07a098b9c3b20"
+        }
+      ],
+      "summary": "The originating episode remaining in the active control loop of a later decision.",
+      "formal_status": "formalized",
+      "validation_status": "server_validated",
+      "publication_status": "unpublished",
+      "profile_status": "not_held"
+    },
+    {
+      "id": "definition:StructuralUpdateRate",
+      "type": "definition",
+      "label": "StructuralUpdateRate",
+      "status": "descriptive",
+      "scope": "AxiomReason descriptive Lean package",
+      "source_refs": [
+        [
+          "Workspace/CausalCompression.lean",
+          "/Users/leoguinan/axiom-workspace/Workspace/CausalCompression.lean"
+        ]
+      ],
+      "provenance": [
+        {
+          "source_ref": "Workspace/CausalCompression.lean",
+          "source_locator": "Workspace/CausalCompression.lean",
+          "retrieved_or_checked_at": "2026-09-10T20:40:32Z",
+          "confidence": "direct",
+          "notes": "",
+          "content_hash": "sha256:90a1c88d3b2a1bacb934050183d56774f98fbfdeaf4f5fc267c07a098b9c3b20"
+        }
+      ],
+      "summary": "The rate at which evaluated experience is allowed to modify learned structural state.",
+      "formal_status": "formalized",
+      "validation_status": "server_validated",
+      "publication_status": "unpublished",
+      "profile_status": "not_held"
+    },
+    {
+      "id": "definition:AdaptiveHeadroom",
+      "type": "definition",
+      "label": "AdaptiveHeadroom",
+      "status": "descriptive",
+      "scope": "AxiomReason descriptive Lean package",
+      "source_refs": [
+        [
+          "Workspace/CausalCompression.lean",
+          "/Users/leoguinan/axiom-workspace/Workspace/CausalCompression.lean"
+        ]
+      ],
+      "provenance": [
+        {
+          "source_ref": "Workspace/CausalCompression.lean",
+          "source_locator": "Workspace/CausalCompression.lean",
+          "retrieved_or_checked_at": "2026-09-10T20:40:32Z",
+          "confidence": "direct",
+          "notes": "",
+          "content_hash": "sha256:90a1c88d3b2a1bacb934050183d56774f98fbfdeaf4f5fc267c07a098b9c3b20"
+        }
+      ],
+      "summary": "Gross capacity to change minus capacity encumbered by current commitments.",
+      "formal_status": "formalized",
+      "validation_status": "server_validated",
+      "publication_status": "unpublished",
+      "profile_status": "not_held"
+    },
+    {
+      "id": "definition:ContractRelativeReachability",
+      "type": "definition",
+      "label": "ContractRelativeReachability",
+      "status": "descriptive",
+      "scope": "AxiomReason descriptive Lean package",
+      "source_refs": [
+        [
+          "Workspace/CausalCompression.lean",
+          "/Users/leoguinan/axiom-workspace/Workspace/CausalCompression.lean"
+        ]
+      ],
+      "provenance": [
+        {
+          "source_ref": "Workspace/CausalCompression.lean",
+          "source_locator": "Workspace/CausalCompression.lean",
+          "retrieved_or_checked_at": "2026-09-10T20:40:32Z",
+          "confidence": "direct",
+          "notes": "",
+          "content_hash": "sha256:90a1c88d3b2a1bacb934050183d56774f98fbfdeaf4f5fc267c07a098b9c3b20"
+        }
+      ],
+      "summary": "The set of future states reachable within declared time, cost, risk, and commitment bounds.",
+      "formal_status": "formalized",
+      "validation_status": "server_validated",
+      "publication_status": "unpublished",
+      "profile_status": "not_held"
+    },
+    {
+      "id": "statement:causal_compression_definition",
+      "type": "statement",
+      "label": "causal_compression_definition",
+      "status": "descriptive",
+      "scope": "AxiomReason descriptive Lean package",
+      "source_refs": [
+        [
+          "Workspace/CausalCompression.lean",
+          "/Users/leoguinan/axiom-workspace/Workspace/CausalCompression.lean"
+        ]
+      ],
+      "provenance": [
+        {
+          "source_ref": "Workspace/CausalCompression.lean",
+          "source_locator": "Workspace/CausalCompression.lean",
+          "retrieved_or_checked_at": "2026-09-10T20:40:32Z",
+          "confidence": "direct",
+          "notes": "",
+          "content_hash": "sha256:90a1c88d3b2a1bacb934050183d56774f98fbfdeaf4f5fc267c07a098b9c3b20"
+        }
+      ],
+      "claim_text": "Causal compression is contract-relative: it preserves distinctions required by future decisions while discarding historical detail that no longer changes the continuation problem.",
+      "formal_status": "not_proved",
+      "validation_status": "server_validated",
+      "publication_status": "unpublished",
+      "profile_status": "not_held"
+    },
+    {
+      "id": "statement:episode_retirement_definition",
+      "type": "statement",
+      "label": "episode_retirement_definition",
+      "status": "descriptive",
+      "scope": "AxiomReason descriptive Lean package",
+      "source_refs": [
+        [
+          "Workspace/CausalCompression.lean",
+          "/Users/leoguinan/axiom-workspace/Workspace/CausalCompression.lean"
+        ]
+      ],
+      "provenance": [
+        {
+          "source_ref": "Workspace/CausalCompression.lean",
+          "source_locator": "Workspace/CausalCompression.lean",
+          "retrieved_or_checked_at": "2026-09-10T20:40:32Z",
+          "confidence": "direct",
+          "notes": "",
+          "content_hash": "sha256:90a1c88d3b2a1bacb934050183d56774f98fbfdeaf4f5fc267c07a098b9c3b20"
+        }
+      ],
+      "claim_text": "Episode retirement does not imply zero learning; it means the episode leaves active control after its decision-relevant information has passed through evaluation and update.",
+      "formal_status": "not_proved",
+      "validation_status": "server_validated",
+      "publication_status": "unpublished",
+      "profile_status": "not_held"
+    },
+    {
+      "id": "statement:informational_attentional_distinction",
+      "type": "statement",
+      "label": "informational_attentional_distinction",
+      "status": "descriptive",
+      "scope": "AxiomReason descriptive Lean package",
+      "source_refs": [
+        [
+          "Workspace/CausalCompression.lean",
+          "/Users/leoguinan/axiom-workspace/Workspace/CausalCompression.lean"
+        ]
+      ],
+      "provenance": [
+        {
+          "source_ref": "Workspace/CausalCompression.lean",
+          "source_locator": "Workspace/CausalCompression.lean",
+          "retrieved_or_checked_at": "2026-09-10T20:40:32Z",
+          "confidence": "direct",
+          "notes": "",
+          "content_hash": "sha256:90a1c88d3b2a1bacb934050183d56774f98fbfdeaf4f5fc267c07a098b9c3b20"
+        }
+      ],
+      "claim_text": "Informational persistence and attentional persistence are distinct observables; adaptive systems may benefit from the first while suppressing the second.",
+      "formal_status": "not_proved",
+      "validation_status": "server_validated",
+      "publication_status": "unpublished",
+      "profile_status": "not_held"
+    },
+    {
+      "id": "statement:expertise_as_compiled_history",
+      "type": "statement",
+      "label": "expertise_as_compiled_history",
+      "status": "descriptive",
+      "scope": "AxiomReason descriptive Lean package",
+      "source_refs": [
+        [
+          "Workspace/CausalCompression.lean",
+          "/Users/leoguinan/axiom-workspace/Workspace/CausalCompression.lean"
+        ]
+      ],
+      "provenance": [
+        {
+          "source_ref": "Workspace/CausalCompression.lean",
+          "source_locator": "Workspace/CausalCompression.lean",
+          "retrieved_or_checked_at": "2026-09-10T20:40:32Z",
+          "confidence": "direct",
+          "notes": "",
+          "content_hash": "sha256:90a1c88d3b2a1bacb934050183d56774f98fbfdeaf4f5fc267c07a098b9c3b20"
+        }
+      ],
+      "claim_text": "Expertise can be modeled as history compiled into present action structure with lower runtime burden than replaying the originating history.",
+      "formal_status": "not_proved",
+      "validation_status": "server_validated",
+      "publication_status": "unpublished",
+      "profile_status": "not_held"
+    },
+    {
+      "id": "statement:update_rate_tradeoff",
+      "type": "statement",
+      "label": "update_rate_tradeoff",
+      "status": "descriptive",
+      "scope": "AxiomReason descriptive Lean package",
+      "source_refs": [
+        [
+          "Workspace/CausalCompression.lean",
+          "/Users/leoguinan/axiom-workspace/Workspace/CausalCompression.lean"
+        ]
+      ],
+      "provenance": [
+        {
+          "source_ref": "Workspace/CausalCompression.lean",
+          "source_locator": "Workspace/CausalCompression.lean",
+          "retrieved_or_checked_at": "2026-09-10T20:40:32Z",
+          "confidence": "direct",
+          "notes": "",
+          "content_hash": "sha256:90a1c88d3b2a1bacb934050183d56774f98fbfdeaf4f5fc267c07a098b9c3b20"
+        }
+      ],
+      "claim_text": "An update rate that is too high can produce policy thrashing from noisy outcomes, while an update rate that is too low can preserve obsolete structure under environmental change.",
+      "formal_status": "not_proved",
+      "validation_status": "server_validated",
+      "publication_status": "unpublished",
+      "profile_status": "not_held"
+    },
+    {
+      "id": "statement:presence_as_compression",
+      "type": "statement",
+      "label": "presence_as_compression",
+      "status": "descriptive",
+      "scope": "AxiomReason descriptive Lean package",
+      "source_refs": [
+        [
+          "Workspace/CausalCompression.lean",
+          "/Users/leoguinan/axiom-workspace/Workspace/CausalCompression.lean"
+        ]
+      ],
+      "provenance": [
+        {
+          "source_ref": "Workspace/CausalCompression.lean",
+          "source_locator": "Workspace/CausalCompression.lean",
+          "retrieved_or_checked_at": "2026-09-10T20:40:32Z",
+          "confidence": "direct",
+          "notes": "",
+          "content_hash": "sha256:90a1c88d3b2a1bacb934050183d56774f98fbfdeaf4f5fc267c07a098b9c3b20"
+        }
+      ],
+      "claim_text": "Presence is a contract-relative condition in which continuation-relevant history is available in present state without requiring the historical payload to remain in active attention.",
+      "formal_status": "not_proved",
+      "validation_status": "server_validated",
+      "publication_status": "unpublished",
+      "profile_status": "not_held"
+    },
+    {
+      "id": "statement:lifecycle_requirement",
+      "type": "statement",
+      "label": "lifecycle_requirement",
+      "status": "descriptive",
+      "scope": "AxiomReason descriptive Lean package",
+      "source_refs": [
+        [
+          "Workspace/CausalCompression.lean",
+          "/Users/leoguinan/axiom-workspace/Workspace/CausalCompression.lean"
+        ]
+      ],
+      "provenance": [
+        {
+          "source_ref": "Workspace/CausalCompression.lean",
+          "source_locator": "Workspace/CausalCompression.lean",
+          "retrieved_or_checked_at": "2026-09-10T20:40:32Z",
+          "confidence": "direct",
+          "notes": "",
+          "content_hash": "sha256:90a1c88d3b2a1bacb934050183d56774f98fbfdeaf4f5fc267c07a098b9c3b20"
+        }
+      ],
+      "claim_text": "Durable capability requires coupled generation, evaluation, selection, compilation, maintenance, re-evaluation, and renewal, replacement, or retirement.",
+      "formal_status": "not_proved",
+      "validation_status": "server_validated",
+      "publication_status": "unpublished",
+      "profile_status": "not_held"
+    },
+    {
+      "id": "statement:headroom_accounting",
+      "type": "statement",
+      "label": "headroom_accounting",
+      "status": "descriptive",
+      "scope": "AxiomReason descriptive Lean package",
+      "source_refs": [
+        [
+          "Workspace/CausalCompression.lean",
+          "/Users/leoguinan/axiom-workspace/Workspace/CausalCompression.lean"
+        ]
+      ],
+      "provenance": [
+        {
+          "source_ref": "Workspace/CausalCompression.lean",
+          "source_locator": "Workspace/CausalCompression.lean",
+          "retrieved_or_checked_at": "2026-09-10T20:40:32Z",
+          "confidence": "direct",
+          "notes": "",
+          "content_hash": "sha256:90a1c88d3b2a1bacb934050183d56774f98fbfdeaf4f5fc267c07a098b9c3b20"
+        }
+      ],
+      "claim_text": "Adaptive headroom is a first-order approximation given by gross change-support capacity minus capacity encumbered by existing commitments; raw capability count is not the same quantity.",
+      "formal_status": "not_proved",
+      "validation_status": "server_validated",
+      "publication_status": "unpublished",
+      "profile_status": "not_held"
+    },
+    {
+      "id": "statement:capability_headroom_nonimplication",
+      "type": "statement",
+      "label": "capability_headroom_nonimplication",
+      "status": "descriptive",
+      "scope": "AxiomReason descriptive Lean package",
+      "source_refs": [
+        [
+          "Workspace/CausalCompression.lean",
+          "/Users/leoguinan/axiom-workspace/Workspace/CausalCompression.lean"
+        ]
+      ],
+      "provenance": [
+        {
+          "source_ref": "Workspace/CausalCompression.lean",
+          "source_locator": "Workspace/CausalCompression.lean",
+          "retrieved_or_checked_at": "2026-09-10T20:40:32Z",
+          "confidence": "direct",
+          "notes": "",
+          "content_hash": "sha256:90a1c88d3b2a1bacb934050183d56774f98fbfdeaf4f5fc267c07a098b9c3b20"
+        }
+      ],
+      "claim_text": "An increase in possessed capabilities does not by itself imply an increase in gross adaptive capacity or uncommitted adaptive headroom.",
+      "formal_status": "not_proved",
+      "validation_status": "server_validated",
+      "publication_status": "unpublished",
+      "profile_status": "not_held"
+    },
+    {
+      "id": "statement:safe_structural_forgetting",
+      "type": "statement",
+      "label": "safe_structural_forgetting",
+      "status": "descriptive",
+      "scope": "AxiomReason descriptive Lean package",
+      "source_refs": [
+        [
+          "Workspace/CausalCompression.lean",
+          "/Users/leoguinan/axiom-workspace/Workspace/CausalCompression.lean"
+        ]
+      ],
+      "provenance": [
+        {
+          "source_ref": "Workspace/CausalCompression.lean",
+          "source_locator": "Workspace/CausalCompression.lean",
+          "retrieved_or_checked_at": "2026-09-10T20:40:32Z",
+          "confidence": "direct",
+          "notes": "",
+          "content_hash": "sha256:90a1c88d3b2a1bacb934050183d56774f98fbfdeaf4f5fc267c07a098b9c3b20"
+        }
+      ],
+      "claim_text": "Retirement releases option value only when it preserves the required continuation contract and releases more future capacity than it destroys through transition and capability loss.",
+      "formal_status": "not_proved",
+      "validation_status": "server_validated",
+      "publication_status": "unpublished",
+      "profile_status": "not_held"
+    },
+    {
+      "id": "statement:magic_evidence_boundary",
+      "type": "statement",
+      "label": "magic_evidence_boundary",
+      "status": "descriptive",
+      "scope": "AxiomReason descriptive Lean package",
+      "source_refs": [
+        [
+          "Workspace/CausalCompression.lean",
+          "/Users/leoguinan/axiom-workspace/Workspace/CausalCompression.lean"
+        ]
+      ],
+      "provenance": [
+        {
+          "source_ref": "Workspace/CausalCompression.lean",
+          "source_locator": "Workspace/CausalCompression.lean",
+          "retrieved_or_checked_at": "2026-09-10T20:40:32Z",
+          "confidence": "direct",
+          "notes": "",
+          "content_hash": "sha256:90a1c88d3b2a1bacb934050183d56774f98fbfdeaf4f5fc267c07a098b9c3b20"
+        }
+      ],
+      "claim_text": "A low-cost local invocation can reflect historically expensive compiled causal work, but apparent magic is not evidence of reliability, causal understanding, or supernatural mechanism.",
+      "formal_status": "not_proved",
+      "validation_status": "server_validated",
+      "publication_status": "unpublished",
+      "profile_status": "not_held"
+    },
+    {
+      "id": "statement:validation_program",
+      "type": "statement",
+      "label": "validation_program",
+      "status": "descriptive",
+      "scope": "AxiomReason descriptive Lean package",
+      "source_refs": [
+        [
+          "Workspace/CausalCompression.lean",
+          "/Users/leoguinan/axiom-workspace/Workspace/CausalCompression.lean"
+        ]
+      ],
+      "provenance": [
+        {
+          "source_ref": "Workspace/CausalCompression.lean",
+          "source_locator": "Workspace/CausalCompression.lean",
+          "retrieved_or_checked_at": "2026-09-10T20:40:32Z",
+          "confidence": "direct",
+          "notes": "",
+          "content_hash": "sha256:90a1c88d3b2a1bacb934050183d56774f98fbfdeaf4f5fc267c07a098b9c3b20"
+        }
+      ],
+      "claim_text": "The framework is an open measurement program: bounded instruments should compare runtime burden, update behavior, maintenance burden, transition cost, reachability, and falsifiers without treating synthetic fixtures as universal laws.",
+      "formal_status": "not_proved",
+      "validation_status": "server_validated",
+      "publication_status": "unpublished",
+      "profile_status": "not_held"
+    },
+    {
+      "id": "artifact:axiom-hmhhcnw7",
+      "type": "artifact",
+      "label": "Causal compression headroom arithmetic",
+      "status": "published_source",
+      "scope": "AxiomReason public Lean source",
+      "source_refs": [
+        [
+          "Workspace/CausalCompressionTheorems.lean",
+          "/Users/leoguinan/axiom-workspace/Workspace/CausalCompressionTheorems.lean"
+        ]
+      ],
+      "provenance": [
+        {
+          "source_ref": "Workspace/CausalCompressionTheorems.lean",
+          "source_locator": "Workspace/CausalCompressionTheorems.lean",
+          "retrieved_or_checked_at": "2026-09-10T20:40:32Z",
+          "confidence": "direct",
+          "notes": "",
+          "content_hash": "sha256:6533592d4b425253fa1db3b09fc50963a9771c7eb4a159267f8a290eded65f65"
+        }
+      ],
+      "content_hash": "sha256:6533592d4b425253fa1db3b09fc50963a9771c7eb4a159267f8a290eded65f65",
+      "axiomreason_file_id": "hmhhcnw7",
+      "formal_status": "server_validated",
+      "publication_status": "published_source",
+      "profile_status": "not_held",
+      "receipt": "/Users/leoguinan/axiom-workspace/receipts/CausalCompressionTheorems-hmhhcnw7.json"
+    },
+    {
+      "id": "evidence:receipt-hmhhcnw7",
+      "type": "evidence",
+      "label": "Publication receipt hmhhcnw7",
+      "status": "server_validated",
+      "scope": "Independent AxiomReason search/fetch receipt",
+      "source_refs": [
+        [
+          "receipts/CausalCompressionTheorems-hmhhcnw7.json",
+          "/Users/leoguinan/axiom-workspace/receipts/CausalCompressionTheorems-hmhhcnw7.json"
+        ]
+      ],
+      "provenance": [
+        {
+          "source_ref": "receipts/CausalCompressionTheorems-hmhhcnw7.json",
+          "source_locator": "receipts/CausalCompressionTheorems-hmhhcnw7.json",
+          "retrieved_or_checked_at": "2026-09-10T20:40:32Z",
+          "confidence": "direct",
+          "notes": "",
+          "content_hash": "sha256:492171919214f5dbdb572fe334b7a092afc6c087db407ac8ed6e9063b4bbd37f"
+        }
+      ],
+      "content_hash": "sha256:492171919214f5dbdb572fe334b7a092afc6c087db407ac8ed6e9063b4bbd37f"
+    },
+    {
+      "id": "theorem:headroom_nonnegative",
+      "type": "theorem",
+      "label": "headroom_nonnegative",
+      "status": "proved",
+      "scope": "Explicit model in published Lean package",
+      "source_refs": [
+        [
+          "Workspace/CausalCompressionTheorems.lean",
+          "/Users/leoguinan/axiom-workspace/Workspace/CausalCompressionTheorems.lean"
+        ]
+      ],
+      "provenance": [
+        {
+          "source_ref": "Workspace/CausalCompressionTheorems.lean",
+          "source_locator": "Workspace/CausalCompressionTheorems.lean",
+          "retrieved_or_checked_at": "2026-09-10T20:40:32Z",
+          "confidence": "direct",
+          "notes": "",
+          "content_hash": "sha256:6533592d4b425253fa1db3b09fc50963a9771c7eb4a159267f8a290eded65f65"
+        }
+      ],
+      "formal_status": "proved",
+      "validation_status": "server_validated",
+      "publication_status": "published_source",
+      "profile_status": "not_held",
+      "axiomreason_file_id": "hmhhcnw7",
+      "assumptions": [
+        "Only the explicit Nat/Int/discrete model assumptions in the source."
+      ]
+    },
+    {
+      "id": "theorem:headroom_zero_of_burden_ge_capacity",
+      "type": "theorem",
+      "label": "headroom_zero_of_burden_ge_capacity",
+      "status": "proved",
+      "scope": "Explicit model in published Lean package",
+      "source_refs": [
+        [
+          "Workspace/CausalCompressionTheorems.lean",
+          "/Users/leoguinan/axiom-workspace/Workspace/CausalCompressionTheorems.lean"
+        ]
+      ],
+      "provenance": [
+        {
+          "source_ref": "Workspace/CausalCompressionTheorems.lean",
+          "source_locator": "Workspace/CausalCompressionTheorems.lean",
+          "retrieved_or_checked_at": "2026-09-10T20:40:32Z",
+          "confidence": "direct",
+          "notes": "",
+          "content_hash": "sha256:6533592d4b425253fa1db3b09fc50963a9771c7eb4a159267f8a290eded65f65"
+        }
+      ],
+      "formal_status": "proved",
+      "validation_status": "server_validated",
+      "publication_status": "published_source",
+      "profile_status": "not_held",
+      "axiomreason_file_id": "hmhhcnw7",
+      "assumptions": [
+        "Only the explicit Nat/Int/discrete model assumptions in the source."
+      ]
+    },
+    {
+      "id": "theorem:headroom_positive_iff_capacity_exceeds_burden",
+      "type": "theorem",
+      "label": "headroom_positive_iff_capacity_exceeds_burden",
+      "status": "proved",
+      "scope": "Explicit model in published Lean package",
+      "source_refs": [
+        [
+          "Workspace/CausalCompressionTheorems.lean",
+          "/Users/leoguinan/axiom-workspace/Workspace/CausalCompressionTheorems.lean"
+        ]
+      ],
+      "provenance": [
+        {
+          "source_ref": "Workspace/CausalCompressionTheorems.lean",
+          "source_locator": "Workspace/CausalCompressionTheorems.lean",
+          "retrieved_or_checked_at": "2026-09-10T20:40:32Z",
+          "confidence": "direct",
+          "notes": "",
+          "content_hash": "sha256:6533592d4b425253fa1db3b09fc50963a9771c7eb4a159267f8a290eded65f65"
+        }
+      ],
+      "formal_status": "proved",
+      "validation_status": "server_validated",
+      "publication_status": "published_source",
+      "profile_status": "not_held",
+      "axiomreason_file_id": "hmhhcnw7",
+      "assumptions": [
+        "Only the explicit Nat/Int/discrete model assumptions in the source."
+      ]
+    },
+    {
+      "id": "theorem:safe_retirement_gain_of_burden_release",
+      "type": "theorem",
+      "label": "safe_retirement_gain_of_burden_release",
+      "status": "proved",
+      "scope": "Explicit model in published Lean package",
+      "source_refs": [
+        [
+          "Workspace/CausalCompressionTheorems.lean",
+          "/Users/leoguinan/axiom-workspace/Workspace/CausalCompressionTheorems.lean"
+        ]
+      ],
+      "provenance": [
+        {
+          "source_ref": "Workspace/CausalCompressionTheorems.lean",
+          "source_locator": "Workspace/CausalCompressionTheorems.lean",
+          "retrieved_or_checked_at": "2026-09-10T20:40:32Z",
+          "confidence": "direct",
+          "notes": "",
+          "content_hash": "sha256:6533592d4b425253fa1db3b09fc50963a9771c7eb4a159267f8a290eded65f65"
+        }
+      ],
+      "formal_status": "proved",
+      "validation_status": "server_validated",
+      "publication_status": "published_source",
+      "profile_status": "not_held",
+      "axiomreason_file_id": "hmhhcnw7",
+      "assumptions": [
+        "Only the explicit Nat/Int/discrete model assumptions in the source."
+      ]
+    },
+    {
+      "id": "artifact:axiom-j1b75r6z",
+      "type": "artifact",
+      "label": "Causal compression forward accounting",
+      "status": "published_source",
+      "scope": "AxiomReason public Lean source",
+      "source_refs": [
+        [
+          "Workspace/CausalCompressionForwardTheorems.lean",
+          "/Users/leoguinan/axiom-workspace/Workspace/CausalCompressionForwardTheorems.lean"
+        ]
+      ],
+      "provenance": [
+        {
+          "source_ref": "Workspace/CausalCompressionForwardTheorems.lean",
+          "source_locator": "Workspace/CausalCompressionForwardTheorems.lean",
+          "retrieved_or_checked_at": "2026-09-10T20:40:32Z",
+          "confidence": "direct",
+          "notes": "",
+          "content_hash": "sha256:8b4c58a9e93b110268355a0b1fe03873bd1f81e1879c81fc0e3146272b52af7e"
+        }
+      ],
+      "content_hash": "sha256:8b4c58a9e93b110268355a0b1fe03873bd1f81e1879c81fc0e3146272b52af7e",
+      "axiomreason_file_id": "j1b75r6z",
+      "formal_status": "server_validated",
+      "publication_status": "published_source",
+      "profile_status": "not_held",
+      "receipt": "/Users/leoguinan/axiom-workspace/receipts/CausalCompressionForwardTheorems-j1b75r6z.json"
+    },
+    {
+      "id": "evidence:receipt-j1b75r6z",
+      "type": "evidence",
+      "label": "Publication receipt j1b75r6z",
+      "status": "server_validated",
+      "scope": "Independent AxiomReason search/fetch receipt",
+      "source_refs": [
+        [
+          "receipts/CausalCompressionForwardTheorems-j1b75r6z.json",
+          "/Users/leoguinan/axiom-workspace/receipts/CausalCompressionForwardTheorems-j1b75r6z.json"
+        ]
+      ],
+      "provenance": [
+        {
+          "source_ref": "receipts/CausalCompressionForwardTheorems-j1b75r6z.json",
+          "source_locator": "receipts/CausalCompressionForwardTheorems-j1b75r6z.json",
+          "retrieved_or_checked_at": "2026-09-10T20:40:32Z",
+          "confidence": "direct",
+          "notes": "",
+          "content_hash": "sha256:715ee71ee963c983e606481a3dca290797277ff95f05d687b0c74296c7b2abfd"
+        }
+      ],
+      "content_hash": "sha256:715ee71ee963c983e606481a3dca290797277ff95f05d687b0c74296c7b2abfd"
+    },
+    {
+      "id": "theorem:headroom_transition_accounting",
+      "type": "theorem",
+      "label": "headroom_transition_accounting",
+      "status": "proved",
+      "scope": "Explicit model in published Lean package",
+      "source_refs": [
+        [
+          "Workspace/CausalCompressionForwardTheorems.lean",
+          "/Users/leoguinan/axiom-workspace/Workspace/CausalCompressionForwardTheorems.lean"
+        ]
+      ],
+      "provenance": [
+        {
+          "source_ref": "Workspace/CausalCompressionForwardTheorems.lean",
+          "source_locator": "Workspace/CausalCompressionForwardTheorems.lean",
+          "retrieved_or_checked_at": "2026-09-10T20:40:32Z",
+          "confidence": "direct",
+          "notes": "",
+          "content_hash": "sha256:8b4c58a9e93b110268355a0b1fe03873bd1f81e1879c81fc0e3146272b52af7e"
+        }
+      ],
+      "formal_status": "proved",
+      "validation_status": "server_validated",
+      "publication_status": "published_source",
+      "profile_status": "not_held",
+      "axiomreason_file_id": "j1b75r6z",
+      "assumptions": [
+        "Only the explicit Nat/Int/discrete model assumptions in the source."
+      ]
+    },
+    {
+      "id": "theorem:backlog_grows_when_arrivals_exceed_service",
+      "type": "theorem",
+      "label": "backlog_grows_when_arrivals_exceed_service",
+      "status": "proved",
+      "scope": "Explicit model in published Lean package",
+      "source_refs": [
+        [
+          "Workspace/CausalCompressionForwardTheorems.lean",
+          "/Users/leoguinan/axiom-workspace/Workspace/CausalCompressionForwardTheorems.lean"
+        ]
+      ],
+      "provenance": [
+        {
+          "source_ref": "Workspace/CausalCompressionForwardTheorems.lean",
+          "source_locator": "Workspace/CausalCompressionForwardTheorems.lean",
+          "retrieved_or_checked_at": "2026-09-10T20:40:32Z",
+          "confidence": "direct",
+          "notes": "",
+          "content_hash": "sha256:8b4c58a9e93b110268355a0b1fe03873bd1f81e1879c81fc0e3146272b52af7e"
+        }
+      ],
+      "formal_status": "proved",
+      "validation_status": "server_validated",
+      "publication_status": "published_source",
+      "profile_status": "not_held",
+      "axiomreason_file_id": "j1b75r6z",
+      "assumptions": [
+        "Only the explicit Nat/Int/discrete model assumptions in the source."
+      ]
+    },
+    {
+      "id": "theorem:zero_gain_preserves_structure",
+      "type": "theorem",
+      "label": "zero_gain_preserves_structure",
+      "status": "proved",
+      "scope": "Explicit model in published Lean package",
+      "source_refs": [
+        [
+          "Workspace/CausalCompressionForwardTheorems.lean",
+          "/Users/leoguinan/axiom-workspace/Workspace/CausalCompressionForwardTheorems.lean"
+        ]
+      ],
+      "provenance": [
+        {
+          "source_ref": "Workspace/CausalCompressionForwardTheorems.lean",
+          "source_locator": "Workspace/CausalCompressionForwardTheorems.lean",
+          "retrieved_or_checked_at": "2026-09-10T20:40:32Z",
+          "confidence": "direct",
+          "notes": "",
+          "content_hash": "sha256:8b4c58a9e93b110268355a0b1fe03873bd1f81e1879c81fc0e3146272b52af7e"
+        }
+      ],
+      "formal_status": "proved",
+      "validation_status": "server_validated",
+      "publication_status": "published_source",
+      "profile_status": "not_held",
+      "axiomreason_file_id": "j1b75r6z",
+      "assumptions": [
+        "Only the explicit Nat/Int/discrete model assumptions in the source."
+      ]
+    },
+    {
+      "id": "theorem:compressed_policy_equal_on_equal_representation",
+      "type": "theorem",
+      "label": "compressed_policy_equal_on_equal_representation",
+      "status": "proved",
+      "scope": "Explicit model in published Lean package",
+      "source_refs": [
+        [
+          "Workspace/CausalCompressionForwardTheorems.lean",
+          "/Users/leoguinan/axiom-workspace/Workspace/CausalCompressionForwardTheorems.lean"
+        ]
+      ],
+      "provenance": [
+        {
+          "source_ref": "Workspace/CausalCompressionForwardTheorems.lean",
+          "source_locator": "Workspace/CausalCompressionForwardTheorems.lean",
+          "retrieved_or_checked_at": "2026-09-10T20:40:32Z",
+          "confidence": "direct",
+          "notes": "",
+          "content_hash": "sha256:8b4c58a9e93b110268355a0b1fe03873bd1f81e1879c81fc0e3146272b52af7e"
+        }
+      ],
+      "formal_status": "proved",
+      "validation_status": "server_validated",
+      "publication_status": "published_source",
+      "profile_status": "not_held",
+      "axiomreason_file_id": "j1b75r6z",
+      "assumptions": [
+        "Only the explicit Nat/Int/discrete model assumptions in the source."
+      ]
+    },
+    {
+      "id": "artifact:axiom-dn8bd2yh",
+      "type": "artifact",
+      "label": "Causal compression discrete dynamics",
+      "status": "published_source",
+      "scope": "AxiomReason public Lean source",
+      "source_refs": [
+        [
+          "Workspace/CausalCompressionDynamicalTheorems.lean",
+          "/Users/leoguinan/axiom-workspace/Workspace/CausalCompressionDynamicalTheorems.lean"
+        ]
+      ],
+      "provenance": [
+        {
+          "source_ref": "Workspace/CausalCompressionDynamicalTheorems.lean",
+          "source_locator": "Workspace/CausalCompressionDynamicalTheorems.lean",
+          "retrieved_or_checked_at": "2026-09-10T20:40:32Z",
+          "confidence": "direct",
+          "notes": "",
+          "content_hash": "sha256:4701c04654a80297ea37e1e3954fcd0f120f5c6ff98726324b852957af47cab6"
+        }
+      ],
+      "content_hash": "sha256:4701c04654a80297ea37e1e3954fcd0f120f5c6ff98726324b852957af47cab6",
+      "axiomreason_file_id": "dn8bd2yh",
+      "formal_status": "server_validated",
+      "publication_status": "published_source",
+      "profile_status": "not_held",
+      "receipt": "/Users/leoguinan/axiom-workspace/receipts/CausalCompressionDynamicalTheorems-dn8bd2yh.json"
+    },
+    {
+      "id": "evidence:receipt-dn8bd2yh",
+      "type": "evidence",
+      "label": "Publication receipt dn8bd2yh",
+      "status": "server_validated",
+      "scope": "Independent AxiomReason search/fetch receipt",
+      "source_refs": [
+        [
+          "receipts/CausalCompressionDynamicalTheorems-dn8bd2yh.json",
+          "/Users/leoguinan/axiom-workspace/receipts/CausalCompressionDynamicalTheorems-dn8bd2yh.json"
+        ]
+      ],
+      "provenance": [
+        {
+          "source_ref": "receipts/CausalCompressionDynamicalTheorems-dn8bd2yh.json",
+          "source_locator": "receipts/CausalCompressionDynamicalTheorems-dn8bd2yh.json",
+          "retrieved_or_checked_at": "2026-09-10T20:40:32Z",
+          "confidence": "direct",
+          "notes": "",
+          "content_hash": "sha256:64ecbdbc716d4b36adeb9de5f6cace8a0d7509506a1d619f631519ac6a365a18"
+        }
+      ],
+      "content_hash": "sha256:64ecbdbc716d4b36adeb9de5f6cace8a0d7509506a1d619f631519ac6a365a18"
+    },
+    {
+      "id": "theorem:bounded_update_stays_between_state_and_target",
+      "type": "theorem",
+      "label": "bounded_update_stays_between_state_and_target",
+      "status": "proved",
+      "scope": "Explicit model in published Lean package",
+      "source_refs": [
+        [
+          "Workspace/CausalCompressionDynamicalTheorems.lean",
+          "/Users/leoguinan/axiom-workspace/Workspace/CausalCompressionDynamicalTheorems.lean"
+        ]
+      ],
+      "provenance": [
+        {
+          "source_ref": "Workspace/CausalCompressionDynamicalTheorems.lean",
+          "source_locator": "Workspace/CausalCompressionDynamicalTheorems.lean",
+          "retrieved_or_checked_at": "2026-09-10T20:40:32Z",
+          "confidence": "direct",
+          "notes": "",
+          "content_hash": "sha256:4701c04654a80297ea37e1e3954fcd0f120f5c6ff98726324b852957af47cab6"
+        }
+      ],
+      "formal_status": "proved",
+      "validation_status": "server_validated",
+      "publication_status": "published_source",
+      "profile_status": "not_held",
+      "axiomreason_file_id": "dn8bd2yh",
+      "assumptions": [
+        "Only the explicit Nat/Int/discrete model assumptions in the source."
+      ]
+    },
+    {
+      "id": "theorem:zero_adaptation_rate_preserves_state",
+      "type": "theorem",
+      "label": "zero_adaptation_rate_preserves_state",
+      "status": "proved",
+      "scope": "Explicit model in published Lean package",
+      "source_refs": [
+        [
+          "Workspace/CausalCompressionDynamicalTheorems.lean",
+          "/Users/leoguinan/axiom-workspace/Workspace/CausalCompressionDynamicalTheorems.lean"
+        ]
+      ],
+      "provenance": [
+        {
+          "source_ref": "Workspace/CausalCompressionDynamicalTheorems.lean",
+          "source_locator": "Workspace/CausalCompressionDynamicalTheorems.lean",
+          "retrieved_or_checked_at": "2026-09-10T20:40:32Z",
+          "confidence": "direct",
+          "notes": "",
+          "content_hash": "sha256:4701c04654a80297ea37e1e3954fcd0f120f5c6ff98726324b852957af47cab6"
+        }
+      ],
+      "formal_status": "proved",
+      "validation_status": "server_validated",
+      "publication_status": "published_source",
+      "profile_status": "not_held",
+      "axiomreason_file_id": "dn8bd2yh",
+      "assumptions": [
+        "Only the explicit Nat/Int/discrete model assumptions in the source."
+      ]
+    },
+    {
+      "id": "theorem:sufficient_representation_preserves_continuation",
+      "type": "theorem",
+      "label": "sufficient_representation_preserves_continuation",
+      "status": "proved",
+      "scope": "Explicit model in published Lean package",
+      "source_refs": [
+        [
+          "Workspace/CausalCompressionDynamicalTheorems.lean",
+          "/Users/leoguinan/axiom-workspace/Workspace/CausalCompressionDynamicalTheorems.lean"
+        ]
+      ],
+      "provenance": [
+        {
+          "source_ref": "Workspace/CausalCompressionDynamicalTheorems.lean",
+          "source_locator": "Workspace/CausalCompressionDynamicalTheorems.lean",
+          "retrieved_or_checked_at": "2026-09-10T20:40:32Z",
+          "confidence": "direct",
+          "notes": "",
+          "content_hash": "sha256:4701c04654a80297ea37e1e3954fcd0f120f5c6ff98726324b852957af47cab6"
+        }
+      ],
+      "formal_status": "proved",
+      "validation_status": "server_validated",
+      "publication_status": "published_source",
+      "profile_status": "not_held",
+      "axiomreason_file_id": "dn8bd2yh",
+      "assumptions": [
+        "Only the explicit Nat/Int/discrete model assumptions in the source."
+      ]
+    },
+    {
+      "id": "result:action-relative-voi-v1",
+      "type": "empirical_result",
+      "label": "Action Relative Voi V1",
+      "status": "measured",
+      "scope": "Bounded experiment result document; scope must be read from the protocol/result file",
+      "source_refs": [
+        [
+          "docs/action-relative-voi-v1-results.md",
+          "/Users/leoguinan/pnp-session-review/experiment/docs/action-relative-voi-v1-results.md"
+        ]
+      ],
+      "provenance": [
+        {
+          "source_ref": "docs/action-relative-voi-v1-results.md",
+          "source_locator": "docs/action-relative-voi-v1-results.md",
+          "retrieved_or_checked_at": "2026-09-10T20:40:32Z",
+          "confidence": "direct",
+          "notes": "",
+          "content_hash": "sha256:00c66d88048a535d1e582d8c4a84a52200c2ae08dfad4a06caa1ad2416a732ba"
+        }
+      ],
+      "experimental_status": "bounded_fixture",
+      "publication_status": "published_source",
+      "profile_status": "not_held",
+      "falsifiers": [
+        "Not automatically mapped to a paper hypothesis; a claim-specific comparator and scope review are required."
+      ]
+    },
+    {
+      "id": "result:adaptive-morphology-hysteresis-v1",
+      "type": "empirical_result",
+      "label": "Adaptive Morphology Hysteresis V1",
+      "status": "measured",
+      "scope": "Bounded experiment result document; scope must be read from the protocol/result file",
+      "source_refs": [
+        [
+          "docs/adaptive-morphology-hysteresis-v1-results.md",
+          "/Users/leoguinan/pnp-session-review/experiment/docs/adaptive-morphology-hysteresis-v1-results.md"
+        ]
+      ],
+      "provenance": [
+        {
+          "source_ref": "docs/adaptive-morphology-hysteresis-v1-results.md",
+          "source_locator": "docs/adaptive-morphology-hysteresis-v1-results.md",
+          "retrieved_or_checked_at": "2026-09-10T20:40:32Z",
+          "confidence": "direct",
+          "notes": "",
+          "content_hash": "sha256:e441639226d792afdeec6308e1fbc24d7f355775a524efd60dc56d8ef57ea12d"
+        }
+      ],
+      "experimental_status": "bounded_fixture",
+      "publication_status": "published_source",
+      "profile_status": "not_held",
+      "falsifiers": [
+        "Not automatically mapped to a paper hypothesis; a claim-specific comparator and scope review are required."
+      ]
+    },
+    {
+      "id": "result:adaptive-observation-policy-v1",
+      "type": "empirical_result",
+      "label": "Adaptive Observation Policy V1",
+      "status": "measured",
+      "scope": "Bounded experiment result document; scope must be read from the protocol/result file",
+      "source_refs": [
+        [
+          "docs/adaptive-observation-policy-v1-results.md",
+          "/Users/leoguinan/pnp-session-review/experiment/docs/adaptive-observation-policy-v1-results.md"
+        ]
+      ],
+      "provenance": [
+        {
+          "source_ref": "docs/adaptive-observation-policy-v1-results.md",
+          "source_locator": "docs/adaptive-observation-policy-v1-results.md",
+          "retrieved_or_checked_at": "2026-09-10T20:40:32Z",
+          "confidence": "direct",
+          "notes": "",
+          "content_hash": "sha256:766a9da3a9430862447d1cf9d4a5c735cd59b112f40d4f7dfb2689a341793615"
+        }
+      ],
+      "experimental_status": "bounded_fixture",
+      "publication_status": "published_source",
+      "profile_status": "not_held",
+      "falsifiers": [
+        "Not automatically mapped to a paper hypothesis; a claim-specific comparator and scope review are required."
+      ]
+    },
+    {
+      "id": "result:archive-release-contract-v1",
+      "type": "empirical_result",
+      "label": "Archive Release Contract V1",
+      "status": "measured",
+      "scope": "Bounded experiment result document; scope must be read from the protocol/result file",
+      "source_refs": [
+        [
+          "docs/archive-release-contract-v1-results.md",
+          "/Users/leoguinan/pnp-session-review/experiment/docs/archive-release-contract-v1-results.md"
+        ]
+      ],
+      "provenance": [
+        {
+          "source_ref": "docs/archive-release-contract-v1-results.md",
+          "source_locator": "docs/archive-release-contract-v1-results.md",
+          "retrieved_or_checked_at": "2026-09-10T20:40:32Z",
+          "confidence": "direct",
+          "notes": "",
+          "content_hash": "sha256:2b250a29ddd14d91b4dcc32ad3699ccd26598aa6513584ca1077e3d38d66f074"
+        }
+      ],
+      "experimental_status": "bounded_fixture",
+      "publication_status": "published_source",
+      "profile_status": "not_held",
+      "falsifiers": [
+        "Not automatically mapped to a paper hypothesis; a claim-specific comparator and scope review are required."
+      ]
+    },
+    {
+      "id": "result:archive-transition-interaction-v1",
+      "type": "empirical_result",
+      "label": "Archive Transition Interaction V1",
+      "status": "measured",
+      "scope": "Bounded experiment result document; scope must be read from the protocol/result file",
+      "source_refs": [
+        [
+          "docs/archive-transition-interaction-v1-results.md",
+          "/Users/leoguinan/pnp-session-review/experiment/docs/archive-transition-interaction-v1-results.md"
+        ]
+      ],
+      "provenance": [
+        {
+          "source_ref": "docs/archive-transition-interaction-v1-results.md",
+          "source_locator": "docs/archive-transition-interaction-v1-results.md",
+          "retrieved_or_checked_at": "2026-09-10T20:40:32Z",
+          "confidence": "direct",
+          "notes": "",
+          "content_hash": "sha256:1f5fa98f9e4074af757c47ec5a854943fbcb37ba2105879eacf85678d680fc80"
+        }
+      ],
+      "experimental_status": "bounded_fixture",
+      "publication_status": "published_source",
+      "profile_status": "not_held",
+      "falsifiers": [
+        "Not automatically mapped to a paper hypothesis; a claim-specific comparator and scope review are required."
+      ]
+    },
+    {
+      "id": "result:branching-adaptive-observation-policy-v1",
+      "type": "empirical_result",
+      "label": "Branching Adaptive Observation Policy V1",
+      "status": "measured",
+      "scope": "Bounded experiment result document; scope must be read from the protocol/result file",
+      "source_refs": [
+        [
+          "docs/branching-adaptive-observation-policy-v1-results.md",
+          "/Users/leoguinan/pnp-session-review/experiment/docs/branching-adaptive-observation-policy-v1-results.md"
+        ]
+      ],
+      "provenance": [
+        {
+          "source_ref": "docs/branching-adaptive-observation-policy-v1-results.md",
+          "source_locator": "docs/branching-adaptive-observation-policy-v1-results.md",
+          "retrieved_or_checked_at": "2026-09-10T20:40:32Z",
+          "confidence": "direct",
+          "notes": "",
+          "content_hash": "sha256:a7cd1e7f7d6cc15cf5327b0c7ef17bdc8975dbfefbeb6b928290d7fa9ee73427"
+        }
+      ],
+      "experimental_status": "bounded_fixture",
+      "publication_status": "published_source",
+      "profile_status": "not_held",
+      "falsifiers": [
+        "Not automatically mapped to a paper hypothesis; a claim-specific comparator and scope review are required."
+      ]
+    },
+    {
+      "id": "result:calibration-v1",
+      "type": "empirical_result",
+      "label": "Calibration V1",
+      "status": "measured",
+      "scope": "Bounded experiment result document; scope must be read from the protocol/result file",
+      "source_refs": [
+        [
+          "docs/calibration-v1-results.md",
+          "/Users/leoguinan/pnp-session-review/experiment/docs/calibration-v1-results.md"
+        ]
+      ],
+      "provenance": [
+        {
+          "source_ref": "docs/calibration-v1-results.md",
+          "source_locator": "docs/calibration-v1-results.md",
+          "retrieved_or_checked_at": "2026-09-10T20:40:32Z",
+          "confidence": "direct",
+          "notes": "",
+          "content_hash": "sha256:8bff474a4e67250618a1e085c93e8c596d6c81568b3065a00af9c4526db7aba1"
+        }
+      ],
+      "experimental_status": "bounded_fixture",
+      "publication_status": "published_source",
+      "profile_status": "not_held",
+      "falsifiers": [
+        "Not automatically mapped to a paper hypothesis; a claim-specific comparator and scope review are required."
+      ]
+    },
+    {
+      "id": "result:capability-placement-freshness-v1",
+      "type": "empirical_result",
+      "label": "Capability Placement Freshness V1",
+      "status": "measured",
+      "scope": "Bounded experiment result document; scope must be read from the protocol/result file",
+      "source_refs": [
+        [
+          "docs/capability-placement-freshness-v1-results.md",
+          "/Users/leoguinan/pnp-session-review/experiment/docs/capability-placement-freshness-v1-results.md"
+        ]
+      ],
+      "provenance": [
+        {
+          "source_ref": "docs/capability-placement-freshness-v1-results.md",
+          "source_locator": "docs/capability-placement-freshness-v1-results.md",
+          "retrieved_or_checked_at": "2026-09-10T20:40:32Z",
+          "confidence": "direct",
+          "notes": "",
+          "content_hash": "sha256:8ca5c168c3013830431e829e486ab453fcf85669018caded179fe57b66540dcf"
+        }
+      ],
+      "experimental_status": "bounded_fixture",
+      "publication_status": "published_source",
+      "profile_status": "not_held",
+      "falsifiers": [
+        "Not automatically mapped to a paper hypothesis; a claim-specific comparator and scope review are required."
+      ]
+    },
+    {
+      "id": "result:capability-space-routing-v1",
+      "type": "empirical_result",
+      "label": "Capability Space Routing V1",
+      "status": "measured",
+      "scope": "Bounded experiment result document; scope must be read from the protocol/result file",
+      "source_refs": [
+        [
+          "docs/capability-space-routing-v1-results.md",
+          "/Users/leoguinan/pnp-session-review/experiment/docs/capability-space-routing-v1-results.md"
+        ]
+      ],
+      "provenance": [
+        {
+          "source_ref": "docs/capability-space-routing-v1-results.md",
+          "source_locator": "docs/capability-space-routing-v1-results.md",
+          "retrieved_or_checked_at": "2026-09-10T20:40:32Z",
+          "confidence": "direct",
+          "notes": "",
+          "content_hash": "sha256:c3137f7e706d2006e893f21c71f2b9c60fc0786de7fc69a3ed8ef67d24b44694"
+        }
+      ],
+      "experimental_status": "bounded_fixture",
+      "publication_status": "published_source",
+      "profile_status": "not_held",
+      "falsifiers": [
+        "Not automatically mapped to a paper hypothesis; a claim-specific comparator and scope review are required."
+      ]
+    },
+    {
+      "id": "result:contract-relative-state-complexity-v1",
+      "type": "empirical_result",
+      "label": "Contract Relative State Complexity V1",
+      "status": "measured",
+      "scope": "Bounded experiment result document; scope must be read from the protocol/result file",
+      "source_refs": [
+        [
+          "docs/contract-relative-state-complexity-v1-results.md",
+          "/Users/leoguinan/pnp-session-review/experiment/docs/contract-relative-state-complexity-v1-results.md"
+        ]
+      ],
+      "provenance": [
+        {
+          "source_ref": "docs/contract-relative-state-complexity-v1-results.md",
+          "source_locator": "docs/contract-relative-state-complexity-v1-results.md",
+          "retrieved_or_checked_at": "2026-09-10T20:40:32Z",
+          "confidence": "direct",
+          "notes": "",
+          "content_hash": "sha256:18f8455bcdbe100a4e553e5b45736f1999a6185b105c783f6c0ec1a5e27bf3ee"
+        }
+      ],
+      "experimental_status": "bounded_fixture",
+      "publication_status": "published_source",
+      "profile_status": "not_held",
+      "falsifiers": [
+        "Not automatically mapped to a paper hypothesis; a claim-specific comparator and scope review are required."
+      ]
+    },
+    {
+      "id": "result:dense-coupling-v1",
+      "type": "empirical_result",
+      "label": "Dense Coupling V1",
+      "status": "measured",
+      "scope": "Bounded experiment result document; scope must be read from the protocol/result file",
+      "source_refs": [
+        [
+          "docs/dense-coupling-v1-results.md",
+          "/Users/leoguinan/pnp-session-review/experiment/docs/dense-coupling-v1-results.md"
+        ]
+      ],
+      "provenance": [
+        {
+          "source_ref": "docs/dense-coupling-v1-results.md",
+          "source_locator": "docs/dense-coupling-v1-results.md",
+          "retrieved_or_checked_at": "2026-09-10T20:40:32Z",
+          "confidence": "direct",
+          "notes": "",
+          "content_hash": "sha256:38c828a2e6848c2edd641702ad32e4a6e6ef1dbebec8f99f7cf476cb4fa74f8c"
+        }
+      ],
+      "experimental_status": "bounded_fixture",
+      "publication_status": "published_source",
+      "profile_status": "not_held",
+      "falsifiers": [
+        "Not automatically mapped to a paper hypothesis; a claim-specific comparator and scope review are required."
+      ]
+    },
+    {
+      "id": "result:dual-control-observation-action-v1",
+      "type": "empirical_result",
+      "label": "Dual Control Observation Action V1",
+      "status": "measured",
+      "scope": "Bounded experiment result document; scope must be read from the protocol/result file",
+      "source_refs": [
+        [
+          "docs/dual-control-observation-action-v1-results.md",
+          "/Users/leoguinan/pnp-session-review/experiment/docs/dual-control-observation-action-v1-results.md"
+        ]
+      ],
+      "provenance": [
+        {
+          "source_ref": "docs/dual-control-observation-action-v1-results.md",
+          "source_locator": "docs/dual-control-observation-action-v1-results.md",
+          "retrieved_or_checked_at": "2026-09-10T20:40:32Z",
+          "confidence": "direct",
+          "notes": "",
+          "content_hash": "sha256:25642afa532e818ce86882fea28e9058cefdd29a4006b2b168e1eb47cf412dfb"
+        }
+      ],
+      "experimental_status": "bounded_fixture",
+      "publication_status": "published_source",
+      "profile_status": "not_held",
+      "falsifiers": [
+        "Not automatically mapped to a paper hypothesis; a claim-specific comparator and scope review are required."
+      ]
+    },
+    {
+      "id": "result:dual-control-policy-phase-diagram-v1",
+      "type": "empirical_result",
+      "label": "Dual Control Policy Phase Diagram V1",
+      "status": "measured",
+      "scope": "Bounded experiment result document; scope must be read from the protocol/result file",
+      "source_refs": [
+        [
+          "docs/dual-control-policy-phase-diagram-v1-results.md",
+          "/Users/leoguinan/pnp-session-review/experiment/docs/dual-control-policy-phase-diagram-v1-results.md"
+        ]
+      ],
+      "provenance": [
+        {
+          "source_ref": "docs/dual-control-policy-phase-diagram-v1-results.md",
+          "source_locator": "docs/dual-control-policy-phase-diagram-v1-results.md",
+          "retrieved_or_checked_at": "2026-09-10T20:40:32Z",
+          "confidence": "direct",
+          "notes": "",
+          "content_hash": "sha256:0a6507b73e0cad0788b8d68ba15129d286252a36c5b9e7187a64ce6a59fd135f"
+        }
+      ],
+      "experimental_status": "bounded_fixture",
+      "publication_status": "published_source",
+      "profile_status": "not_held",
+      "falsifiers": [
+        "Not automatically mapped to a paper hypothesis; a claim-specific comparator and scope review are required."
+      ]
+    },
+    {
+      "id": "result:dynamic-v1",
+      "type": "empirical_result",
+      "label": "Dynamic V1",
+      "status": "measured",
+      "scope": "Bounded experiment result document; scope must be read from the protocol/result file",
+      "source_refs": [
+        [
+          "docs/dynamic-v1-results.md",
+          "/Users/leoguinan/pnp-session-review/experiment/docs/dynamic-v1-results.md"
+        ]
+      ],
+      "provenance": [
+        {
+          "source_ref": "docs/dynamic-v1-results.md",
+          "source_locator": "docs/dynamic-v1-results.md",
+          "retrieved_or_checked_at": "2026-09-10T20:40:32Z",
+          "confidence": "direct",
+          "notes": "",
+          "content_hash": "sha256:c15c2ba4d02c12a1fbf77568c161a2a63d5b68c942190804d4b60e60d598ce79"
+        }
+      ],
+      "experimental_status": "bounded_fixture",
+      "publication_status": "published_source",
+      "profile_status": "not_held",
+      "falsifiers": [
+        "Not automatically mapped to a paper hypothesis; a claim-specific comparator and scope review are required."
+      ]
+    },
+    {
+      "id": "result:dynamic-v2",
+      "type": "empirical_result",
+      "label": "Dynamic V2",
+      "status": "measured",
+      "scope": "Bounded experiment result document; scope must be read from the protocol/result file",
+      "source_refs": [
+        [
+          "docs/dynamic-v2-results.md",
+          "/Users/leoguinan/pnp-session-review/experiment/docs/dynamic-v2-results.md"
+        ]
+      ],
+      "provenance": [
+        {
+          "source_ref": "docs/dynamic-v2-results.md",
+          "source_locator": "docs/dynamic-v2-results.md",
+          "retrieved_or_checked_at": "2026-09-10T20:40:32Z",
+          "confidence": "direct",
+          "notes": "",
+          "content_hash": "sha256:335a2f0000cb854ac2f5f6140e80f9b8644827a8cd8ea0361418ae703c5b4d2e"
+        }
+      ],
+      "experimental_status": "bounded_fixture",
+      "publication_status": "published_source",
+      "profile_status": "not_held",
+      "falsifiers": [
+        "Not automatically mapped to a paper hypothesis; a claim-specific comparator and scope review are required."
+      ]
+    },
+    {
+      "id": "result:fanout-v1",
+      "type": "empirical_result",
+      "label": "Fanout V1",
+      "status": "measured",
+      "scope": "Bounded experiment result document; scope must be read from the protocol/result file",
+      "source_refs": [
+        [
+          "docs/fanout-v1-results.md",
+          "/Users/leoguinan/pnp-session-review/experiment/docs/fanout-v1-results.md"
+        ]
+      ],
+      "provenance": [
+        {
+          "source_ref": "docs/fanout-v1-results.md",
+          "source_locator": "docs/fanout-v1-results.md",
+          "retrieved_or_checked_at": "2026-09-10T20:40:32Z",
+          "confidence": "direct",
+          "notes": "",
+          "content_hash": "sha256:ec1e646aba6bebc00ad66aa5c642cc677f8a034b63b0ad203eb9e10a4a172830"
+        }
+      ],
+      "experimental_status": "bounded_fixture",
+      "publication_status": "published_source",
+      "profile_status": "not_held",
+      "falsifiers": [
+        "Not automatically mapped to a paper hypothesis; a claim-specific comparator and scope review are required."
+      ]
+    },
+    {
+      "id": "result:fixed-contract-architecture-v1",
+      "type": "empirical_result",
+      "label": "Fixed Contract Architecture V1",
+      "status": "measured",
+      "scope": "Bounded experiment result document; scope must be read from the protocol/result file",
+      "source_refs": [
+        [
+          "docs/fixed-contract-architecture-v1-results.md",
+          "/Users/leoguinan/pnp-session-review/experiment/docs/fixed-contract-architecture-v1-results.md"
+        ]
+      ],
+      "provenance": [
+        {
+          "source_ref": "docs/fixed-contract-architecture-v1-results.md",
+          "source_locator": "docs/fixed-contract-architecture-v1-results.md",
+          "retrieved_or_checked_at": "2026-09-10T20:40:32Z",
+          "confidence": "direct",
+          "notes": "",
+          "content_hash": "sha256:51a2db0ef554504c6de5de467662b78c063b18879b4636a4c7f907cd46fced7b"
+        }
+      ],
+      "experimental_status": "bounded_fixture",
+      "publication_status": "published_source",
+      "profile_status": "not_held",
+      "falsifiers": [
+        "Not automatically mapped to a paper hypothesis; a claim-specific comparator and scope review are required."
+      ]
+    },
+    {
+      "id": "result:gates-v1",
+      "type": "empirical_result",
+      "label": "Gates V1",
+      "status": "measured",
+      "scope": "Bounded experiment result document; scope must be read from the protocol/result file",
+      "source_refs": [
+        [
+          "docs/gates-v1-results.md",
+          "/Users/leoguinan/pnp-session-review/experiment/docs/gates-v1-results.md"
+        ]
+      ],
+      "provenance": [
+        {
+          "source_ref": "docs/gates-v1-results.md",
+          "source_locator": "docs/gates-v1-results.md",
+          "retrieved_or_checked_at": "2026-09-10T20:40:32Z",
+          "confidence": "direct",
+          "notes": "",
+          "content_hash": "sha256:fbb1fb76384d33857b86513827f7145b429e783c8e6e7c17478cc737210c9dd9"
+        }
+      ],
+      "experimental_status": "bounded_fixture",
+      "publication_status": "published_source",
+      "profile_status": "not_held",
+      "falsifiers": [
+        "Not automatically mapped to a paper hypothesis; a claim-specific comparator and scope review are required."
+      ]
+    },
+    {
+      "id": "result:history-sufficiency-v1",
+      "type": "empirical_result",
+      "label": "History Sufficiency V1",
+      "status": "measured",
+      "scope": "Bounded experiment result document; scope must be read from the protocol/result file",
+      "source_refs": [
+        [
+          "docs/history-sufficiency-v1-results.md",
+          "/Users/leoguinan/pnp-session-review/experiment/docs/history-sufficiency-v1-results.md"
+        ]
+      ],
+      "provenance": [
+        {
+          "source_ref": "docs/history-sufficiency-v1-results.md",
+          "source_locator": "docs/history-sufficiency-v1-results.md",
+          "retrieved_or_checked_at": "2026-09-10T20:40:32Z",
+          "confidence": "direct",
+          "notes": "",
+          "content_hash": "sha256:84135163a8f654c7ec036d6515acc64756abb6df38047352db549b19ba51f3fa"
+        }
+      ],
+      "experimental_status": "bounded_fixture",
+      "publication_status": "published_source",
+      "profile_status": "not_held",
+      "falsifiers": [
+        "Not automatically mapped to a paper hypothesis; a claim-specific comparator and scope review are required."
+      ]
+    },
+    {
+      "id": "result:history-v1",
+      "type": "empirical_result",
+      "label": "History V1",
+      "status": "measured",
+      "scope": "Bounded experiment result document; scope must be read from the protocol/result file",
+      "source_refs": [
+        [
+          "docs/history-v1-results.md",
+          "/Users/leoguinan/pnp-session-review/experiment/docs/history-v1-results.md"
+        ]
+      ],
+      "provenance": [
+        {
+          "source_ref": "docs/history-v1-results.md",
+          "source_locator": "docs/history-v1-results.md",
+          "retrieved_or_checked_at": "2026-09-10T20:40:32Z",
+          "confidence": "direct",
+          "notes": "",
+          "content_hash": "sha256:3e4108a0231ae83771c3c6c28b7ce2453de1a7af2958741edefb1c5fd88f04a7"
+        }
+      ],
+      "experimental_status": "bounded_fixture",
+      "publication_status": "published_source",
+      "profile_status": "not_held",
+      "falsifiers": [
+        "Not automatically mapped to a paper hypothesis; a claim-specific comparator and scope review are required."
+      ]
+    },
+    {
+      "id": "result:history-v1.1",
+      "type": "empirical_result",
+      "label": "History V1.1",
+      "status": "measured",
+      "scope": "Bounded experiment result document; scope must be read from the protocol/result file",
+      "source_refs": [
+        [
+          "docs/history-v1.1-results.md",
+          "/Users/leoguinan/pnp-session-review/experiment/docs/history-v1.1-results.md"
+        ]
+      ],
+      "provenance": [
+        {
+          "source_ref": "docs/history-v1.1-results.md",
+          "source_locator": "docs/history-v1.1-results.md",
+          "retrieved_or_checked_at": "2026-09-10T20:40:32Z",
+          "confidence": "direct",
+          "notes": "",
+          "content_hash": "sha256:254da7ca581d8f9ae7a3a9f313dd972387a7ac0b8696db03b5d2be6dd7b473d2"
+        }
+      ],
+      "experimental_status": "bounded_fixture",
+      "publication_status": "published_source",
+      "profile_status": "not_held",
+      "falsifiers": [
+        "Not automatically mapped to a paper hypothesis; a claim-specific comparator and scope review are required."
+      ]
+    },
+    {
+      "id": "result:interactive-observation-policy-v1",
+      "type": "empirical_result",
+      "label": "Interactive Observation Policy V1",
+      "status": "measured",
+      "scope": "Bounded experiment result document; scope must be read from the protocol/result file",
+      "source_refs": [
+        [
+          "docs/interactive-observation-policy-v1-results.md",
+          "/Users/leoguinan/pnp-session-review/experiment/docs/interactive-observation-policy-v1-results.md"
+        ]
+      ],
+      "provenance": [
+        {
+          "source_ref": "docs/interactive-observation-policy-v1-results.md",
+          "source_locator": "docs/interactive-observation-policy-v1-results.md",
+          "retrieved_or_checked_at": "2026-09-10T20:40:32Z",
+          "confidence": "direct",
+          "notes": "",
+          "content_hash": "sha256:9cb7a4f8e394f72f6b7aa910f736fedf79dd712452ff94eb51936e4c682b87f0"
+        }
+      ],
+      "experimental_status": "bounded_fixture",
+      "publication_status": "published_source",
+      "profile_status": "not_held",
+      "falsifiers": [
+        "Not automatically mapped to a paper hypothesis; a claim-specific comparator and scope review are required."
+      ]
+    },
+    {
+      "id": "result:loss-aware-observation-v1",
+      "type": "empirical_result",
+      "label": "Loss Aware Observation V1",
+      "status": "measured",
+      "scope": "Bounded experiment result document; scope must be read from the protocol/result file",
+      "source_refs": [
+        [
+          "docs/loss-aware-observation-v1-results.md",
+          "/Users/leoguinan/pnp-session-review/experiment/docs/loss-aware-observation-v1-results.md"
+        ]
+      ],
+      "provenance": [
+        {
+          "source_ref": "docs/loss-aware-observation-v1-results.md",
+          "source_locator": "docs/loss-aware-observation-v1-results.md",
+          "retrieved_or_checked_at": "2026-09-10T20:40:32Z",
+          "confidence": "direct",
+          "notes": "",
+          "content_hash": "sha256:d0ac6a7031335534c7a4ca8c767e28033ad6a10eb3252aadceb667cbc6edf75b"
+        }
+      ],
+      "experimental_status": "bounded_fixture",
+      "publication_status": "published_source",
+      "profile_status": "not_held",
+      "falsifiers": [
+        "Not automatically mapped to a paper hypothesis; a claim-specific comparator and scope review are required."
+      ]
+    },
+    {
+      "id": "result:morphology-transition-cost-phase-sweep-v1",
+      "type": "empirical_result",
+      "label": "Morphology Transition Cost Phase Sweep V1",
+      "status": "measured",
+      "scope": "Bounded experiment result document; scope must be read from the protocol/result file",
+      "source_refs": [
+        [
+          "docs/morphology-transition-cost-phase-sweep-v1-results.md",
+          "/Users/leoguinan/pnp-session-review/experiment/docs/morphology-transition-cost-phase-sweep-v1-results.md"
+        ]
+      ],
+      "provenance": [
+        {
+          "source_ref": "docs/morphology-transition-cost-phase-sweep-v1-results.md",
+          "source_locator": "docs/morphology-transition-cost-phase-sweep-v1-results.md",
+          "retrieved_or_checked_at": "2026-09-10T20:40:32Z",
+          "confidence": "direct",
+          "notes": "",
+          "content_hash": "sha256:5d74705091a454d36d0b7a65ee76c1e618c9c33e9dc1edb1c9c9c21cb16fd857"
+        }
+      ],
+      "experimental_status": "bounded_fixture",
+      "publication_status": "published_source",
+      "profile_status": "not_held",
+      "falsifiers": [
+        "Not automatically mapped to a paper hypothesis; a claim-specific comparator and scope review are required."
+      ]
+    },
+    {
+      "id": "result:observation-v1",
+      "type": "empirical_result",
+      "label": "Observation V1",
+      "status": "measured",
+      "scope": "Bounded experiment result document; scope must be read from the protocol/result file",
+      "source_refs": [
+        [
+          "docs/observation-v1-results.md",
+          "/Users/leoguinan/pnp-session-review/experiment/docs/observation-v1-results.md"
+        ]
+      ],
+      "provenance": [
+        {
+          "source_ref": "docs/observation-v1-results.md",
+          "source_locator": "docs/observation-v1-results.md",
+          "retrieved_or_checked_at": "2026-09-10T20:40:32Z",
+          "confidence": "direct",
+          "notes": "",
+          "content_hash": "sha256:1004b93f696eea6f2bc06f62afbb3face2cd4d5d4a20e54a9ab3eea966cb27ea"
+        }
+      ],
+      "experimental_status": "bounded_fixture",
+      "publication_status": "published_source",
+      "profile_status": "not_held",
+      "falsifiers": [
+        "Not automatically mapped to a paper hypothesis; a claim-specific comparator and scope review are required."
+      ]
+    },
+    {
+      "id": "result:overlapping-updates-v1",
+      "type": "empirical_result",
+      "label": "Overlapping Updates V1",
+      "status": "measured",
+      "scope": "Bounded experiment result document; scope must be read from the protocol/result file",
+      "source_refs": [
+        [
+          "docs/overlapping-updates-v1-results.md",
+          "/Users/leoguinan/pnp-session-review/experiment/docs/overlapping-updates-v1-results.md"
+        ]
+      ],
+      "provenance": [
+        {
+          "source_ref": "docs/overlapping-updates-v1-results.md",
+          "source_locator": "docs/overlapping-updates-v1-results.md",
+          "retrieved_or_checked_at": "2026-09-10T20:40:32Z",
+          "confidence": "direct",
+          "notes": "",
+          "content_hash": "sha256:52c20fbd527b398755c6cd45e25011a44c097af294f0bfa5c07c2e24883da492"
+        }
+      ],
+      "experimental_status": "bounded_fixture",
+      "publication_status": "published_source",
+      "profile_status": "not_held",
+      "falsifiers": [
+        "Not automatically mapped to a paper hypothesis; a claim-specific comparator and scope review are required."
+      ]
+    },
+    {
+      "id": "result:parameterized-contract-state-scaling-v1",
+      "type": "empirical_result",
+      "label": "Parameterized Contract State Scaling V1",
+      "status": "measured",
+      "scope": "Bounded experiment result document; scope must be read from the protocol/result file",
+      "source_refs": [
+        [
+          "docs/parameterized-contract-state-scaling-v1-results.md",
+          "/Users/leoguinan/pnp-session-review/experiment/docs/parameterized-contract-state-scaling-v1-results.md"
+        ]
+      ],
+      "provenance": [
+        {
+          "source_ref": "docs/parameterized-contract-state-scaling-v1-results.md",
+          "source_locator": "docs/parameterized-contract-state-scaling-v1-results.md",
+          "retrieved_or_checked_at": "2026-09-10T20:40:32Z",
+          "confidence": "direct",
+          "notes": "",
+          "content_hash": "sha256:6d2e53abee583958e716d725d0a694dbf9580c03ee78ea184e21dbb0ddf038c7"
+        }
+      ],
+      "experimental_status": "bounded_fixture",
+      "publication_status": "published_source",
+      "profile_status": "not_held",
+      "falsifiers": [
+        "Not automatically mapped to a paper hypothesis; a claim-specific comparator and scope review are required."
+      ]
+    },
+    {
+      "id": "result:partially-observed-morphology-regret-v1",
+      "type": "empirical_result",
+      "label": "Partially Observed Morphology Regret V1",
+      "status": "measured",
+      "scope": "Bounded experiment result document; scope must be read from the protocol/result file",
+      "source_refs": [
+        [
+          "docs/partially-observed-morphology-regret-v1-results.md",
+          "/Users/leoguinan/pnp-session-review/experiment/docs/partially-observed-morphology-regret-v1-results.md"
+        ]
+      ],
+      "provenance": [
+        {
+          "source_ref": "docs/partially-observed-morphology-regret-v1-results.md",
+          "source_locator": "docs/partially-observed-morphology-regret-v1-results.md",
+          "retrieved_or_checked_at": "2026-09-10T20:40:32Z",
+          "confidence": "direct",
+          "notes": "",
+          "content_hash": "sha256:5b40cb5185a6926cf8a01500559a4571d6f78156d2e33fe5e78dc022c9c1fe72"
+        }
+      ],
+      "experimental_status": "bounded_fixture",
+      "publication_status": "published_source",
+      "profile_status": "not_held",
+      "falsifiers": [
+        "Not automatically mapped to a paper hypothesis; a claim-specific comparator and scope review are required."
+      ]
+    },
+    {
+      "id": "result:persistent-capability-reuse-v1",
+      "type": "empirical_result",
+      "label": "Persistent Capability Reuse V1",
+      "status": "measured",
+      "scope": "Bounded experiment result document; scope must be read from the protocol/result file",
+      "source_refs": [
+        [
+          "docs/persistent-capability-reuse-v1-results.md",
+          "/Users/leoguinan/pnp-session-review/experiment/docs/persistent-capability-reuse-v1-results.md"
+        ]
+      ],
+      "provenance": [
+        {
+          "source_ref": "docs/persistent-capability-reuse-v1-results.md",
+          "source_locator": "docs/persistent-capability-reuse-v1-results.md",
+          "retrieved_or_checked_at": "2026-09-10T20:40:32Z",
+          "confidence": "direct",
+          "notes": "",
+          "content_hash": "sha256:8e508a87148508e2cd8858d12537949f01a550f88f02824acf3caccf43ae8e72"
+        }
+      ],
+      "experimental_status": "bounded_fixture",
+      "publication_status": "published_source",
+      "profile_status": "not_held",
+      "falsifiers": [
+        "Not automatically mapped to a paper hypothesis; a claim-specific comparator and scope review are required."
+      ]
+    },
+    {
+      "id": "result:physical-architecture-benchmark-v1",
+      "type": "empirical_result",
+      "label": "Physical Architecture Benchmark V1",
+      "status": "measured",
+      "scope": "Bounded experiment result document; scope must be read from the protocol/result file",
+      "source_refs": [
+        [
+          "docs/physical-architecture-benchmark-v1-results.md",
+          "/Users/leoguinan/pnp-session-review/experiment/docs/physical-architecture-benchmark-v1-results.md"
+        ]
+      ],
+      "provenance": [
+        {
+          "source_ref": "docs/physical-architecture-benchmark-v1-results.md",
+          "source_locator": "docs/physical-architecture-benchmark-v1-results.md",
+          "retrieved_or_checked_at": "2026-09-10T20:40:32Z",
+          "confidence": "direct",
+          "notes": "",
+          "content_hash": "sha256:44f31be3f76980a6fd0d5b130af1c092996038126fefff928ea734f038adfdf0"
+        }
+      ],
+      "experimental_status": "bounded_fixture",
+      "publication_status": "published_source",
+      "profile_status": "not_held",
+      "falsifiers": [
+        "Not automatically mapped to a paper hypothesis; a claim-specific comparator and scope review are required."
+      ]
+    },
+    {
+      "id": "result:recursive-history-sufficiency-v1",
+      "type": "empirical_result",
+      "label": "Recursive History Sufficiency V1",
+      "status": "measured",
+      "scope": "Bounded experiment result document; scope must be read from the protocol/result file",
+      "source_refs": [
+        [
+          "docs/recursive-history-sufficiency-v1-results.md",
+          "/Users/leoguinan/pnp-session-review/experiment/docs/recursive-history-sufficiency-v1-results.md"
+        ]
+      ],
+      "provenance": [
+        {
+          "source_ref": "docs/recursive-history-sufficiency-v1-results.md",
+          "source_locator": "docs/recursive-history-sufficiency-v1-results.md",
+          "retrieved_or_checked_at": "2026-09-10T20:40:32Z",
+          "confidence": "direct",
+          "notes": "",
+          "content_hash": "sha256:9ab430f4fd6f367c9269c2ca999c98504954a5aeaecb25ac04697974fd735674"
+        }
+      ],
+      "experimental_status": "bounded_fixture",
+      "publication_status": "published_source",
+      "profile_status": "not_held",
+      "falsifiers": [
+        "Not automatically mapped to a paper hypothesis; a claim-specific comparator and scope review are required."
+      ]
+    },
+    {
+      "id": "result:release-v1",
+      "type": "empirical_result",
+      "label": "Release V1",
+      "status": "measured",
+      "scope": "Bounded experiment result document; scope must be read from the protocol/result file",
+      "source_refs": [
+        [
+          "docs/release-v1-results.md",
+          "/Users/leoguinan/pnp-session-review/experiment/docs/release-v1-results.md"
+        ]
+      ],
+      "provenance": [
+        {
+          "source_ref": "docs/release-v1-results.md",
+          "source_locator": "docs/release-v1-results.md",
+          "retrieved_or_checked_at": "2026-09-10T20:40:32Z",
+          "confidence": "direct",
+          "notes": "",
+          "content_hash": "sha256:3ea1840e4e581a88de8031513588c4b48aa493720840ca96a312fa9027eb8ed8"
+        }
+      ],
+      "experimental_status": "bounded_fixture",
+      "publication_status": "published_source",
+      "profile_status": "not_held",
+      "falsifiers": [
+        "Not automatically mapped to a paper hypothesis; a claim-specific comparator and scope review are required."
+      ]
+    },
+    {
+      "id": "result:semantic-interaction-v1",
+      "type": "empirical_result",
+      "label": "Semantic Interaction V1",
+      "status": "measured",
+      "scope": "Bounded experiment result document; scope must be read from the protocol/result file",
+      "source_refs": [
+        [
+          "docs/semantic-interaction-v1-results.md",
+          "/Users/leoguinan/pnp-session-review/experiment/docs/semantic-interaction-v1-results.md"
+        ]
+      ],
+      "provenance": [
+        {
+          "source_ref": "docs/semantic-interaction-v1-results.md",
+          "source_locator": "docs/semantic-interaction-v1-results.md",
+          "retrieved_or_checked_at": "2026-09-10T20:40:32Z",
+          "confidence": "direct",
+          "notes": "",
+          "content_hash": "sha256:fd8c63575200d68cba532f942c80e3b2201e6fa3a4d2a53eca853e3671cee38c"
+        }
+      ],
+      "experimental_status": "bounded_fixture",
+      "publication_status": "published_source",
+      "profile_status": "not_held",
+      "falsifiers": [
+        "Not automatically mapped to a paper hypothesis; a claim-specific comparator and scope review are required."
+      ]
+    },
+    {
+      "id": "result:situated-v1",
+      "type": "empirical_result",
+      "label": "Situated V1",
+      "status": "measured",
+      "scope": "Bounded experiment result document; scope must be read from the protocol/result file",
+      "source_refs": [
+        [
+          "docs/situated-v1-results.md",
+          "/Users/leoguinan/pnp-session-review/experiment/docs/situated-v1-results.md"
+        ]
+      ],
+      "provenance": [
+        {
+          "source_ref": "docs/situated-v1-results.md",
+          "source_locator": "docs/situated-v1-results.md",
+          "retrieved_or_checked_at": "2026-09-10T20:40:32Z",
+          "confidence": "direct",
+          "notes": "",
+          "content_hash": "sha256:089a557070ec8de5da92ce222ea2f9bd25a4b5a9a9cbfde6a6f27b54dcd1d707"
+        }
+      ],
+      "experimental_status": "bounded_fixture",
+      "publication_status": "published_source",
+      "profile_status": "not_held",
+      "falsifiers": [
+        "Not automatically mapped to a paper hypothesis; a claim-specific comparator and scope review are required."
+      ]
+    },
+    {
+      "id": "result:stochastic-morphology-switching-v1",
+      "type": "empirical_result",
+      "label": "Stochastic Morphology Switching V1",
+      "status": "measured",
+      "scope": "Bounded experiment result document; scope must be read from the protocol/result file",
+      "source_refs": [
+        [
+          "docs/stochastic-morphology-switching-v1-results.md",
+          "/Users/leoguinan/pnp-session-review/experiment/docs/stochastic-morphology-switching-v1-results.md"
+        ]
+      ],
+      "provenance": [
+        {
+          "source_ref": "docs/stochastic-morphology-switching-v1-results.md",
+          "source_locator": "docs/stochastic-morphology-switching-v1-results.md",
+          "retrieved_or_checked_at": "2026-09-10T20:40:32Z",
+          "confidence": "direct",
+          "notes": "",
+          "content_hash": "sha256:7a721028bf9810f64af74a6d2e05233036c7806de40a98a283d91d754b498515"
+        }
+      ],
+      "experimental_status": "bounded_fixture",
+      "publication_status": "published_source",
+      "profile_status": "not_held",
+      "falsifiers": [
+        "Not automatically mapped to a paper hypothesis; a claim-specific comparator and scope review are required."
+      ]
+    },
+    {
+      "id": "experiment:queue-migration-v3",
+      "type": "experiment",
+      "label": "Queue migration v3 independent workload cross-check",
+      "status": "locally_validated",
+      "scope": "Finite synthetic burst/on-off and jittered workload families; three seeds; eight conditions; independent simulator and receipt audit",
+      "source_refs": [
+        [
+          "docs/queue-migration-v3-protocol.md",
+          "/Users/leoguinan/pnp-session-review/experiment/docs/queue-migration-v3-protocol.md"
+        ]
+      ],
+      "provenance": [
+        {
+          "source_ref": "docs/queue-migration-v3-protocol.md",
+          "source_locator": "/Users/leoguinan/pnp-session-review/experiment/docs/queue-migration-v3-protocol.md",
+          "retrieved_or_checked_at": "2026-09-11T02:54:18Z",
+          "confidence": "direct",
+          "notes": "",
+          "content_hash": "sha256:c8a55bd5fc51d26b53e198f3768e25b332e4c1a4e4664ed9e37ad7e6eaf04734"
+        }
+      ],
+      "commit": "2519d723261e451a3c07479dea86e86cfbc44ce6",
+      "public_urls": [
+        "https://github.com/Build-In-Public-University/pnp-research-base/blob/main/experiment/docs/queue-migration-v3-protocol.md"
+      ]
+    },
+    {
+      "id": "result:queue-migration-v3",
+      "type": "empirical_result",
+      "label": "Queue migration v3 result",
+      "status": "measured",
+      "scope": "48 bounded synthetic records across two workload families and three deterministic seeds",
+      "source_refs": [
+        [
+          "docs/queue-migration-v3-results.md",
+          "/Users/leoguinan/pnp-session-review/experiment/docs/queue-migration-v3-results.md"
+        ],
+        [
+          "artifacts/queue_migration_v3.json",
+          "/Users/leoguinan/pnp-session-review/experiment/artifacts/queue_migration_v3.json"
+        ]
+      ],
+      "provenance": [
+        {
+          "source_ref": "docs/queue-migration-v3-results.md",
+          "source_locator": "/Users/leoguinan/pnp-session-review/experiment/docs/queue-migration-v3-results.md",
+          "retrieved_or_checked_at": "2026-09-11T02:54:18Z",
+          "confidence": "direct",
+          "notes": "",
+          "content_hash": "sha256:ebac309e80588936c8b6474c143b9fdef12857dd10566bb9bc446fb961bb9d07"
+        },
+        {
+          "source_ref": "artifacts/queue_migration_v3.json",
+          "source_locator": "/Users/leoguinan/pnp-session-review/experiment/artifacts/queue_migration_v3.json",
+          "retrieved_or_checked_at": "2026-09-11T02:54:18Z",
+          "confidence": "direct",
+          "notes": "",
+          "content_hash": "sha256:3c529f66d400c43bdbb034e7d3f148fa937489c63a75b58046d3f8e7a3d599ad"
+        }
+      ],
+      "experimental_status": "bounded_fixture",
+      "publication_status": "published_source",
+      "profile_status": "not_held",
+      "falsifiers": [
+        "An independently specified workload family in which the generation sweep or capacity-release ladder fails to localize the declared bottlenecks."
+      ],
+      "commit": "2519d723261e451a3c07479dea86e86cfbc44ce6",
+      "public_urls": [
+        "https://github.com/Build-In-Public-University/pnp-research-base/blob/main/experiment/docs/queue-migration-v3-results.md",
+        "https://github.com/Build-In-Public-University/pnp-research-base/blob/main/experiment/artifacts/queue_migration_v3.json"
+      ]
+    },
+    {
+      "id": "artifact:queue-migration-v3-code",
+      "type": "artifact",
+      "label": "Queue migration v3 simulator and audit source",
+      "status": "published_source",
+      "scope": "Public experiment repository",
+      "source_refs": [
+        [
+          "src/pnp_architecture/queue_migration_v3_bursty.py",
+          "/Users/leoguinan/pnp-session-review/experiment/src/pnp_architecture/queue_migration_v3_bursty.py"
+        ]
+      ],
+      "provenance": [
+        {
+          "source_ref": "src/pnp_architecture/queue_migration_v3_bursty.py",
+          "source_locator": "/Users/leoguinan/pnp-session-review/experiment/src/pnp_architecture/queue_migration_v3_bursty.py",
+          "retrieved_or_checked_at": "2026-09-11T02:54:18Z",
+          "confidence": "direct",
+          "notes": "",
+          "content_hash": "sha256:1e1d48c2b74445191bbb2f5ee3fdabdfe5403982937cd1f0333b8cc8d87ae380"
+        }
+      ],
+      "commit": "2519d723261e451a3c07479dea86e86cfbc44ce6",
+      "public_urls": [
+        "https://github.com/Build-In-Public-University/pnp-research-base/blob/main/experiment/src/pnp_architecture/queue_migration_v3_bursty.py"
+      ]
+    },
+    {
+      "id": "evidence:queue-migration-v3-receipt",
+      "type": "evidence",
+      "label": "Queue migration v3 canonical receipt",
+      "status": "measured",
+      "scope": "Canonical JSON receipt with independent audit status and input hash",
+      "source_refs": [
+        [
+          "artifacts/queue_migration_v3.json",
+          "/Users/leoguinan/pnp-session-review/experiment/artifacts/queue_migration_v3.json"
+        ]
+      ],
+      "provenance": [
+        {
+          "source_ref": "artifacts/queue_migration_v3.json",
+          "source_locator": "/Users/leoguinan/pnp-session-review/experiment/artifacts/queue_migration_v3.json",
+          "retrieved_or_checked_at": "2026-09-11T02:54:18Z",
+          "confidence": "direct",
+          "notes": "",
+          "content_hash": "sha256:3c529f66d400c43bdbb034e7d3f148fa937489c63a75b58046d3f8e7a3d599ad"
+        }
+      ],
+      "commit": "2519d723261e451a3c07479dea86e86cfbc44ce6",
+      "public_urls": [
+        "https://github.com/Build-In-Public-University/pnp-research-base/blob/main/experiment/artifacts/queue_migration_v3.json"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "id": "claims-ledger-documents-Mechanism-001",
+      "from": "artifact:claims-ledger",
+      "to": "claim:Mechanism-001",
+      "relation": "documents",
+      "provenance": [
+        {
+          "source_ref": "claims/claims.yaml",
+          "source_locator": "claims/claims.yaml",
+          "retrieved_or_checked_at": "2026-09-10T20:40:32Z",
+          "confidence": "direct",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "Mechanism-001-paper-source",
+      "from": "claim:Mechanism-001",
+      "to": "artifact:paper-main-tex",
+      "relation": "documented_in",
+      "provenance": [
+        {
+          "source_ref": "paper/main.tex",
+          "source_locator": "paper/main.tex",
+          "retrieved_or_checked_at": "2026-09-10T20:40:32Z",
+          "confidence": "direct",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "claims-ledger-documents-Compression-001",
+      "from": "artifact:claims-ledger",
+      "to": "claim:Compression-001",
+      "relation": "documents",
+      "provenance": [
+        {
+          "source_ref": "claims/claims.yaml",
+          "source_locator": "claims/claims.yaml",
+          "retrieved_or_checked_at": "2026-09-10T20:40:32Z",
+          "confidence": "direct",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "Compression-001-paper-source",
+      "from": "claim:Compression-001",
+      "to": "artifact:paper-main-tex",
+      "relation": "documented_in",
+      "provenance": [
+        {
+          "source_ref": "paper/main.tex",
+          "source_locator": "paper/main.tex",
+          "retrieved_or_checked_at": "2026-09-10T20:40:32Z",
+          "confidence": "direct",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "claims-ledger-documents-Gap-001",
+      "from": "artifact:claims-ledger",
+      "to": "claim:Gap-001",
+      "relation": "documents",
+      "provenance": [
+        {
+          "source_ref": "claims/claims.yaml",
+          "source_locator": "claims/claims.yaml",
+          "retrieved_or_checked_at": "2026-09-10T20:40:32Z",
+          "confidence": "direct",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "Gap-001-paper-source",
+      "from": "claim:Gap-001",
+      "to": "artifact:paper-main-tex",
+      "relation": "documented_in",
+      "provenance": [
+        {
+          "source_ref": "paper/main.tex",
+          "source_locator": "paper/main.tex",
+          "retrieved_or_checked_at": "2026-09-10T20:40:32Z",
+          "confidence": "direct",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "claims-ledger-documents-Lifecycle-001",
+      "from": "artifact:claims-ledger",
+      "to": "claim:Lifecycle-001",
+      "relation": "documents",
+      "provenance": [
+        {
+          "source_ref": "claims/claims.yaml",
+          "source_locator": "claims/claims.yaml",
+          "retrieved_or_checked_at": "2026-09-10T20:40:32Z",
+          "confidence": "direct",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "Lifecycle-001-paper-source",
+      "from": "claim:Lifecycle-001",
+      "to": "artifact:paper-main-tex",
+      "relation": "documented_in",
+      "provenance": [
+        {
+          "source_ref": "paper/main.tex",
+          "source_locator": "paper/main.tex",
+          "retrieved_or_checked_at": "2026-09-10T20:40:32Z",
+          "confidence": "direct",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "claims-ledger-documents-Headroom-001",
+      "from": "artifact:claims-ledger",
+      "to": "claim:Headroom-001",
+      "relation": "documents",
+      "provenance": [
+        {
+          "source_ref": "claims/claims.yaml",
+          "source_locator": "claims/claims.yaml",
+          "retrieved_or_checked_at": "2026-09-10T20:40:32Z",
+          "confidence": "direct",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "Headroom-001-paper-source",
+      "from": "claim:Headroom-001",
+      "to": "artifact:paper-main-tex",
+      "relation": "documented_in",
+      "provenance": [
+        {
+          "source_ref": "paper/main.tex",
+          "source_locator": "paper/main.tex",
+          "retrieved_or_checked_at": "2026-09-10T20:40:32Z",
+          "confidence": "direct",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "claims-ledger-documents-QueueMigration-001",
+      "from": "artifact:claims-ledger",
+      "to": "claim:QueueMigration-001",
+      "relation": "documents",
+      "provenance": [
+        {
+          "source_ref": "claims/claims.yaml",
+          "source_locator": "claims/claims.yaml",
+          "retrieved_or_checked_at": "2026-09-10T20:40:32Z",
+          "confidence": "direct",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "QueueMigration-001-paper-source",
+      "from": "claim:QueueMigration-001",
+      "to": "artifact:paper-main-tex",
+      "relation": "documented_in",
+      "provenance": [
+        {
+          "source_ref": "paper/main.tex",
+          "source_locator": "paper/main.tex",
+          "retrieved_or_checked_at": "2026-09-10T20:40:32Z",
+          "confidence": "direct",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "claims-ledger-documents-Timescale-001",
+      "from": "artifact:claims-ledger",
+      "to": "claim:Timescale-001",
+      "relation": "documents",
+      "provenance": [
+        {
+          "source_ref": "claims/claims.yaml",
+          "source_locator": "claims/claims.yaml",
+          "retrieved_or_checked_at": "2026-09-10T20:40:32Z",
+          "confidence": "direct",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "Timescale-001-paper-source",
+      "from": "claim:Timescale-001",
+      "to": "artifact:paper-main-tex",
+      "relation": "documented_in",
+      "provenance": [
+        {
+          "source_ref": "paper/main.tex",
+          "source_locator": "paper/main.tex",
+          "retrieved_or_checked_at": "2026-09-10T20:40:32Z",
+          "confidence": "direct",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "claims-ledger-documents-Magic-001",
+      "from": "artifact:claims-ledger",
+      "to": "claim:Magic-001",
+      "relation": "documents",
+      "provenance": [
+        {
+          "source_ref": "claims/claims.yaml",
+          "source_locator": "claims/claims.yaml",
+          "retrieved_or_checked_at": "2026-09-10T20:40:32Z",
+          "confidence": "direct",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "Magic-001-paper-source",
+      "from": "claim:Magic-001",
+      "to": "artifact:paper-main-tex",
+      "relation": "documented_in",
+      "provenance": [
+        {
+          "source_ref": "paper/main.tex",
+          "source_locator": "paper/main.tex",
+          "retrieved_or_checked_at": "2026-09-10T20:40:32Z",
+          "confidence": "direct",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "cc-def-CausalCompression",
+      "from": "artifact:paper-main-tex",
+      "to": "definition:CausalCompression",
+      "relation": "conceptually_depends_on",
+      "provenance": [
+        {
+          "source_ref": "paper/main.tex",
+          "source_locator": "paper/main.tex",
+          "retrieved_or_checked_at": "2026-09-10T20:40:32Z",
+          "confidence": "direct",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "cc-def-InformationalPersistence",
+      "from": "artifact:paper-main-tex",
+      "to": "definition:InformationalPersistence",
+      "relation": "conceptually_depends_on",
+      "provenance": [
+        {
+          "source_ref": "paper/main.tex",
+          "source_locator": "paper/main.tex",
+          "retrieved_or_checked_at": "2026-09-10T20:40:32Z",
+          "confidence": "direct",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "cc-def-AttentionalPersistence",
+      "from": "artifact:paper-main-tex",
+      "to": "definition:AttentionalPersistence",
+      "relation": "conceptually_depends_on",
+      "provenance": [
+        {
+          "source_ref": "paper/main.tex",
+          "source_locator": "paper/main.tex",
+          "retrieved_or_checked_at": "2026-09-10T20:40:32Z",
+          "confidence": "direct",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "cc-def-StructuralUpdateRate",
+      "from": "artifact:paper-main-tex",
+      "to": "definition:StructuralUpdateRate",
+      "relation": "conceptually_depends_on",
+      "provenance": [
+        {
+          "source_ref": "paper/main.tex",
+          "source_locator": "paper/main.tex",
+          "retrieved_or_checked_at": "2026-09-10T20:40:32Z",
+          "confidence": "direct",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "cc-def-AdaptiveHeadroom",
+      "from": "artifact:paper-main-tex",
+      "to": "definition:AdaptiveHeadroom",
+      "relation": "conceptually_depends_on",
+      "provenance": [
+        {
+          "source_ref": "paper/main.tex",
+          "source_locator": "paper/main.tex",
+          "retrieved_or_checked_at": "2026-09-10T20:40:32Z",
+          "confidence": "direct",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "cc-def-ContractRelativeReachability",
+      "from": "artifact:paper-main-tex",
+      "to": "definition:ContractRelativeReachability",
+      "relation": "conceptually_depends_on",
+      "provenance": [
+        {
+          "source_ref": "paper/main.tex",
+          "source_locator": "paper/main.tex",
+          "retrieved_or_checked_at": "2026-09-10T20:40:32Z",
+          "confidence": "direct",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "hmhhcnw7-receipt",
+      "from": "artifact:axiom-hmhhcnw7",
+      "to": "evidence:receipt-hmhhcnw7",
+      "relation": "verified_by",
+      "provenance": [
+        {
+          "source_ref": "CausalCompressionTheorems-hmhhcnw7.json",
+          "source_locator": "CausalCompressionTheorems-hmhhcnw7.json",
+          "retrieved_or_checked_at": "2026-09-10T20:40:32Z",
+          "confidence": "direct",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "hmhhcnw7-paper",
+      "from": "artifact:paper-main-tex",
+      "to": "artifact:axiom-hmhhcnw7",
+      "relation": "motivated_by",
+      "provenance": [
+        {
+          "source_ref": "paper/main.tex",
+          "source_locator": "paper/main.tex",
+          "retrieved_or_checked_at": "2026-09-10T20:40:32Z",
+          "confidence": "direct",
+          "notes": "Conceptual relation; not a formal import dependency."
+        }
+      ]
+    },
+    {
+      "id": "hmhhcnw7-proves-headroom_nonnegative",
+      "from": "artifact:axiom-hmhhcnw7",
+      "to": "theorem:headroom_nonnegative",
+      "relation": "proves",
+      "provenance": [
+        {
+          "source_ref": "Workspace/CausalCompressionTheorems.lean",
+          "source_locator": "Workspace/CausalCompressionTheorems.lean",
+          "retrieved_or_checked_at": "2026-09-10T20:40:32Z",
+          "confidence": "direct",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "hmhhcnw7-proves-headroom_zero_of_burden_ge_capacity",
+      "from": "artifact:axiom-hmhhcnw7",
+      "to": "theorem:headroom_zero_of_burden_ge_capacity",
+      "relation": "proves",
+      "provenance": [
+        {
+          "source_ref": "Workspace/CausalCompressionTheorems.lean",
+          "source_locator": "Workspace/CausalCompressionTheorems.lean",
+          "retrieved_or_checked_at": "2026-09-10T20:40:32Z",
+          "confidence": "direct",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "hmhhcnw7-proves-headroom_positive_iff_capacity_exceeds_burden",
+      "from": "artifact:axiom-hmhhcnw7",
+      "to": "theorem:headroom_positive_iff_capacity_exceeds_burden",
+      "relation": "proves",
+      "provenance": [
+        {
+          "source_ref": "Workspace/CausalCompressionTheorems.lean",
+          "source_locator": "Workspace/CausalCompressionTheorems.lean",
+          "retrieved_or_checked_at": "2026-09-10T20:40:32Z",
+          "confidence": "direct",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "hmhhcnw7-proves-safe_retirement_gain_of_burden_release",
+      "from": "artifact:axiom-hmhhcnw7",
+      "to": "theorem:safe_retirement_gain_of_burden_release",
+      "relation": "proves",
+      "provenance": [
+        {
+          "source_ref": "Workspace/CausalCompressionTheorems.lean",
+          "source_locator": "Workspace/CausalCompressionTheorems.lean",
+          "retrieved_or_checked_at": "2026-09-10T20:40:32Z",
+          "confidence": "direct",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "j1b75r6z-receipt",
+      "from": "artifact:axiom-j1b75r6z",
+      "to": "evidence:receipt-j1b75r6z",
+      "relation": "verified_by",
+      "provenance": [
+        {
+          "source_ref": "CausalCompressionForwardTheorems-j1b75r6z.json",
+          "source_locator": "CausalCompressionForwardTheorems-j1b75r6z.json",
+          "retrieved_or_checked_at": "2026-09-10T20:40:32Z",
+          "confidence": "direct",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "j1b75r6z-paper",
+      "from": "artifact:paper-main-tex",
+      "to": "artifact:axiom-j1b75r6z",
+      "relation": "motivated_by",
+      "provenance": [
+        {
+          "source_ref": "paper/main.tex",
+          "source_locator": "paper/main.tex",
+          "retrieved_or_checked_at": "2026-09-10T20:40:32Z",
+          "confidence": "direct",
+          "notes": "Conceptual relation; not a formal import dependency."
+        }
+      ]
+    },
+    {
+      "id": "j1b75r6z-proves-headroom_transition_accounting",
+      "from": "artifact:axiom-j1b75r6z",
+      "to": "theorem:headroom_transition_accounting",
+      "relation": "proves",
+      "provenance": [
+        {
+          "source_ref": "Workspace/CausalCompressionForwardTheorems.lean",
+          "source_locator": "Workspace/CausalCompressionForwardTheorems.lean",
+          "retrieved_or_checked_at": "2026-09-10T20:40:32Z",
+          "confidence": "direct",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "j1b75r6z-proves-backlog_grows_when_arrivals_exceed_service",
+      "from": "artifact:axiom-j1b75r6z",
+      "to": "theorem:backlog_grows_when_arrivals_exceed_service",
+      "relation": "proves",
+      "provenance": [
+        {
+          "source_ref": "Workspace/CausalCompressionForwardTheorems.lean",
+          "source_locator": "Workspace/CausalCompressionForwardTheorems.lean",
+          "retrieved_or_checked_at": "2026-09-10T20:40:32Z",
+          "confidence": "direct",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "j1b75r6z-proves-zero_gain_preserves_structure",
+      "from": "artifact:axiom-j1b75r6z",
+      "to": "theorem:zero_gain_preserves_structure",
+      "relation": "proves",
+      "provenance": [
+        {
+          "source_ref": "Workspace/CausalCompressionForwardTheorems.lean",
+          "source_locator": "Workspace/CausalCompressionForwardTheorems.lean",
+          "retrieved_or_checked_at": "2026-09-10T20:40:32Z",
+          "confidence": "direct",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "j1b75r6z-proves-compressed_policy_equal_on_equal_representation",
+      "from": "artifact:axiom-j1b75r6z",
+      "to": "theorem:compressed_policy_equal_on_equal_representation",
+      "relation": "proves",
+      "provenance": [
+        {
+          "source_ref": "Workspace/CausalCompressionForwardTheorems.lean",
+          "source_locator": "Workspace/CausalCompressionForwardTheorems.lean",
+          "retrieved_or_checked_at": "2026-09-10T20:40:32Z",
+          "confidence": "direct",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "dn8bd2yh-receipt",
+      "from": "artifact:axiom-dn8bd2yh",
+      "to": "evidence:receipt-dn8bd2yh",
+      "relation": "verified_by",
+      "provenance": [
+        {
+          "source_ref": "CausalCompressionDynamicalTheorems-dn8bd2yh.json",
+          "source_locator": "CausalCompressionDynamicalTheorems-dn8bd2yh.json",
+          "retrieved_or_checked_at": "2026-09-10T20:40:32Z",
+          "confidence": "direct",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "dn8bd2yh-paper",
+      "from": "artifact:paper-main-tex",
+      "to": "artifact:axiom-dn8bd2yh",
+      "relation": "motivated_by",
+      "provenance": [
+        {
+          "source_ref": "paper/main.tex",
+          "source_locator": "paper/main.tex",
+          "retrieved_or_checked_at": "2026-09-10T20:40:32Z",
+          "confidence": "direct",
+          "notes": "Conceptual relation; not a formal import dependency."
+        }
+      ]
+    },
+    {
+      "id": "dn8bd2yh-proves-bounded_update_stays_between_state_and_target",
+      "from": "artifact:axiom-dn8bd2yh",
+      "to": "theorem:bounded_update_stays_between_state_and_target",
+      "relation": "proves",
+      "provenance": [
+        {
+          "source_ref": "Workspace/CausalCompressionDynamicalTheorems.lean",
+          "source_locator": "Workspace/CausalCompressionDynamicalTheorems.lean",
+          "retrieved_or_checked_at": "2026-09-10T20:40:32Z",
+          "confidence": "direct",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "dn8bd2yh-proves-zero_adaptation_rate_preserves_state",
+      "from": "artifact:axiom-dn8bd2yh",
+      "to": "theorem:zero_adaptation_rate_preserves_state",
+      "relation": "proves",
+      "provenance": [
+        {
+          "source_ref": "Workspace/CausalCompressionDynamicalTheorems.lean",
+          "source_locator": "Workspace/CausalCompressionDynamicalTheorems.lean",
+          "retrieved_or_checked_at": "2026-09-10T20:40:32Z",
+          "confidence": "direct",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "dn8bd2yh-proves-sufficient_representation_preserves_continuation",
+      "from": "artifact:axiom-dn8bd2yh",
+      "to": "theorem:sufficient_representation_preserves_continuation",
+      "relation": "proves",
+      "provenance": [
+        {
+          "source_ref": "Workspace/CausalCompressionDynamicalTheorems.lean",
+          "source_locator": "Workspace/CausalCompressionDynamicalTheorems.lean",
+          "retrieved_or_checked_at": "2026-09-10T20:40:32Z",
+          "confidence": "direct",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "experiment-doc-action-relative-voi-v1",
+      "from": "artifact:experiment-repo",
+      "to": "result:action-relative-voi-v1",
+      "relation": "documents",
+      "provenance": [
+        {
+          "source_ref": "docs/action-relative-voi-v1-results.md",
+          "source_locator": "docs/action-relative-voi-v1-results.md",
+          "retrieved_or_checked_at": "2026-09-10T20:40:32Z",
+          "confidence": "direct",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "experiment-doc-adaptive-morphology-hysteresis-v1",
+      "from": "artifact:experiment-repo",
+      "to": "result:adaptive-morphology-hysteresis-v1",
+      "relation": "documents",
+      "provenance": [
+        {
+          "source_ref": "docs/adaptive-morphology-hysteresis-v1-results.md",
+          "source_locator": "docs/adaptive-morphology-hysteresis-v1-results.md",
+          "retrieved_or_checked_at": "2026-09-10T20:40:32Z",
+          "confidence": "direct",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "experiment-doc-adaptive-observation-policy-v1",
+      "from": "artifact:experiment-repo",
+      "to": "result:adaptive-observation-policy-v1",
+      "relation": "documents",
+      "provenance": [
+        {
+          "source_ref": "docs/adaptive-observation-policy-v1-results.md",
+          "source_locator": "docs/adaptive-observation-policy-v1-results.md",
+          "retrieved_or_checked_at": "2026-09-10T20:40:32Z",
+          "confidence": "direct",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "experiment-doc-archive-release-contract-v1",
+      "from": "artifact:experiment-repo",
+      "to": "result:archive-release-contract-v1",
+      "relation": "documents",
+      "provenance": [
+        {
+          "source_ref": "docs/archive-release-contract-v1-results.md",
+          "source_locator": "docs/archive-release-contract-v1-results.md",
+          "retrieved_or_checked_at": "2026-09-10T20:40:32Z",
+          "confidence": "direct",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "experiment-doc-archive-transition-interaction-v1",
+      "from": "artifact:experiment-repo",
+      "to": "result:archive-transition-interaction-v1",
+      "relation": "documents",
+      "provenance": [
+        {
+          "source_ref": "docs/archive-transition-interaction-v1-results.md",
+          "source_locator": "docs/archive-transition-interaction-v1-results.md",
+          "retrieved_or_checked_at": "2026-09-10T20:40:32Z",
+          "confidence": "direct",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "experiment-doc-branching-adaptive-observation-policy-v1",
+      "from": "artifact:experiment-repo",
+      "to": "result:branching-adaptive-observation-policy-v1",
+      "relation": "documents",
+      "provenance": [
+        {
+          "source_ref": "docs/branching-adaptive-observation-policy-v1-results.md",
+          "source_locator": "docs/branching-adaptive-observation-policy-v1-results.md",
+          "retrieved_or_checked_at": "2026-09-10T20:40:32Z",
+          "confidence": "direct",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "experiment-doc-calibration-v1",
+      "from": "artifact:experiment-repo",
+      "to": "result:calibration-v1",
+      "relation": "documents",
+      "provenance": [
+        {
+          "source_ref": "docs/calibration-v1-results.md",
+          "source_locator": "docs/calibration-v1-results.md",
+          "retrieved_or_checked_at": "2026-09-10T20:40:32Z",
+          "confidence": "direct",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "experiment-doc-capability-placement-freshness-v1",
+      "from": "artifact:experiment-repo",
+      "to": "result:capability-placement-freshness-v1",
+      "relation": "documents",
+      "provenance": [
+        {
+          "source_ref": "docs/capability-placement-freshness-v1-results.md",
+          "source_locator": "docs/capability-placement-freshness-v1-results.md",
+          "retrieved_or_checked_at": "2026-09-10T20:40:32Z",
+          "confidence": "direct",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "experiment-doc-capability-space-routing-v1",
+      "from": "artifact:experiment-repo",
+      "to": "result:capability-space-routing-v1",
+      "relation": "documents",
+      "provenance": [
+        {
+          "source_ref": "docs/capability-space-routing-v1-results.md",
+          "source_locator": "docs/capability-space-routing-v1-results.md",
+          "retrieved_or_checked_at": "2026-09-10T20:40:32Z",
+          "confidence": "direct",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "experiment-doc-contract-relative-state-complexity-v1",
+      "from": "artifact:experiment-repo",
+      "to": "result:contract-relative-state-complexity-v1",
+      "relation": "documents",
+      "provenance": [
+        {
+          "source_ref": "docs/contract-relative-state-complexity-v1-results.md",
+          "source_locator": "docs/contract-relative-state-complexity-v1-results.md",
+          "retrieved_or_checked_at": "2026-09-10T20:40:32Z",
+          "confidence": "direct",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "experiment-doc-dense-coupling-v1",
+      "from": "artifact:experiment-repo",
+      "to": "result:dense-coupling-v1",
+      "relation": "documents",
+      "provenance": [
+        {
+          "source_ref": "docs/dense-coupling-v1-results.md",
+          "source_locator": "docs/dense-coupling-v1-results.md",
+          "retrieved_or_checked_at": "2026-09-10T20:40:32Z",
+          "confidence": "direct",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "experiment-doc-dual-control-observation-action-v1",
+      "from": "artifact:experiment-repo",
+      "to": "result:dual-control-observation-action-v1",
+      "relation": "documents",
+      "provenance": [
+        {
+          "source_ref": "docs/dual-control-observation-action-v1-results.md",
+          "source_locator": "docs/dual-control-observation-action-v1-results.md",
+          "retrieved_or_checked_at": "2026-09-10T20:40:32Z",
+          "confidence": "direct",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "experiment-doc-dual-control-policy-phase-diagram-v1",
+      "from": "artifact:experiment-repo",
+      "to": "result:dual-control-policy-phase-diagram-v1",
+      "relation": "documents",
+      "provenance": [
+        {
+          "source_ref": "docs/dual-control-policy-phase-diagram-v1-results.md",
+          "source_locator": "docs/dual-control-policy-phase-diagram-v1-results.md",
+          "retrieved_or_checked_at": "2026-09-10T20:40:32Z",
+          "confidence": "direct",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "experiment-doc-dynamic-v1",
+      "from": "artifact:experiment-repo",
+      "to": "result:dynamic-v1",
+      "relation": "documents",
+      "provenance": [
+        {
+          "source_ref": "docs/dynamic-v1-results.md",
+          "source_locator": "docs/dynamic-v1-results.md",
+          "retrieved_or_checked_at": "2026-09-10T20:40:32Z",
+          "confidence": "direct",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "experiment-doc-dynamic-v2",
+      "from": "artifact:experiment-repo",
+      "to": "result:dynamic-v2",
+      "relation": "documents",
+      "provenance": [
+        {
+          "source_ref": "docs/dynamic-v2-results.md",
+          "source_locator": "docs/dynamic-v2-results.md",
+          "retrieved_or_checked_at": "2026-09-10T20:40:32Z",
+          "confidence": "direct",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "experiment-doc-fanout-v1",
+      "from": "artifact:experiment-repo",
+      "to": "result:fanout-v1",
+      "relation": "documents",
+      "provenance": [
+        {
+          "source_ref": "docs/fanout-v1-results.md",
+          "source_locator": "docs/fanout-v1-results.md",
+          "retrieved_or_checked_at": "2026-09-10T20:40:32Z",
+          "confidence": "direct",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "experiment-doc-fixed-contract-architecture-v1",
+      "from": "artifact:experiment-repo",
+      "to": "result:fixed-contract-architecture-v1",
+      "relation": "documents",
+      "provenance": [
+        {
+          "source_ref": "docs/fixed-contract-architecture-v1-results.md",
+          "source_locator": "docs/fixed-contract-architecture-v1-results.md",
+          "retrieved_or_checked_at": "2026-09-10T20:40:32Z",
+          "confidence": "direct",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "experiment-doc-gates-v1",
+      "from": "artifact:experiment-repo",
+      "to": "result:gates-v1",
+      "relation": "documents",
+      "provenance": [
+        {
+          "source_ref": "docs/gates-v1-results.md",
+          "source_locator": "docs/gates-v1-results.md",
+          "retrieved_or_checked_at": "2026-09-10T20:40:32Z",
+          "confidence": "direct",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "experiment-doc-history-sufficiency-v1",
+      "from": "artifact:experiment-repo",
+      "to": "result:history-sufficiency-v1",
+      "relation": "documents",
+      "provenance": [
+        {
+          "source_ref": "docs/history-sufficiency-v1-results.md",
+          "source_locator": "docs/history-sufficiency-v1-results.md",
+          "retrieved_or_checked_at": "2026-09-10T20:40:32Z",
+          "confidence": "direct",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "experiment-doc-history-v1",
+      "from": "artifact:experiment-repo",
+      "to": "result:history-v1",
+      "relation": "documents",
+      "provenance": [
+        {
+          "source_ref": "docs/history-v1-results.md",
+          "source_locator": "docs/history-v1-results.md",
+          "retrieved_or_checked_at": "2026-09-10T20:40:32Z",
+          "confidence": "direct",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "experiment-doc-history-v1.1",
+      "from": "artifact:experiment-repo",
+      "to": "result:history-v1.1",
+      "relation": "documents",
+      "provenance": [
+        {
+          "source_ref": "docs/history-v1.1-results.md",
+          "source_locator": "docs/history-v1.1-results.md",
+          "retrieved_or_checked_at": "2026-09-10T20:40:32Z",
+          "confidence": "direct",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "experiment-doc-interactive-observation-policy-v1",
+      "from": "artifact:experiment-repo",
+      "to": "result:interactive-observation-policy-v1",
+      "relation": "documents",
+      "provenance": [
+        {
+          "source_ref": "docs/interactive-observation-policy-v1-results.md",
+          "source_locator": "docs/interactive-observation-policy-v1-results.md",
+          "retrieved_or_checked_at": "2026-09-10T20:40:32Z",
+          "confidence": "direct",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "experiment-doc-loss-aware-observation-v1",
+      "from": "artifact:experiment-repo",
+      "to": "result:loss-aware-observation-v1",
+      "relation": "documents",
+      "provenance": [
+        {
+          "source_ref": "docs/loss-aware-observation-v1-results.md",
+          "source_locator": "docs/loss-aware-observation-v1-results.md",
+          "retrieved_or_checked_at": "2026-09-10T20:40:32Z",
+          "confidence": "direct",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "experiment-doc-morphology-transition-cost-phase-sweep-v1",
+      "from": "artifact:experiment-repo",
+      "to": "result:morphology-transition-cost-phase-sweep-v1",
+      "relation": "documents",
+      "provenance": [
+        {
+          "source_ref": "docs/morphology-transition-cost-phase-sweep-v1-results.md",
+          "source_locator": "docs/morphology-transition-cost-phase-sweep-v1-results.md",
+          "retrieved_or_checked_at": "2026-09-10T20:40:32Z",
+          "confidence": "direct",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "experiment-doc-observation-v1",
+      "from": "artifact:experiment-repo",
+      "to": "result:observation-v1",
+      "relation": "documents",
+      "provenance": [
+        {
+          "source_ref": "docs/observation-v1-results.md",
+          "source_locator": "docs/observation-v1-results.md",
+          "retrieved_or_checked_at": "2026-09-10T20:40:32Z",
+          "confidence": "direct",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "experiment-doc-overlapping-updates-v1",
+      "from": "artifact:experiment-repo",
+      "to": "result:overlapping-updates-v1",
+      "relation": "documents",
+      "provenance": [
+        {
+          "source_ref": "docs/overlapping-updates-v1-results.md",
+          "source_locator": "docs/overlapping-updates-v1-results.md",
+          "retrieved_or_checked_at": "2026-09-10T20:40:32Z",
+          "confidence": "direct",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "experiment-doc-parameterized-contract-state-scaling-v1",
+      "from": "artifact:experiment-repo",
+      "to": "result:parameterized-contract-state-scaling-v1",
+      "relation": "documents",
+      "provenance": [
+        {
+          "source_ref": "docs/parameterized-contract-state-scaling-v1-results.md",
+          "source_locator": "docs/parameterized-contract-state-scaling-v1-results.md",
+          "retrieved_or_checked_at": "2026-09-10T20:40:32Z",
+          "confidence": "direct",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "experiment-doc-partially-observed-morphology-regret-v1",
+      "from": "artifact:experiment-repo",
+      "to": "result:partially-observed-morphology-regret-v1",
+      "relation": "documents",
+      "provenance": [
+        {
+          "source_ref": "docs/partially-observed-morphology-regret-v1-results.md",
+          "source_locator": "docs/partially-observed-morphology-regret-v1-results.md",
+          "retrieved_or_checked_at": "2026-09-10T20:40:32Z",
+          "confidence": "direct",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "experiment-doc-persistent-capability-reuse-v1",
+      "from": "artifact:experiment-repo",
+      "to": "result:persistent-capability-reuse-v1",
+      "relation": "documents",
+      "provenance": [
+        {
+          "source_ref": "docs/persistent-capability-reuse-v1-results.md",
+          "source_locator": "docs/persistent-capability-reuse-v1-results.md",
+          "retrieved_or_checked_at": "2026-09-10T20:40:32Z",
+          "confidence": "direct",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "experiment-doc-physical-architecture-benchmark-v1",
+      "from": "artifact:experiment-repo",
+      "to": "result:physical-architecture-benchmark-v1",
+      "relation": "documents",
+      "provenance": [
+        {
+          "source_ref": "docs/physical-architecture-benchmark-v1-results.md",
+          "source_locator": "docs/physical-architecture-benchmark-v1-results.md",
+          "retrieved_or_checked_at": "2026-09-10T20:40:32Z",
+          "confidence": "direct",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "experiment-doc-recursive-history-sufficiency-v1",
+      "from": "artifact:experiment-repo",
+      "to": "result:recursive-history-sufficiency-v1",
+      "relation": "documents",
+      "provenance": [
+        {
+          "source_ref": "docs/recursive-history-sufficiency-v1-results.md",
+          "source_locator": "docs/recursive-history-sufficiency-v1-results.md",
+          "retrieved_or_checked_at": "2026-09-10T20:40:32Z",
+          "confidence": "direct",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "experiment-doc-release-v1",
+      "from": "artifact:experiment-repo",
+      "to": "result:release-v1",
+      "relation": "documents",
+      "provenance": [
+        {
+          "source_ref": "docs/release-v1-results.md",
+          "source_locator": "docs/release-v1-results.md",
+          "retrieved_or_checked_at": "2026-09-10T20:40:32Z",
+          "confidence": "direct",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "experiment-doc-semantic-interaction-v1",
+      "from": "artifact:experiment-repo",
+      "to": "result:semantic-interaction-v1",
+      "relation": "documents",
+      "provenance": [
+        {
+          "source_ref": "docs/semantic-interaction-v1-results.md",
+          "source_locator": "docs/semantic-interaction-v1-results.md",
+          "retrieved_or_checked_at": "2026-09-10T20:40:32Z",
+          "confidence": "direct",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "experiment-doc-situated-v1",
+      "from": "artifact:experiment-repo",
+      "to": "result:situated-v1",
+      "relation": "documents",
+      "provenance": [
+        {
+          "source_ref": "docs/situated-v1-results.md",
+          "source_locator": "docs/situated-v1-results.md",
+          "retrieved_or_checked_at": "2026-09-10T20:40:32Z",
+          "confidence": "direct",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "experiment-doc-stochastic-morphology-switching-v1",
+      "from": "artifact:experiment-repo",
+      "to": "result:stochastic-morphology-switching-v1",
+      "relation": "documents",
+      "provenance": [
+        {
+          "source_ref": "docs/stochastic-morphology-switching-v1-results.md",
+          "source_locator": "docs/stochastic-morphology-switching-v1-results.md",
+          "retrieved_or_checked_at": "2026-09-10T20:40:32Z",
+          "confidence": "direct",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "paper-ledger",
+      "from": "artifact:paper-main-tex",
+      "to": "artifact:claims-ledger",
+      "relation": "documents",
+      "provenance": [
+        {
+          "source_ref": "paper/main.tex",
+          "source_locator": "paper/main.tex",
+          "retrieved_or_checked_at": "2026-09-10T20:40:32Z",
+          "confidence": "direct",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "paper-boundary",
+      "from": "artifact:paper-main-tex",
+      "to": "artifact:research-boundary",
+      "relation": "qualifies",
+      "provenance": [
+        {
+          "source_ref": "docs/RESEARCH-BOUNDARY.md",
+          "source_locator": "docs/RESEARCH-BOUNDARY.md",
+          "retrieved_or_checked_at": "2026-09-10T20:40:32Z",
+          "confidence": "direct",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "paper-repo-tex",
+      "from": "artifact:paper-repo",
+      "to": "artifact:paper-main-tex",
+      "relation": "published_as",
+      "provenance": [
+        {
+          "source_ref": "README.md",
+          "source_locator": "README.md",
+          "retrieved_or_checked_at": "2026-09-10T20:40:32Z",
+          "confidence": "direct",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "paper-repo-pdf",
+      "from": "artifact:paper-repo",
+      "to": "artifact:paper-main-pdf",
+      "relation": "published_as",
+      "provenance": [
+        {
+          "source_ref": "README.md",
+          "source_locator": "README.md",
+          "retrieved_or_checked_at": "2026-09-10T20:40:32Z",
+          "confidence": "direct",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "experiment-manifest-link",
+      "from": "artifact:experiment-repo",
+      "to": "artifact:experiment-manifest",
+      "relation": "documents",
+      "provenance": [
+        {
+          "source_ref": "manifest.json",
+          "source_locator": "manifest.json",
+          "retrieved_or_checked_at": "2026-09-10T20:40:32Z",
+          "confidence": "direct",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "mechanism-definition",
+      "from": "claim:Mechanism-001",
+      "to": "definition:CausalCompression",
+      "relation": "formalizes",
+      "provenance": [
+        {
+          "source_ref": "Workspace/CausalCompression.lean",
+          "source_locator": "Workspace/CausalCompression.lean",
+          "retrieved_or_checked_at": "2026-09-10T20:40:32Z",
+          "confidence": "direct",
+          "notes": "Conceptual alignment only; descriptive package is unpublished."
+        }
+      ]
+    },
+    {
+      "id": "compression-definition",
+      "from": "claim:Compression-001",
+      "to": "definition:CausalCompression",
+      "relation": "formalizes",
+      "provenance": [
+        {
+          "source_ref": "Workspace/CausalCompression.lean",
+          "source_locator": "Workspace/CausalCompression.lean",
+          "retrieved_or_checked_at": "2026-09-10T20:40:32Z",
+          "confidence": "direct",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "headroom-definition",
+      "from": "claim:Headroom-001",
+      "to": "definition:AdaptiveHeadroom",
+      "relation": "formalizes",
+      "provenance": [
+        {
+          "source_ref": "Workspace/CausalCompression.lean",
+          "source_locator": "Workspace/CausalCompression.lean",
+          "retrieved_or_checked_at": "2026-09-10T20:40:32Z",
+          "confidence": "direct",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "gap-framework",
+      "from": "claim:Gap-001",
+      "to": "artifact:paper-main-tex",
+      "relation": "documented_in",
+      "provenance": [
+        {
+          "source_ref": "paper/main.tex",
+          "source_locator": "paper/main.tex",
+          "retrieved_or_checked_at": "2026-09-10T20:40:32Z",
+          "confidence": "direct",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "queue-migration-v3-code-implements-experiment",
+      "from": "artifact:queue-migration-v3-code",
+      "to": "experiment:queue-migration-v3",
+      "relation": "implements",
+      "provenance": [
+        {
+          "source_ref": "src/pnp_architecture/queue_migration_v3_bursty.py",
+          "source_locator": "/Users/leoguinan/pnp-session-review/experiment/src/pnp_architecture/queue_migration_v3_bursty.py",
+          "retrieved_or_checked_at": "2026-09-11T02:54:18Z",
+          "confidence": "direct",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "queue-migration-v3-experiment-tests-claim",
+      "from": "experiment:queue-migration-v3",
+      "to": "claim:QueueMigration-001",
+      "relation": "tests",
+      "provenance": [
+        {
+          "source_ref": "docs/queue-migration-v3-protocol.md",
+          "source_locator": "/Users/leoguinan/pnp-session-review/experiment/docs/queue-migration-v3-protocol.md",
+          "retrieved_or_checked_at": "2026-09-11T02:54:18Z",
+          "confidence": "direct",
+          "notes": "Frozen comparator and falsifiers reviewed against QueueMigration-001."
+        }
+      ]
+    },
+    {
+      "id": "queue-migration-v3-result-supports-claim",
+      "from": "result:queue-migration-v3",
+      "to": "claim:QueueMigration-001",
+      "relation": "supports",
+      "provenance": [
+        {
+          "source_ref": "docs/queue-migration-v3-results.md",
+          "source_locator": "/Users/leoguinan/pnp-session-review/experiment/docs/queue-migration-v3-results.md",
+          "retrieved_or_checked_at": "2026-09-11T02:54:18Z",
+          "confidence": "direct",
+          "notes": "Bounded synthetic support only; does not establish deployment generality."
+        }
+      ]
+    },
+    {
+      "id": "queue-migration-v3-receipt-verifies-result",
+      "from": "result:queue-migration-v3",
+      "to": "evidence:queue-migration-v3-receipt",
+      "relation": "verified_by",
+      "provenance": [
+        {
+          "source_ref": "artifacts/queue_migration_v3.json",
+          "source_locator": "/Users/leoguinan/pnp-session-review/experiment/artifacts/queue_migration_v3.json",
+          "retrieved_or_checked_at": "2026-09-11T02:54:18Z",
+          "confidence": "direct",
+          "notes": "Independent readback of 48 records and audit status."
+        }
+      ]
+    },
+    {
+      "id": "queue-migration-v3-result-documents-experiment",
+      "from": "result:queue-migration-v3",
+      "to": "experiment:queue-migration-v3",
+      "relation": "documents",
+      "provenance": [
+        {
+          "source_ref": "docs/queue-migration-v3-results.md",
+          "source_locator": "/Users/leoguinan/pnp-session-review/experiment/docs/queue-migration-v3-results.md",
+          "retrieved_or_checked_at": "2026-09-11T02:54:18Z",
+          "confidence": "direct",
+          "notes": ""
+        }
+      ]
+    }
+  ]
+}

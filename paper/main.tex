@@ -203,7 +203,7 @@ The queue-migration claim is tested in two deliberately different evidence layer
 
 \subsection{Instrument and intervention}
 
-The frozen v3 protocol separates two questions. The capacity-release ladder is a positive control: when one lifecycle stage is deliberately constrained, does the instrument identify that known stage? The generation sweep is the queue-migration probe: when upstream generation pressure rises while downstream capacity remains fixed, does the first visible bottleneck move downstream as predicted?
+The frozen v3 protocol separates two questions. The capacity-release ladder is a positive control: when one lifecycle stage is deliberately constrained, does the instrument identify that known stage? The generation sweep is the queue-migration probe: when upstream generation pressure rises while downstream capacity remains fixed, does the first visible bottleneck move downstream as predicted? This synthetic intervention is a protocol-validation fixture, not an empirical test of whether real adaptive systems exhibit queue migration.
 
 \subsection{Synthetic positive controls}
 
@@ -211,7 +211,7 @@ The capacity-release ladder uses a finite, stage-ordered service system with fix
 
 \subsection{Generation sweep}
 
-The same protocol uses two independently implemented finite workload families: five-tick burst/on--off arrivals (`burst\_train`) and bounded seeded jitter around the declared mean (`jittered`). Each workload runs for 80 ticks and must drain completely. The generation sweep uses rates \(1,2,4,8\) with downstream capacities fixed at 4. Seeds 11, 12, and 13 are applied to both workload families, producing 48 records.
+The same protocol uses two independently implemented finite workload families: five-tick burst/on--off arrivals (\texttt{burst\_train}) and bounded seeded jitter around the declared mean (\texttt{jittered}). Each workload runs for 80 ticks and must drain completely. The generation sweep uses rates \(1,2,4,8\) with downstream capacities fixed at 4. Seeds 11, 12, and 13 are applied to both workload families, producing 48 records.
 
 The generation sweep is the more substantive queue-migration probe. Rates 1, 2, and 4 remain source-limited, with no downstream lifecycle stage binding; at rate 8, evaluation becomes capacity-limiting. The result is not merely that a deliberately constrained stage queues: increasing upstream generation pressure exposes the first constrained downstream stage under the frozen dynamics. All 48 records pass flow conservation and drain within the finite bound. Figure~\ref{fig:bottleneck} renders both the positive-control ladder and the generation-sweep transition. The strongest interpretation is instrument identifiability under the declared synthetic contract. This is evidence for the instrument-level mechanism under the declared synthetic model, not for deployed organizational or AI-system behavior.
 
@@ -220,7 +220,7 @@ Table~\ref{tab:generation-magnitude} reports a compact magnitude check from the 
 \begin{figure}[t]
   \centering
   \includegraphics[width=\linewidth]{figures/queue_migration_bottleneck.pdf}
-  \caption{Bottleneck localization in the frozen synthetic v3 protocol. In the generation sweep, the observed bottleneck moves from generation to evaluation only at the highest rate. In the positive-control ladder, the localized bottleneck follows the constrained lifecycle stage. The diagram summarizes 48 audited records, not a continuous estimate over untested rates.}
+  \caption{Bottleneck localization in the frozen synthetic v3 protocol. In the generation sweep, the system remains source-limited through rates 1--4, while evaluation becomes the first capacity-limiting downstream stage at rate 8. In the positive-control ladder, the localized bottleneck follows the constrained lifecycle stage. The diagram summarizes 48 audited records, not a continuous estimate over untested rates.}
   \label{fig:bottleneck}
 \end{figure}
 

@@ -4,9 +4,9 @@ publication_authorized: false
 claims:
   - id: Mechanism-001
     type: theory
-    wording: Causal compression converts historically expensive causal sequences into maintained transitions that are cheap to invoke under a declared continuation contract.
+    wording: Causal compression converts historically expensive causal sequences into maintained transitions that are cheap to invoke under a declared task contract.
     evidence: paper/main.tex
-    falsifier: A bounded transition whose invocation burden does not decline relative to construction burden after reuse and maintenance are introduced.
+    falsifier: A bounded transition whose invocation burden does not persistently decline without equivalent loss of contract performance after reuse and maintenance are introduced.
     status: framework_claim
   - id: Compression-001
     type: theory
@@ -19,6 +19,12 @@ claims:
     wording: The invocation-construction gap is an observable asymmetry between the work required to establish reliable transition capability and the work required for local invocation.
     evidence: paper/main.tex
     falsifier: A specified transition for which construction and invocation workloads remain comparable after contract, maintenance, and reuse are controlled.
+    status: hypothesis
+  - id: Infrastructure-001
+    type: bounded_hypothesis
+    wording: Transitions that become durable infrastructure should exhibit persistent reductions in invocation burden without equivalent loss of contract performance, conditional on continued maintenance and a stable contract.
+    evidence: paper/main.tex
+    falsifier: A durable transition whose invocation burden does not persistently decline or whose contract performance falls equivalently under the declared maintenance regime.
     status: hypothesis
   - id: Lifecycle-001
     type: theory

@@ -42,7 +42,7 @@ The central claim is deliberately modest:
 A transition can appear magical when the causal work required to make it reliable is much larger than the work required to invoke it locally.
 \end{quote}
 
-This claim has three parts. First, the transition must exist as a possible edge in a reachable-state graph. Second, it must be reliable enough for the declared use contract. Third, the historical work that made it reliable must be largely absent from the local invocation loop. Opacity alone is insufficient. Cheapness alone is insufficient. Consequence alone is insufficient. The characteristic combination is a large construction--invocation gap, reliable operation, substantial consequence, and hidden causal depth.
+This claim has three parts: the transition must be reachable, reliable enough for the declared contract, and supported by historical work that is largely absent from the local invocation loop. The relevant combination is a large construction--invocation gap, reliable operation, substantial consequence, and hidden causal depth.
 
 The paper's mechanism is:
 \[
@@ -52,13 +52,13 @@ The paper's mechanism is:
 \rightarrow\text{renewal, replacement, or retirement}.
 \end{gathered}
 \]
-Magic is what the left side of this process can feel like from inside a local decision loop. Adaptability is what determines whether the right side leaves the system able to change again.
+Magic is the motivating phenomenon. Causal compression is the mechanism. Queue migration and adaptive headroom are the systems consequences that make the mechanism testable beyond the local experience of invocation.
 
-This paper is a conceptual framework and measurement program. Its equations define quantities, identify accounting identities, or specify bounded hypotheses; they do not establish universal laws about civilizations, firms, brains, or artificial intelligence.
+This paper is a conceptual framework and measurement program. Its equations define quantities, identify accounting identities, or specify bounded hypotheses; the framework's claims are therefore evaluated relative to declared contracts, substrates, and measurement protocols.
 
 \section{The mechanism: from causal work to cheap invocation}
 
-Let a history be an element \(h\in\Hist\), and let \(q\) denote a declared continuation contract: the future decisions, observations, costs, risks, and outcomes that count for the analysis. A system may transform history into a present representation:
+Let a history be an element \(h\in\Hist\), and let \(q\) denote a declared task contract (called a continuation contract below): the future decisions, observations, costs, risks, and outcomes that count for the analysis. A system may transform history into a present representation:
 \[
 z_t=\phi(h_t).
 \]
@@ -268,7 +268,7 @@ The distinction between construction and invocation also clarifies accountabilit
 The framework makes bounded predictions. These are not consequences of the definitions alone.
 
 \begin{enumerate}[leftmargin=*]
-\item \textbf{Invocation--construction gap.} Across a transition's lifecycle, invocation workload should fall relative to construction workload as the transition becomes reusable infrastructure, conditional on continued maintenance and a stable contract.
+\item \textbf{Infrastructure signature.} Transitions that become durable infrastructure should exhibit persistent reductions in invocation burden without equivalent loss of contract performance, conditional on continued maintenance and a stable contract.
 \item \textbf{Compression--burden relocation.} Increasing causal compression should decrease the fraction of lifecycle work performed during invocation and increase the fraction borne by pre-existing representation, structure, and maintenance. In a declared workload accounting, this predicts \(W_{\mathrm{invoke}}/W_{\mathrm{lifecycle}}\downarrow\), not necessarily \(W_{\mathrm{maintain}}\uparrow\); consolidation can reduce total work.
 \item \textbf{Queue migration.} Increasing candidate-generation capacity should move observed bottlenecks downstream when evaluation, integration, maintenance, or retirement capacity does not scale with it.
 \item \textbf{Headroom erosion.} Holding nominal capability performance constant, faster growth in commitment burden and maintenance drift should narrow measured adaptation choices.
@@ -297,17 +297,11 @@ The proposed synthesis is the lifecycle relation among these objects: historical
 
 \section{Limitations and non-claims}
 
-First, causal compression is not causal understanding. The framework separates hidden causality from absent causality and requires evidence for reliability rather than treating opacity as proof.
+Causal compression is not causal understanding: hidden causality must be distinguished from absent causality, and reliability still requires evidence. The scalar headroom model is an approximation; real systems have shared infrastructure, complementarities, bottlenecks, nonconvex migration costs, dependencies, and vector-valued constraints, so \(\Oset_t\) is the more faithful target.
 
-Second, the scalar headroom model is an approximation. Real networks have shared infrastructure, complementarities, bottlenecks, nonconvex migration costs, dependencies, and vector-valued constraints. The reachable-set object \(\Oset_t\) is the more faithful target.
+Construction work, invocation work, maintenance burden, and capacity need not be commensurable without a declared contract and valuation rule. The gap metric and lifecycle equations are therefore instrument-relative accounting objects. A temporary arrival rate above service capacity need not imply permanent overload if slack or later service clears the queue.
 
-Third, construction work, invocation work, maintenance burden, and capacity may not be commensurable without a declared contract and valuation rule. The gap metric is therefore instrument-relative.
-
-Fourth, the pressure and queue equations are accounting vocabulary until their terms are measured and their boundary conditions specified. A ratio above one for a temporary interval need not imply permanent overload if slack or later service clears the queue.
-
-Fifth, the framework does not claim that every successful compression improves welfare, that every persistent structure is irrational, or that retirement is always beneficial. Safety, headroom release, and option value are distinct evaluation dimensions.
-
-Sixth, the paper contains no new field dataset, no energy measurement, and no empirical estimate of AI's social or economic effects. The predictions are proposed instruments and hypotheses, not reported confirmations.
+The framework does not claim that every successful compression improves welfare, that every persistent structure is irrational, or that retirement is always beneficial. This paper contains no field dataset, energy measurement, or empirical estimate of AI's social or economic effects; the predictions are proposed instruments and hypotheses, not reported confirmations.
 
 \section{Conclusion}
 
@@ -315,7 +309,7 @@ Civilization becomes more powerful by moving causal work out of the present. Pro
 
 This is why the title is not merely a metaphor. The invocation--construction gap supplies one measurable component of magical appearance, while the magic-like predicate adds reliability, consequence, and local causal visibility. A transition feels magical when it is reliable and consequential, cheap to invoke, expensive to construct within a declared substrate boundary, and causally deep beyond the local interface.
 
-But compression has a cost. It lowers the burden of action and can expand reachable futures; it also turns selected possibilities into maintained commitments. The past survives as structure, and structure has to be maintained. A system that evaluates and compiles faster than it can sustain or retire its commitments may become more capable while becoming less able to change.
+Compression converts past effort into present capability. Commitment converts present capability into future obligation. The past survives as structure, and structure has to be maintained. Retirement is the mechanism that can break the obligation while preserving required continuation capability and restoring future degrees of freedom.
 
 The central lifecycle is therefore:
 \[

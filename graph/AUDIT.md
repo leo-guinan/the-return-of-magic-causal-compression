@@ -2,7 +2,7 @@
 
 ## Verdict
 
-The project has a public artifact corpus, claim-specific synthetic evidence chains, two source-derived archive calibrations, and a bounded external operational calibration. It does not have causal field validation.
+The project has a public artifact corpus and one claim-specific synthetic evidence chain plus one source-derived calibration chain. It does not have causal field validation.
 
 The current state is best described as:
 
@@ -10,9 +10,8 @@ The current state is best described as:
 public source catalogue
 + validated formal slices
 + bounded experiment archive
-+ claim-specific synthetic support/test chain
-+ two source-derived trace calibration chains
-+ bounded two-cell Google Borg operational observation
++ one claim-specific synthetic support/test chain
++ one source-derived trace calibration chain
 - causal deployment validation
 - profile-held causal-compression commitments
 - resolved source-hash lineage for AxiomReason readbacks
@@ -25,12 +24,12 @@ The graph snapshot is structurally valid. Its epistemic edges remain sparse by d
 | Class | Count | Current state |
 |---|---:|---|
 | Paper manuscript source | 1 | Public GitHub source, commit `00e360b` |
-| Compiled paper PDF | 1 | Public GitHub artifact; 11 pages |
+| Compiled paper PDF | 1 | Public GitHub artifact; 13 pages |
 | Paper claims/hypotheses | 8 | Four framework claims, four hypotheses in the claims ledger |
 | Descriptive definitions | 6 | In `Workspace/CausalCompression.lean`; server-validated, unpublished |
-| Descriptive Statements | 12 | In the same package; not theorem declarations |
+| Descriptive Statements | 13 | In the same package; not theorem declarations |
 | Proved theorem declarations | 11 | Three public AxiomReason source packages |
-| Bounded experiment result documents | 38 | In the public experiment archive; queue migration v3 and both v4 trace results are claim-linked |
+| Bounded experiment result documents | 38 | In the public experiment archive; queue migration v3 and one v4 trace result are claim-linked |
 | AxiomReason theorem receipts | 3 | Search/fetch readback recorded |
 | Experiment manifest receipt | 1 | 384-entry archive manifest |
 | Causal-compression profile holdings | 0 | Not represented in the profile commitment projection |

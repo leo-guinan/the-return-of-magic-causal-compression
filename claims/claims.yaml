@@ -41,15 +41,9 @@ claims:
   - id: QueueMigration-001
     type: bounded_hypothesis
     wording: Increasing candidate-generation capacity should move observed bottlenecks downstream when evaluation, integration, maintenance, or retirement capacity does not scale with generation.
-    evidence: paper/main.tex; pnp-session-review/experiment/docs/queue-migration-v3-results.md; pnp-session-review/experiment/artifacts/queue_migration_v3.json; pnp-session-review/experiment/docs/queue-migration-v4-results.md; pnp-session-review/experiment/artifacts/queue_migration_v4.json; pnp-session-review/experiment/docs/queue-migration-v4-trace2-results.md; pnp-session-review/experiment/artifacts/queue_migration_v4_trace2.json
+    evidence: paper/main.tex; pnp-session-review/experiment/docs/queue-migration-v3-results.md; pnp-session-review/experiment/artifacts/queue_migration_v3.json; pnp-session-review/experiment/docs/queue-migration-v4-results.md; pnp-session-review/experiment/artifacts/queue_migration_v4.json
     falsifier: An independently specified workload family in which the generation sweep and capacity-release ladder fail to localize the declared bottlenecks under the frozen receipt contract.
     status: validated_synthetic
-  - id: BorgObservation-001
-    type: bounded_observation
-    wording: In bounded first-24-hour aggregates from two public Google Borg cells, scheduler composition and interruption/duration profiles differ across priority, scheduling class, collection type, and coarse resource-request strata; pooled pressure/utilization associations should therefore be treated as cell- and scheduler-dependent observations rather than causal confirmation of queue migration.
-    evidence: pnp-session-review/experiment/docs/google-borg-bigquery-v6-results.md; pnp-session-review/experiment/docs/google-borg-bigquery-v7-results.md; pnp-session-review/experiment/docs/google-borg-bigquery-v8-results.md; pnp-session-review/experiment/artifacts/google_borg_bigquery_v6.json; pnp-session-review/experiment/artifacts/google_borg_bigquery_v7.json; pnp-session-review/experiment/artifacts/google_borg_bigquery_v8.json
-    falsifier: A preregistered matched comparison across the same cell windows showing stable scheduler composition and a robust, monotone pressure/utilization relationship after declared boundary and censoring controls.
-    status: observed
   - id: Timescale-001
     type: bounded_hypothesis
     wording: Under environmental change, an intermediate structural-update regime can outperform both excessively rapid updating and excessively slow updating on a predeclared adaptive-performance measure.

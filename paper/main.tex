@@ -213,7 +213,9 @@ The capacity-release ladder uses a finite, stage-ordered service system with fix
 
 The same protocol uses two independently implemented finite workload families: five-tick burst/on--off arrivals (`burst\_train`) and bounded seeded jitter around the declared mean (`jittered`). Each workload runs for 80 ticks and must drain completely. The generation sweep uses rates \(1,2,4,8\) with downstream capacities fixed at 4. Seeds 11, 12, and 13 are applied to both workload families, producing 48 records.
 
-The generation sweep is the more substantive queue-migration probe. Rates 1, 2, and 4 remain generation-bound; rate 8 becomes evaluation-bound. The result is not merely that a deliberately constrained stage queues: increasing upstream generation pressure exposes the first constrained downstream stage under the frozen dynamics. All 48 records pass flow conservation and drain within the finite bound. Figure~\ref{fig:bottleneck} renders both the positive-control ladder and the generation-sweep transition. The strongest interpretation is instrument identifiability under the declared synthetic contract. This validates the instrument, not the general theory.
+The generation sweep is the more substantive queue-migration probe. Rates 1, 2, and 4 remain source-limited, with no downstream lifecycle stage binding; at rate 8, evaluation becomes capacity-limiting. The result is not merely that a deliberately constrained stage queues: increasing upstream generation pressure exposes the first constrained downstream stage under the frozen dynamics. All 48 records pass flow conservation and drain within the finite bound. Figure~\ref{fig:bottleneck} renders both the positive-control ladder and the generation-sweep transition. The strongest interpretation is instrument identifiability under the declared synthetic contract. This is evidence for the instrument-level mechanism under the declared synthetic model, not for deployed organizational or AI-system behavior.
+
+Table~\ref{tab:generation-magnitude} reports a compact magnitude check from the frozen receipt. Values are maxima across the two workload families and three seeds; they are descriptive fixture outputs, not population estimates.
 
 \begin{figure}[t]
   \centering
@@ -221,6 +223,22 @@ The generation sweep is the more substantive queue-migration probe. Rates 1, 2, 
   \caption{Bottleneck localization in the frozen synthetic v3 protocol. In the generation sweep, the observed bottleneck moves from generation to evaluation only at the highest rate. In the positive-control ladder, the localized bottleneck follows the constrained lifecycle stage. The diagram summarizes 48 audited records, not a continuous estimate over untested rates.}
   \label{fig:bottleneck}
 \end{figure}
+
+\begin{table}[t]
+  \centering
+  \caption{Magnitude check for the synthetic generation sweep. \(Q^{\max}\) is maximum queue size and \(\bar W\) is mean waiting time in ticks.}
+  \label{tab:generation-magnitude}
+  \begin{tabular}{rrrrr}
+    \toprule
+    rate & source \(Q^{\max}\) & evaluation \(Q^{\max}\) & evaluation \(\bar W\) & drain ticks \\
+    \midrule
+    1 & 5  & 0   & 1.00  & 81  \\
+    2 & 14 & 0   & 1.00  & 87  \\
+    4 & 20 & 0   & 1.00  & 84  \\
+    8 & 40 & 324 & 41.52 & 163 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
 
 For reproduction, the protocol, input hash, seeds, condition definitions, independent auditor, and result receipt are preserved in the experiment repository. The executable checks are:
 \begin{verbatim}
@@ -326,7 +344,7 @@ A minimal instrument should log, for each candidate transition: its contract, ev
 \end{gathered}
 \]
 
-Synthetic fixtures can test instrumentation and implementation invariants. They cannot establish market, institutional, civilizational, or general AI effects. A serious test program should compare generation, evaluation, integration, maintenance, and retirement capacity under controlled workload scaling, with fixed seeds, independent correctness checks, and explicit receipts. For queue-migration tests, arrival rate, service rate, stage occupancy, and time-in-stage should be reported separately; Little's law is a useful benchmark only when its stationarity and finite-mean conditions are checked, not a license to infer permanent overload from a transient spike \citep{little1961}. For update-rate tests, adaptation and retention should be measured as separate outcomes: a policy that changes quickly may gain short-run fit while losing previously retained behavior, the stability--plasticity tradeoff documented in connectionist learning \citep{french1999}.
+Synthetic fixtures can test instrumentation and implementation invariants. Beyond the bounded instrument validation in Section~6, a generalization program should compare generation, evaluation, integration, maintenance, and retirement capacity under controlled workload scaling, with fixed seeds, independent correctness checks, and explicit receipts. For queue-migration tests, arrival rate, service rate, stage occupancy, and time-in-stage should be reported separately; Little's law is a useful benchmark only when its stationarity and finite-mean conditions are checked, not a license to infer permanent overload from a transient spike \citep{little1961}. For update-rate tests, adaptation and retention should be measured as separate outcomes: a policy that changes quickly may gain short-run fit while losing previously retained behavior, the stability--plasticity tradeoff documented in connectionist learning \citep{french1999}.
 
 \section{Relation to adjacent frameworks}
 
@@ -342,11 +360,13 @@ Causal compression is not causal understanding: hidden causality must be disting
 
 Construction work, invocation work, maintenance burden, and capacity need not be commensurable without a declared contract and valuation rule. The gap metric and lifecycle equations are therefore instrument-relative accounting objects. A temporary arrival rate above service capacity need not imply permanent overload if slack or later service clears the queue.
 
-The framework does not claim that every successful compression improves welfare, that every persistent structure is irrational, or that retirement is always beneficial. This paper contains no newly collected field dataset, no energy measurement, and no empirical estimate of AI's social or economic effects. Its operational observation uses existing public traces rather than a purpose-built field study; the predictions are proposed instruments and bounded observations, not general organizational or AI-system effects.
+The framework does not claim that every successful compression improves welfare, that every persistent structure is irrational, or that retirement is always beneficial. This paper contains no newly collected field dataset, no energy measurement, and no empirical estimate of AI's social or economic effects. The trace-derived calibration uses an existing archive trace rather than a purpose-built field study; the predictions are proposed instruments and bounded observations, not general organizational or AI-system effects.
 
 \section{Conclusion}
 
 Civilization becomes more powerful by moving causal work out of the present. Procedures become policies. Policies become infrastructure. Repeated flows become commitments. The causal chain remains real even when the invocation becomes small.
+
+The bounded experiments do not validate the framework generally, but they show that downstream constraint exposure can be operationalized and recovered under a frozen service model.
 
 This is why the title is not merely a metaphor. The invocation--construction gap supplies one measurable component of magical appearance, while the magic-like predicate adds reliability, consequence, and local causal visibility. A transition feels magical when it is reliable and consequential, cheap to invoke, expensive to construct within a declared substrate boundary, and causally deep beyond the local interface.
 

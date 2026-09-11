@@ -6,15 +6,15 @@ fig,(ax1,ax2)=plt.subplots(1,2,figsize=(7.2,3.0),gridspec_kw={'width_ratios':[1.
 labels=['generation','evaluation','integration','maintenance','retirement']
 colors=['#d9d9d9','#4c78a8','#f58518','#54a24b','#e45756']
 cmap=ListedColormap(colors)
-# synthetic generation sweep: 1,2,4 remain generation-bound; 8 moves to evaluation
-m1=[[0,0,0,0],[0,0,0,0],[0,0,0,0],[1,1,1,1],[1,1,1,1]]
-# reshape rows as stage x condition; show one cell per workload/seed replicated pattern
-im=ax1.imshow(m1,aspect='auto',cmap=cmap,vmin=0,vmax=4)
+# synthetic generation sweep: rates 1,2,4 are source-limited; rate 8 is evaluation-limited
+# rows are stage x condition, so the visual cell and tick label share the same index
+m1=[[1,1,1,1],[0,0,0,2],[0,0,0,0],[0,0,0,0],[0,0,0,0]]
+im=ax1.imshow(m1,aspect='auto',cmap=cmap,vmin=0,vmax=4,origin='upper')
 ax1.set_xticks(range(4),['1','2','4','8']); ax1.set_xlabel('generation rate')
 ax1.set_yticks(range(5),labels); ax1.set_title('Generation sweep')
-# release ladder diagonal: constrained stage localizes to itself
-m2=[[1,0,0,0],[0,2,0,0],[0,0,3,0],[0,0,0,4],[0,0,0,0]]
-ax2.imshow(m2,aspect='auto',cmap=cmap,vmin=0,vmax=4)
+# release ladder: constrained stage localizes to the same labelled row
+m2=[[0,0,0,0],[1,0,0,0],[0,2,0,0],[0,0,3,0],[0,0,0,4]]
+ax2.imshow(m2,aspect='auto',cmap=cmap,vmin=0,vmax=4,origin='upper')
 ax2.set_xticks(range(4),['eval.','integr.','maint.','retire.']); ax2.set_xlabel('released capacity except')
 ax2.set_yticks(range(5),labels); ax2.set_title('Capacity-release ladder')
 for ax in (ax1,ax2):

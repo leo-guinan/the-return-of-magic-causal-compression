@@ -198,6 +198,8 @@ The example also exposes the downstream bottleneck. If candidate generation beco
 \]
 Cheap generation can therefore increase the stock of unprocessed commitments faster than the system can safely absorb them. This queue-migration prediction is the most direct empirical entry point in the framework: it can be tested without estimating the total causal history of the system, by varying upstream candidate-generation capacity while holding downstream service capacities fixed and measuring where backlog and delay accumulate.
 
+A bounded synthetic cross-check implements this protocol in two independently specified workload families: burst/on--off arrivals and jittered arrivals. Across 48 records (eight conditions, two workload families, three seeds), the generation sweep exposed evaluation as the first downstream bottleneck at the highest rate, while the capacity-release ladder localized evaluation, integration, maintenance, and retirement bottlenecks in turn. All records passed an independent flow-conservation audit and drained within the finite bound. This is evidence for the instrument-level mechanism under the declared synthetic model, not for deployed organizational or AI-system behavior; a trace-derived workload remains a separate evidentiary step.
+
 \section{Commitment, maintenance, and adaptive headroom}
 
 Separate raw capability from the capacity to change:

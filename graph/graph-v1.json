@@ -1,7 +1,7 @@
 {
   "schema_version": "research-graph-v1",
   "graph_id": "the-return-of-magic-causal-compression",
-  "checked_at": "2026-09-11T05:00:00Z",
+  "checked_at": "2026-09-11T05:10:00Z",
   "source_of_truth": "graph-v1.json",
   "nodes": [
     {
@@ -2709,91 +2709,6 @@
       "public_urls": [
         "https://github.com/Build-In-Public-University/pnp-research-base/blob/main/experiment/artifacts/queue_migration_v4.json"
       ]
-    },
-    {
-      "id": "result:queue-migration-v4-trace2",
-      "type": "empirical_result",
-      "label": "Queue migration v4 second archive trace result",
-      "status": "measured",
-      "scope": "Second anonymized archive trace; frozen v4 replay; trace sensitivity within one exported corpus",
-      "source_refs": [
-        [
-          "docs/queue-migration-v4-trace2-results.md",
-          "/Users/leoguinan/pnp-session-review/experiment/docs/queue-migration-v4-trace2-results.md"
-        ],
-        [
-          "artifacts/queue_migration_v4_trace2.json",
-          "/Users/leoguinan/pnp-session-review/experiment/artifacts/queue_migration_v4_trace2.json"
-        ],
-        [
-          "conversation/subagents/worker-7/records.jsonl",
-          "/Users/leoguinan/pnp-session-review/conversation/subagents/worker-7/records.jsonl"
-        ]
-      ],
-      "provenance": [
-        {
-          "source_ref": "docs/queue-migration-v4-trace2-results.md",
-          "source_locator": "/Users/leoguinan/pnp-session-review/experiment/docs/queue-migration-v4-trace2-results.md",
-          "retrieved_or_checked_at": "2026-09-11T03:12:00Z",
-          "confidence": "direct",
-          "notes": "",
-          "content_hash": "sha256:d1ae1a65e4a7ad2496bbf10f4fef993c1b69783ad5bf9859771c54975a288bb1"
-        },
-        {
-          "source_ref": "artifacts/queue_migration_v4_trace2.json",
-          "source_locator": "/Users/leoguinan/pnp-session-review/experiment/artifacts/queue_migration_v4_trace2.json",
-          "retrieved_or_checked_at": "2026-09-11T03:12:00Z",
-          "confidence": "direct",
-          "notes": "",
-          "content_hash": "sha256:2a6d5ecdeab20287ab9eb62e96f9537ef6e51f486d07b47e424fcb4e943a3f28"
-        },
-        {
-          "source_ref": "conversation/subagents/worker-7/records.jsonl",
-          "source_locator": "/Users/leoguinan/pnp-session-review/conversation/subagents/worker-7/records.jsonl",
-          "retrieved_or_checked_at": "2026-09-11T03:12:00Z",
-          "confidence": "direct",
-          "notes": "Message content excluded from emitted artifacts.",
-          "content_hash": "sha256:6903037bdbad8b0fc3b6d48d61e264bc8a30cbe1a3808ca9ecbb56581b067c9e"
-        }
-      ],
-      "experimental_status": "trace_derived_calibration",
-      "publication_status": "published_source",
-      "profile_status": "not_held",
-      "falsifiers": [
-        "Source hash mismatch, flow-conservation failure, incomplete drain, failure to localize the declared bottlenecks, or message content entering an emitted artifact."
-      ],
-      "commit": "f1d4aae70c1d913d42771ff005845c52ec52437f",
-      "public_urls": [
-        "https://github.com/Build-In-Public-University/pnp-research-base/blob/main/experiment/docs/queue-migration-v4-trace2-results.md",
-        "https://github.com/Build-In-Public-University/pnp-research-base/blob/main/experiment/artifacts/queue_migration_v4_trace2.json"
-      ]
-    },
-    {
-      "id": "evidence:queue-migration-v4-trace2-receipt",
-      "type": "evidence",
-      "label": "Queue migration v4 second trace receipt",
-      "status": "measured",
-      "scope": "Receipt containing second source hash, metadata-only policy, shortfall accounting, stage audit, and result hash",
-      "source_refs": [
-        [
-          "artifacts/queue_migration_v4_trace2.json",
-          "/Users/leoguinan/pnp-session-review/experiment/artifacts/queue_migration_v4_trace2.json"
-        ]
-      ],
-      "provenance": [
-        {
-          "source_ref": "artifacts/queue_migration_v4_trace2.json",
-          "source_locator": "/Users/leoguinan/pnp-session-review/experiment/artifacts/queue_migration_v4_trace2.json",
-          "retrieved_or_checked_at": "2026-09-11T03:12:00Z",
-          "confidence": "direct",
-          "notes": "",
-          "content_hash": "sha256:2a6d5ecdeab20287ab9eb62e96f9537ef6e51f486d07b47e424fcb4e943a3f28"
-        }
-      ],
-      "commit": "f1d4aae70c1d913d42771ff005845c52ec52437f",
-      "public_urls": [
-        "https://github.com/Build-In-Public-University/pnp-research-base/blob/main/experiment/artifacts/queue_migration_v4_trace2.json"
-      ]
     }
   ],
   "edges": [
@@ -4189,51 +4104,6 @@
           "retrieved_or_checked_at": "2026-09-11T03:04:00Z",
           "confidence": "direct",
           "notes": ""
-        }
-      ]
-    },
-    {
-      "id": "queue-migration-v4-trace2-result-supports-claim",
-      "from": "result:queue-migration-v4-trace2",
-      "to": "claim:QueueMigration-001",
-      "relation": "supports",
-      "provenance": [
-        {
-          "source_ref": "experiment/docs/queue-migration-v4-trace2-results.md",
-          "source_locator": "/Users/leoguinan/pnp-session-review/experiment/docs/queue-migration-v4-trace2-results.md",
-          "retrieved_or_checked_at": "2026-09-11T03:12:00Z",
-          "confidence": "direct",
-          "notes": "Second trace remains bounded to one exported archive corpus."
-        }
-      ]
-    },
-    {
-      "id": "queue-migration-v4-trace2-receipt-verifies-result",
-      "from": "result:queue-migration-v4-trace2",
-      "to": "evidence:queue-migration-v4-trace2-receipt",
-      "relation": "verified_by",
-      "provenance": [
-        {
-          "source_ref": "experiment/artifacts/queue_migration_v4_trace2.json",
-          "source_locator": "/Users/leoguinan/pnp-session-review/experiment/artifacts/queue_migration_v4_trace2.json",
-          "retrieved_or_checked_at": "2026-09-11T03:12:00Z",
-          "confidence": "direct",
-          "notes": "Second trace remains bounded to one exported archive corpus."
-        }
-      ]
-    },
-    {
-      "id": "queue-migration-v4-trace2-result-documents-experiment",
-      "from": "result:queue-migration-v4-trace2",
-      "to": "experiment:queue-migration-v4",
-      "relation": "documents",
-      "provenance": [
-        {
-          "source_ref": "experiment/docs/queue-migration-v4-trace2-protocol.md",
-          "source_locator": "/Users/leoguinan/pnp-session-review/experiment/docs/queue-migration-v4-trace2-protocol.md",
-          "retrieved_or_checked_at": "2026-09-11T03:12:00Z",
-          "confidence": "direct",
-          "notes": "Second trace remains bounded to one exported archive corpus."
         }
       ]
     }

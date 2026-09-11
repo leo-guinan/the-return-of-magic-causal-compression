@@ -16,15 +16,15 @@ The graph does not infer support from topical similarity. An experiment document
 
 ## Current snapshot
 
-- 95 nodes
-- 96 edges
+- 93 nodes
+- 93 edges
 - 6 definitions
-- 13 descriptive Statements
+- 12 descriptive Statements
 - 11 proved theorem declarations
 - 4 framework claims
 - 4 hypotheses
-- 38 bounded experiment result documents
-- 7 evidence/publication receipts
+- 37 bounded experiment result documents
+- 6 evidence/publication receipts
 - 0 causal-compression profile-held propositions
 
 ## Integrity

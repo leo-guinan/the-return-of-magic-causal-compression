@@ -1,7 +1,7 @@
 {
   "schema_version": "research-graph-v1",
   "graph_id": "the-return-of-magic-causal-compression",
-  "checked_at": "2026-09-11T02:54:18Z",
+  "checked_at": "2026-09-11T03:04:00Z",
   "source_of_truth": "graph-v1.json",
   "nodes": [
     {
@@ -19,15 +19,15 @@
       "provenance": [
         {
           "source_ref": "paper/main.tex",
-          "source_locator": "paper/main.tex",
-          "retrieved_or_checked_at": "2026-09-10T20:40:32Z",
+          "source_locator": "/Users/leoguinan/the-return-of-magic-causal-compression/paper/main.tex",
+          "retrieved_or_checked_at": "2026-09-11T03:04:00Z",
           "confidence": "direct",
           "notes": "",
-          "content_hash": "sha256:9f17e9df0dc48e3475f74e6fe85863bad7dc111dd001c44604fd43075811ac57"
+          "content_hash": "sha256:65cbfdad5d8f0415b8f4f29017db9ef356f2ec815528f9dfa1a1428b17a69c56"
         }
       ],
-      "commit": "8fcaa6fabe089c353fd78746ef96bd48de6037c6",
-      "content_hash": "sha256:9f17e9df0dc48e3475f74e6fe85863bad7dc111dd001c44604fd43075811ac57",
+      "commit": "0dce7ffbe88a1180f3f380c7992ae10b220bf8c1",
+      "content_hash": "sha256:65cbfdad5d8f0415b8f4f29017db9ef356f2ec815528f9dfa1a1428b17a69c56",
       "public_urls": [
         "https://github.com/leo-guinan/the-return-of-magic-causal-compression/blob/main/paper/main.tex"
       ]
@@ -47,15 +47,15 @@
       "provenance": [
         {
           "source_ref": "paper/main.pdf",
-          "source_locator": "paper/main.pdf",
-          "retrieved_or_checked_at": "2026-09-10T20:40:32Z",
+          "source_locator": "/Users/leoguinan/the-return-of-magic-causal-compression/paper/main.pdf",
+          "retrieved_or_checked_at": "2026-09-11T03:04:00Z",
           "confidence": "direct",
           "notes": "",
-          "content_hash": "sha256:d0efc2b84d252644a5f00a6b99073194d7cc56ae1fec3d119248f79d006467fe"
+          "content_hash": "sha256:a23ac4a2294ea2b803577aaee4b97dc5cd8c54e401106a5a21bb700777fd45ae"
         }
       ],
-      "commit": "8fcaa6fabe089c353fd78746ef96bd48de6037c6",
-      "content_hash": "sha256:d0efc2b84d252644a5f00a6b99073194d7cc56ae1fec3d119248f79d006467fe",
+      "commit": "0dce7ffbe88a1180f3f380c7992ae10b220bf8c1",
+      "content_hash": "sha256:a23ac4a2294ea2b803577aaee4b97dc5cd8c54e401106a5a21bb700777fd45ae",
       "public_urls": [
         "https://github.com/leo-guinan/the-return-of-magic-causal-compression/blob/main/paper/main.pdf"
       ]
@@ -2569,6 +2569,146 @@
       "public_urls": [
         "https://github.com/Build-In-Public-University/pnp-research-base/blob/main/experiment/artifacts/queue_migration_v3.json"
       ]
+    },
+    {
+      "id": "experiment:queue-migration-v4",
+      "type": "experiment",
+      "label": "Queue migration v4 trace-derived calibration",
+      "status": "measured",
+      "scope": "One anonymized archive trace replayed as one-minute demand bins; timestamps and role labels only; generation sweep and capacity ladder",
+      "source_refs": [
+        [
+          "docs/queue-migration-v4-protocol.md",
+          "/Users/leoguinan/pnp-session-review/experiment/docs/queue-migration-v4-protocol.md"
+        ],
+        [
+          "conversation/records.jsonl",
+          "/Users/leoguinan/pnp-session-review/conversation/records.jsonl"
+        ]
+      ],
+      "provenance": [
+        {
+          "source_ref": "docs/queue-migration-v4-protocol.md",
+          "source_locator": "/Users/leoguinan/pnp-session-review/experiment/docs/queue-migration-v4-protocol.md",
+          "retrieved_or_checked_at": "2026-09-11T03:04:00Z",
+          "confidence": "direct",
+          "notes": "",
+          "content_hash": "sha256:d1eb6cc01d7829025d4a31f1c98cb9e09f3036ba57bb52618f3ee34c186966e5"
+        },
+        {
+          "source_ref": "conversation/records.jsonl",
+          "source_locator": "/Users/leoguinan/pnp-session-review/conversation/records.jsonl",
+          "retrieved_or_checked_at": "2026-09-11T03:04:00Z",
+          "confidence": "direct",
+          "notes": "Message content excluded from emitted artifacts.",
+          "content_hash": "sha256:dffc63dce4c36a12e28f5dce447ca997516a7ea4c099d3a46a5d96262053eb38"
+        }
+      ],
+      "commit": "e73dc3d5a3802c95784a4d7db3089407634b31b9",
+      "public_urls": [
+        "https://github.com/Build-In-Public-University/pnp-research-base/blob/main/experiment/docs/queue-migration-v4-protocol.md",
+        "https://github.com/Build-In-Public-University/pnp-research-base/blob/main/conversation/records.jsonl"
+      ]
+    },
+    {
+      "id": "result:queue-migration-v4",
+      "type": "empirical_result",
+      "label": "Queue migration v4 trace-derived result",
+      "status": "measured",
+      "scope": "1,190-record anonymized archive trace; finite one-minute replay; no content emitted",
+      "source_refs": [
+        [
+          "docs/queue-migration-v4-results.md",
+          "/Users/leoguinan/pnp-session-review/experiment/docs/queue-migration-v4-results.md"
+        ],
+        [
+          "artifacts/queue_migration_v4.json",
+          "/Users/leoguinan/pnp-session-review/experiment/artifacts/queue_migration_v4.json"
+        ]
+      ],
+      "provenance": [
+        {
+          "source_ref": "docs/queue-migration-v4-results.md",
+          "source_locator": "/Users/leoguinan/pnp-session-review/experiment/docs/queue-migration-v4-results.md",
+          "retrieved_or_checked_at": "2026-09-11T03:04:00Z",
+          "confidence": "direct",
+          "notes": "",
+          "content_hash": "sha256:333a6b4dea7f580ddbb288302d2bc21f9eb6a68ed485adfd09ab3280aa4d9272"
+        },
+        {
+          "source_ref": "artifacts/queue_migration_v4.json",
+          "source_locator": "/Users/leoguinan/pnp-session-review/experiment/artifacts/queue_migration_v4.json",
+          "retrieved_or_checked_at": "2026-09-11T03:04:00Z",
+          "confidence": "direct",
+          "notes": "",
+          "content_hash": "sha256:3ca2069dc4c7c95b1aa835eefc0f2c8feb4f51dfc6e59261ac8fc1f0b877d8a8"
+        }
+      ],
+      "experimental_status": "trace_derived_calibration",
+      "publication_status": "published_source",
+      "profile_status": "not_held",
+      "falsifiers": [
+        "Source hash mismatch, flow-conservation failure, incomplete drain, failure to localize trace bottlenecks, or message content entering an emitted artifact."
+      ],
+      "commit": "e73dc3d5a3802c95784a4d7db3089407634b31b9",
+      "public_urls": [
+        "https://github.com/Build-In-Public-University/pnp-research-base/blob/main/experiment/docs/queue-migration-v4-results.md",
+        "https://github.com/Build-In-Public-University/pnp-research-base/blob/main/experiment/artifacts/queue_migration_v4.json"
+      ]
+    },
+    {
+      "id": "artifact:queue-migration-v4-code",
+      "type": "artifact",
+      "label": "Queue migration v4 trace replay source",
+      "status": "published_source",
+      "scope": "Public experiment repository",
+      "source_refs": [
+        [
+          "src/pnp_architecture/queue_migration_v4_trace.py",
+          "/Users/leoguinan/pnp-session-review/experiment/src/pnp_architecture/queue_migration_v4_trace.py"
+        ]
+      ],
+      "provenance": [
+        {
+          "source_ref": "src/pnp_architecture/queue_migration_v4_trace.py",
+          "source_locator": "/Users/leoguinan/pnp-session-review/experiment/src/pnp_architecture/queue_migration_v4_trace.py",
+          "retrieved_or_checked_at": "2026-09-11T03:04:00Z",
+          "confidence": "direct",
+          "notes": "",
+          "content_hash": "sha256:a37970c1b4979f1f3f3ed00f5f655a301c3d97563c1577687507abcb86b768ef"
+        }
+      ],
+      "commit": "e73dc3d5a3802c95784a4d7db3089407634b31b9",
+      "public_urls": [
+        "https://github.com/Build-In-Public-University/pnp-research-base/blob/main/experiment/src/pnp_architecture/queue_migration_v4_trace.py"
+      ]
+    },
+    {
+      "id": "evidence:queue-migration-v4-receipt",
+      "type": "evidence",
+      "label": "Queue migration v4 canonical receipt",
+      "status": "measured",
+      "scope": "Receipt containing source hash, metadata-only policy, source shortfall, stage audit, and result hash",
+      "source_refs": [
+        [
+          "artifacts/queue_migration_v4.json",
+          "/Users/leoguinan/pnp-session-review/experiment/artifacts/queue_migration_v4.json"
+        ]
+      ],
+      "provenance": [
+        {
+          "source_ref": "artifacts/queue_migration_v4.json",
+          "source_locator": "/Users/leoguinan/pnp-session-review/experiment/artifacts/queue_migration_v4.json",
+          "retrieved_or_checked_at": "2026-09-11T03:04:00Z",
+          "confidence": "direct",
+          "notes": "",
+          "content_hash": "sha256:3ca2069dc4c7c95b1aa835eefc0f2c8feb4f51dfc6e59261ac8fc1f0b877d8a8"
+        }
+      ],
+      "commit": "e73dc3d5a3802c95784a4d7db3089407634b31b9",
+      "public_urls": [
+        "https://github.com/Build-In-Public-University/pnp-research-base/blob/main/experiment/artifacts/queue_migration_v4.json"
+      ]
     }
   ],
   "edges": [
@@ -3887,6 +4027,81 @@
           "source_ref": "docs/queue-migration-v3-results.md",
           "source_locator": "/Users/leoguinan/pnp-session-review/experiment/docs/queue-migration-v3-results.md",
           "retrieved_or_checked_at": "2026-09-11T02:54:18Z",
+          "confidence": "direct",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "queue-migration-v4-code-implements-experiment",
+      "from": "artifact:queue-migration-v4-code",
+      "to": "experiment:queue-migration-v4",
+      "relation": "implements",
+      "provenance": [
+        {
+          "source_ref": "src/pnp_architecture/queue_migration_v4_trace.py",
+          "source_locator": "/Users/leoguinan/pnp-session-review/experiment/src/pnp_architecture/queue_migration_v4_trace.py",
+          "retrieved_or_checked_at": "2026-09-11T03:04:00Z",
+          "confidence": "direct",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "queue-migration-v4-experiment-tests-claim",
+      "from": "experiment:queue-migration-v4",
+      "to": "claim:QueueMigration-001",
+      "relation": "tests",
+      "provenance": [
+        {
+          "source_ref": "docs/queue-migration-v4-protocol.md",
+          "source_locator": "/Users/leoguinan/pnp-session-review/experiment/docs/queue-migration-v4-protocol.md",
+          "retrieved_or_checked_at": "2026-09-11T03:04:00Z",
+          "confidence": "direct",
+          "notes": "Trace-derived calibration reviewed against the frozen queue-migration contract."
+        }
+      ]
+    },
+    {
+      "id": "queue-migration-v4-result-supports-claim",
+      "from": "result:queue-migration-v4",
+      "to": "claim:QueueMigration-001",
+      "relation": "supports",
+      "provenance": [
+        {
+          "source_ref": "docs/queue-migration-v4-results.md",
+          "source_locator": "/Users/leoguinan/pnp-session-review/experiment/docs/queue-migration-v4-results.md",
+          "retrieved_or_checked_at": "2026-09-11T03:04:00Z",
+          "confidence": "direct",
+          "notes": "Single-trace calibration support; no stationarity or deployment generality."
+        }
+      ]
+    },
+    {
+      "id": "queue-migration-v4-receipt-verifies-result",
+      "from": "result:queue-migration-v4",
+      "to": "evidence:queue-migration-v4-receipt",
+      "relation": "verified_by",
+      "provenance": [
+        {
+          "source_ref": "artifacts/queue_migration_v4.json",
+          "source_locator": "/Users/leoguinan/pnp-session-review/experiment/artifacts/queue_migration_v4.json",
+          "retrieved_or_checked_at": "2026-09-11T03:04:00Z",
+          "confidence": "direct",
+          "notes": "Independent readback of source hash, 8 conditions, audit, and drain status."
+        }
+      ]
+    },
+    {
+      "id": "queue-migration-v4-result-documents-experiment",
+      "from": "result:queue-migration-v4",
+      "to": "experiment:queue-migration-v4",
+      "relation": "documents",
+      "provenance": [
+        {
+          "source_ref": "docs/queue-migration-v4-results.md",
+          "source_locator": "/Users/leoguinan/pnp-session-review/experiment/docs/queue-migration-v4-results.md",
+          "retrieved_or_checked_at": "2026-09-11T03:04:00Z",
           "confidence": "direct",
           "notes": ""
         }

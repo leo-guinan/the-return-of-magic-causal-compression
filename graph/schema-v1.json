@@ -1,0 +1,111 @@
+{
+  "schema_version": "research-graph-v1",
+  "schema_name": "Source-receipted research graph",
+  "purpose": "A public, claim-calibrated projection of research concepts, formal artifacts, experiments, evidence, and publication state.",
+  "epistemic_rule": "A graph edge records a typed relationship; it is not evidence that the source node is true.",
+  "node_types": {
+    "definition": "A named concept or quantity with an explicit meaning.",
+    "model": "An explicit formal or computational model with assumptions.",
+    "axiom": "A proposition explicitly held in a profile or formal environment.",
+    "statement": "A descriptive or explanatory proposition not represented as a proved theorem.",
+    "theorem": "A named formally proved declaration with a bounded model/scope.",
+    "claim": "A manuscript-level proposition tracked in the claims ledger.",
+    "hypothesis": "A testable proposition not yet established by the available evidence.",
+    "empirical_result": "A result emitted by a bounded experiment or measurement run.",
+    "experiment": "A protocol or executable instrument that produces results.",
+    "artifact": "A source, paper, repository, receipt, code file, or other inspectable object.",
+    "evidence": "A receipt or observation used to establish artifact state or result provenance.",
+    "question": "An unresolved research question or future test.",
+    "publication": "A public release event or public location for an artifact."
+  },
+  "status_values": {
+    "conceptual": "Part of the proposed framework; not independently established.",
+    "descriptive": "A source description or vocabulary item.",
+    "hypothesized": "Open and testable; not confirmed.",
+    "formalized": "Encoded in a formal or computational representation.",
+    "locally_validated": "Passed local build/check or deterministic validation.",
+    "server_validated": "Passed independent server-side validation.",
+    "proved": "A formal declaration checked by the relevant proof system.",
+    "measured": "Produced by an executed bounded instrument.",
+    "published_source": "Available at a public source location.",
+    "profile_held": "Explicitly represented in the author's profile commitment layer.",
+    "unresolved": "Known but not yet resolved or adequately evidenced.",
+    "superseded": "Retained for provenance but no longer the current formulation."
+  },
+  "edge_relations": {
+    "defines": "Source gives the meaning of target concept.",
+    "formalizes": "Source encodes target proposition/model; does not by itself prove it.",
+    "proves": "A formal artifact proves a named theorem under its assumptions.",
+    "depends_on": "Target cannot be interpreted or built without source dependency.",
+    "conceptually_depends_on": "Research framing dependency without a formal import/build dependency.",
+    "documents": "Artifact records or describes target.",
+    "implements": "Code or protocol implements target model/instrument.",
+    "measures": "Experiment emits or measures target quantity.",
+    "supports": "Evidence supports target claim under stated scope.",
+    "tests": "Experiment is designed to test target hypothesis/claim.",
+    "falsifies": "Evidence or result contradicts target under its declared contract.",
+    "qualifies": "Source narrows, limits, or conditions target claim.",
+    "motivated_by": "Artifact was created in response to or inspired by target concept.",
+    "published_as": "Artifact is exposed through target publication location.",
+    "verified_by": "Artifact state is independently checked by target evidence/receipt.",
+    "supersedes": "Current node replaces an earlier formulation.",
+    "contradicts": "Nodes make incompatible claims under comparable scope."
+  },
+  "required_node_fields": [
+    "id",
+    "type",
+    "label",
+    "status",
+    "scope",
+    "source_refs",
+    "provenance"
+  ],
+  "required_edge_fields": [
+    "id",
+    "from",
+    "to",
+    "relation",
+    "provenance"
+  ],
+  "provenance_fields": [
+    "source_ref",
+    "source_locator",
+    "retrieved_or_checked_at",
+    "content_hash",
+    "confidence",
+    "notes"
+  ],
+  "integrity_rules": [
+    "Node IDs are unique.",
+    "Edge IDs are unique.",
+    "Every edge endpoint resolves to a node.",
+    "Every node has at least one source reference.",
+    "Every claim and hypothesis has a falsifier or an explicit reason it is not yet falsifiable.",
+    "Formal dependency edges require evidence from imports/build metadata; conceptual relations use conceptually_depends_on or motivated_by.",
+    "Published source, proved, measured, and profile_held are independent status dimensions and must not be collapsed into one badge.",
+    "Inferred groupings must be marked in provenance and must not be rendered as direct source facts.",
+    "Private credentials, tokens, internal secrets, and private identifiers are forbidden in public graph data."
+  ],
+  "status_dimensions": [
+    "epistemic_status",
+    "formal_status",
+    "validation_status",
+    "publication_status",
+    "profile_status",
+    "empirical_status"
+  ],
+  "recommended_node_extensions": [
+    "claim_text",
+    "formal_statement",
+    "assumptions",
+    "dependencies",
+    "falsifiers",
+    "counterexamples",
+    "supporting_artifacts",
+    "supersession",
+    "commit",
+    "content_hash",
+    "public_urls"
+  ],
+  "public_projection_rule": "AxiomReason profile nodes are a commitment/derivation projection. The full research graph may contain descriptive, measured, hypothesized, and unresolved nodes without converting them into profile-held axioms."
+}

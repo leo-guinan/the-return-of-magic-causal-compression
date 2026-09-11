@@ -41,7 +41,7 @@ claims:
   - id: QueueMigration-001
     type: bounded_hypothesis
     wording: Increasing candidate-generation capacity should move observed bottlenecks downstream when evaluation, integration, maintenance, or retirement capacity does not scale with generation.
-    evidence: paper/main.tex; pnp-session-review/experiment/docs/queue-migration-v3-results.md; pnp-session-review/experiment/artifacts/queue_migration_v3.json
+    evidence: paper/main.tex; pnp-session-review/experiment/docs/queue-migration-v3-results.md; pnp-session-review/experiment/artifacts/queue_migration_v3.json; pnp-session-review/experiment/docs/queue-migration-v4-results.md; pnp-session-review/experiment/artifacts/queue_migration_v4.json
     falsifier: An independently specified workload family in which the generation sweep and capacity-release ladder fail to localize the declared bottlenecks under the frozen receipt contract.
     status: validated_synthetic
   - id: Timescale-001
